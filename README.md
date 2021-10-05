@@ -1,9 +1,9 @@
 # TODO
 
 * `staff`:
-* * [ ] get people's info + photos
-* * * [ ] pat
-* * * [ ] dhruvi
+* * [x] get people's info + photos
+* * * [x] pat
+* * * [x] dhruvi
 * `showinfo`:
 * * [x] remove old ones
 * * [ ] add new shows
@@ -13,7 +13,7 @@
 * * [x] remove old events
 * * [ ] add new ones
 * `stream`
-* * [ ] [Video js](https://videojs.com/getting-started/)
+* * [x] [Video js](https://videojs.com/getting-started/)
 * Forms:
 * * [ ] embed into the website
 * * [ ] add qr codes to main page
