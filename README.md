@@ -12,6 +12,8 @@
 * `events`:
 * * [x] remove old events
 * * [ ] add new ones
+* `stream`
+* * [ ] [Video js](https://videojs.com/getting-started/)
 * Forms:
 * * [ ] embed into the website
 * * [ ] add qr codes to main page
