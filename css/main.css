@@ -1,0 +1,434 @@
+html {
+    background-color: #e5e6ec;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    -webkit-flex-direction: column;
+}
+
+@font-face {
+    font-family: 'geometosregular';
+    src: url('../fonts/geometos/geometos.eot');
+    src: url('../fonts/geometos/geometos.svg#geometosregular') format('svg'),
+         url('../fonts/geometos/geometos.ttf') format('ttf'),
+         url('../fonts/geometos/geometos.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'nexabold';
+    src: url('../fonts/nexa/nexa_bold.eot');
+    src: url('../fonts/nexa/nexa_bold.svg#nexabold') format('svg'),
+        url('../fonts/nexa/nexa_bold.ttf') format('ttf'),
+        url('../fonts/nexa/nexa_bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'nexalight';
+    src: url('../fonts/nexa/nexa_light.eot');
+    src: url('../fonts/nexa/nexa_light.svg#nexalight') format('svg'),
+        url('../fonts/nexa/nexa_light.ttf') format('ttf'),
+        url('../fonts/nexa/nexa_light.woff') format('woff');
+}
+
+.wrapper {
+    display: none;
+}
+
+.nav {
+    background-color: rgba(43, 48, 58, 1);
+    border-bottom: 0.13vw solid rgba(43, 48, 58, 1);
+    box-shadow: 0 0.13vw 0.65vw rgba(0, 0, 0, 0.35);
+    height: 5.3vw;
+    padding: 1.5vw 1.75vw;
+    position: relative;
+    z-index: 3;
+}
+
+.nav img {
+    float: left;
+    width: 15vw;
+}
+
+.links {
+    float: right;
+    margin: 0.85vw 0 0 0;
+}
+
+.links a {
+    border-radius: 0.6vw;
+    color: rgba(255, 255, 255, 1);
+    float: left;
+    font-family: 'geometosregular', Arial, sans-serif;
+    font-size: 2vw;
+    margin: 0 1.2vw 0 0.6vw;
+    padding: 0.7vw 1vw;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 0.6vw;
+}
+
+.navtab {
+    background-color: #7B241C;
+    box-shadow: 0 0.13vw 0.65vw rgba(0, 0, 0, 0.35);
+    display: none;
+    height: 2.5vw;
+    left: 0;
+    overflow: hidden;
+    padding: 0.4vw 1.75vw;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.navtab span {
+    color: rgba(255, 255, 255, 0.15);
+    float: left;
+    font-family: 'geometosregular', Arial, sans-serif;
+    font-size: 6vw;
+    margin: -1.95vw 0 0 -0.3vw;
+    text-decoration: none;
+    user-select: none;
+}
+
+.sublinks {
+    float: right;
+}
+
+.sublinks a {
+    color: rgba(255, 255, 255, 1);
+    border-radius: 0.6vw;
+    float: left;
+    font-family: 'geometosregular', Arial, sans-serif;
+    font-size: 1.7vw;
+    margin: 0 1.4vw 0 0.6vw;
+    padding: 0.3vw 1vw;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sublinks a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 0.6vw;
+}
+
+.content {
+    flex: 1;
+    margin: 6vw 10vw 6vw 10vw;
+    -webkit-flex: 1;
+}
+
+.footer {
+    background-color: rgba(43, 48, 58, 1);
+    border-top: 0.13vw solid rgba(0, 83, 119, 1);
+    box-shadow: 0 -0.13vw 0.65vw rgba(0, 0, 0, 0.35);
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'nexalight', Arial, sans-serif;
+    font-size: 1vw;
+    font-variant: small-caps;
+    height: 2.6vw;
+    left: 0;
+    letter-spacing: 0.03vw;
+    padding: 1.7vw 2vw;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+}
+
+#f_left {
+    float: left;
+    margin: -1.4vw -0.6vw 0 -0.6vw;
+    padding: 0.6vw 0.6vw;
+}
+
+#f_left img {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all 0.3s ease, width 1ms;
+    -webkit-filter: grayscale(100%);
+    width: 4vw;
+}
+
+#f_left img:hover {
+    filter: grayscale(0%);
+    opacity: 0.8;
+    -webkit-filter: grayscale(0%);
+}
+
+#f_center {
+    display: inline-block;
+    margin: 0.7vw 0 0 5.3vw;
+}
+
+#f_right {
+    margin: -0.1vw 0 0 0;
+    font-size: 1.8vw;
+    float: right;
+}
+
+#f_right a {
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0.6vw 0.6vw;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+#f_right a:hover {
+    color: rgba(6, 167, 125, 1);
+    text-shadow: 0 0 1vw rgba(255, 255, 255, 0.25);
+}
+
+@media only screen and (min-width: 1024px) {
+    .nav {
+        border-bottom: 1.33px solid rgba(43, 48, 58, 1);
+        box-shadow: 0 1.33px 6.66px rgba(0, 0, 0, 0.35);
+        height: 54.27px;
+        padding: 15.36px 17.92px;
+    }
+    
+    
+    .nav img {
+        width: 153.6px;
+    }
+    
+    .links {
+        margin-top: 8.7px;
+    }
+    
+    .links a {
+        border-radius: 6.14px;
+        font-size: 20.48px;
+        margin: 0 12.29px 0 6.14px;
+        padding: 7.17px 10.24px;
+    }
+    
+    .links a:hover {
+        border-radius: 6.14px;
+    }
+    
+    .navtab {
+        box-shadow: 0 1.33px 6.66px rgba(0, 0, 0, 0.35);
+        height: 25.6px;
+        padding: 4.1px 17.92px;
+    }
+    
+    .navtab span {
+        font-size: 61.44px;
+        margin: -19.97px 0 0 -3.07px;
+    }
+    
+    .sublinks a {
+        border-radius: 6.14px;
+        font-size: 17.41px;
+        margin: 0 14.34px 0 6.14px;
+        padding: 3.07px 10.24px;
+    }
+    
+    .sublinks a:hover {
+        border-radius: 6.14px;
+    }
+
+    .content {
+        margin: 61.44px 102.4px 61.44px 102.4px;
+    }
+
+    .footer {
+        border-top: 1.33px solid rgba(0, 83, 119, 1);
+        box-shadow: 0 -1.33px 6.66px rgba(0, 0, 0, 0.35);
+        font-size: 10.24px;
+        height: 26.62px;
+        letter-spacing: 0.31px;
+        padding: 17.41px 20.48px;
+    }
+    
+    #f_left {
+        margin: -14.34px -6.14px 0 -6.14px;
+        padding: 6.14px 6.14px;
+    }
+    
+    #f_left img {
+        width: 40.96px;
+    }
+    
+    #f_center {
+        margin: 7.17px 0 0 54.27px;
+    }
+    
+    #f_right {
+        margin: -1.02px 0 0 0;
+        font-size: 18.43px;
+    }
+    
+    #f_right a {
+        padding: 6.14px 6.14px;
+    }
+
+    #f_right a:hover {
+        text-shadow: 0 0 10.24px rgba(255, 255, 255, 0.25);
+    }
+}
+
+/* BEGIN TEMPORARY CSS */
+
+.tmp {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.welcome {
+   /* border: 1px solid transparent;
+    border-radius: 4px; */
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.welcome_h, .h1_alt {
+    font-family: 'geometosregular', Arial, sans-serif;
+    font-size: 3vw;
+    font-variant: small-caps;
+    margin: 0.5vw 0 0.5vw 0;
+}
+
+.welcome_wrap, .welcome_wrap a {
+    background-color: #e5e6ec;
+    border-color: rgba(43, 48, 58, 1);
+    border-width: 5px;
+    color: rgba(43, 48, 58, 1);
+    font-family: 'nexalight', Arial, sans-serif;
+    font-size: 1.3vw;
+}
+
+b {
+    font-family: 'nexabold', Arial, sans-serif;
+    font-weight: normal;
+}
+
+.stream_a {
+    display: inline-block;
+    left: 20%;
+    position: relative;
+}
+
+.stream_b {
+    float: right;
+    position: relative;
+    right: 20%;
+}
+
+audio {
+    text-align: left;
+}
+
+p, li {
+    font-family: 'nexalight', Arial, sans-serif;
+    font-size: 1vw;
+}
+
+.subtext {
+    color: rgba(0, 0, 0, 0.50);
+    font-style: italic;
+    margin: -0.5vw 0 1vw 0;
+}
+
+.subsubtext {
+    color: rgba(0, 0, 0, 0.50);
+    font-style: italic;
+    font-size: 1vw;
+    margin: -0.5vw 0 1vw 0;
+}
+
+hr {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.h2_alt {
+    color: rgba(0, 0, 0, 0.70);
+    font-family: 'geometosregular', Arial, sans-serif;
+    font-size: 2.2vw;
+    font-variant: small-caps;
+    font-weight: 0;
+    letter-spacing: 0.05vw;
+    margin: 1vw 0 0.5vw 0;
+}
+
+.black {
+    color: rgba(0, 0, 0, 1);
+}
+
+.mid {
+    text-align: center;
+}
+
+.h3_alt {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: 'geometosregular', Arial, sans-serif;
+    font-size: 1.7vw;
+    font-variant: small-caps;
+    font-weight: 0;
+    letter-spacing: 0.04vw;
+    margin: 0.4vw 0 0.5vw 0;    
+}
+
+.h3_alt_alt {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-size: 0.8vw;
+    font-weight: 0;
+    letter-spacing: 0.02vw;
+    margin: 0.4vw 0 0.5vw 0;    
+}
+
+.show img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 8vw;
+}
+
+.show_desc {
+    display: inline-block;
+    margin-left: 2vw;
+    vertical-align: middle;
+}
+
+.all_inline {
+    margin-bottom: 0.5vw;
+}
+
+.all_inline * {
+    display: inline;
+}
+
+.pfix {
+    display: table-caption;
+    width: 60vw;
+}
+
+.home_img {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.home_img img {
+    border-radius: 0.6vw;
+    box-shadow: 0 0.13vw 0.65vw rgba(0, 0, 0, 0.35);
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 25vw;
+    height: 14vw;
+}
+
+/*  END TEMPORARY CSS  */

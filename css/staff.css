@@ -1,0 +1,44 @@
+.card {
+    background-color: rgba(0, 83, 119, 1);
+    border-radius: 2vw;
+    box-shadow: 0 1.33px 6.66px rgba(0, 0, 0, 0.35);
+    color: rgba(255, 255, 255, 0.75);
+    display: inline-block;
+    margin: 0.5vw;
+    padding: 1.5vw;
+}
+
+#staff_title {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+#staff_name {
+    font-size: 1vw;
+    margin: 1vw;
+}
+
+.card a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.card p {
+    display: inline-block;
+    padding-left: 1vw;
+    vertical-align: middle;
+}
+
+.card img {
+    border-radius: 4vw;
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle;
+    width: 7vw;
+}
+
+.staff_wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
