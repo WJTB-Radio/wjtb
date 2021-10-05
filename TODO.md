@@ -1,7 +1,9 @@
 # TODO
 
 * `staff`:
-* * [x] get people's info + photos
+* * [ ] get people's info + photos
+* * * [ ] pat
+* * * [ ] dhruvi
 * `showinfo`:
 * * [x] remove old ones
 * * [ ] add new shows
