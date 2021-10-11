@@ -23,3 +23,4 @@
 * * [ ] ??? change to `Links` and have qr codes, links, and more?
 * `private/footer`:
 * * [x] change copyright date
+* * [x] update instagram `@wjtb_radio`
