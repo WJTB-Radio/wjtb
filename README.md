@@ -24,3 +24,7 @@
 * `private/footer`:
 * * [x] change copyright date
 * * [x] update instagram `@wjtb_radio`
+* General Things
+* * [ ] Document structure of site
+* * [ ] Templates
+
