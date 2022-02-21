@@ -15,25 +15,19 @@ body {
 @font-face {
     font-family: 'geometosregular';
     src: url('../fonts/geometos/geometos.eot');
-    src: url('../fonts/geometos/geometos.svg#geometosregular') format('svg'),
-         url('../fonts/geometos/geometos.ttf') format('ttf'),
-         url('../fonts/geometos/geometos.woff') format('woff');
+    src: url('../fonts/geometos/geometos.svg#geometosregular') format('svg'), url('../fonts/geometos/geometos.ttf') format('ttf'), url('../fonts/geometos/geometos.woff') format('woff');
 }
 
 @font-face {
     font-family: 'nexabold';
     src: url('../fonts/nexa/nexa_bold.eot');
-    src: url('../fonts/nexa/nexa_bold.svg#nexabold') format('svg'),
-        url('../fonts/nexa/nexa_bold.ttf') format('ttf'),
-        url('../fonts/nexa/nexa_bold.woff') format('woff');
+    src: url('../fonts/nexa/nexa_bold.svg#nexabold') format('svg'), url('../fonts/nexa/nexa_bold.ttf') format('ttf'), url('../fonts/nexa/nexa_bold.woff') format('woff');
 }
 
 @font-face {
     font-family: 'nexalight';
     src: url('../fonts/nexa/nexa_light.eot');
-    src: url('../fonts/nexa/nexa_light.svg#nexalight') format('svg'),
-        url('../fonts/nexa/nexa_light.ttf') format('ttf'),
-        url('../fonts/nexa/nexa_light.woff') format('woff');
+    src: url('../fonts/nexa/nexa_light.svg#nexalight') format('svg'), url('../fonts/nexa/nexa_light.ttf') format('ttf'), url('../fonts/nexa/nexa_light.woff') format('woff');
 }
 
 .wrapper {
@@ -194,53 +188,42 @@ body {
         height: 54.27px;
         padding: 15.36px 17.92px;
     }
-    
-    
     .nav img {
         width: 153.6px;
     }
-    
     .links {
         margin-top: 8.7px;
     }
-    
     .links a {
         border-radius: 6.14px;
         font-size: 20.48px;
         margin: 0 12.29px 0 6.14px;
         padding: 7.17px 10.24px;
     }
-    
     .links a:hover {
         border-radius: 6.14px;
     }
-    
     .navtab {
         box-shadow: 0 1.33px 6.66px rgba(0, 0, 0, 0.35);
         height: 25.6px;
         padding: 4.1px 17.92px;
     }
-    
     .navtab span {
         font-size: 61.44px;
         margin: -19.97px 0 0 -3.07px;
     }
-    
     .sublinks a {
         border-radius: 6.14px;
         font-size: 17.41px;
         margin: 0 14.34px 0 6.14px;
         padding: 3.07px 10.24px;
     }
-    
     .sublinks a:hover {
         border-radius: 6.14px;
     }
-
     .content {
         margin: 61.44px 102.4px 61.44px 102.4px;
     }
-
     .footer {
         border-top: 1.33px solid rgba(0, 83, 119, 1);
         box-shadow: 0 -1.33px 6.66px rgba(0, 0, 0, 0.35);
@@ -249,33 +232,28 @@ body {
         letter-spacing: 0.31px;
         padding: 17.41px 20.48px;
     }
-    
     #f_left {
         margin: -14.34px -6.14px 0 -6.14px;
         padding: 6.14px 6.14px;
     }
-    
     #f_left img {
         width: 40.96px;
     }
-    
     #f_center {
         margin: 7.17px 0 0 54.27px;
     }
-    
     #f_right {
         margin: -1.02px 0 0 0;
         font-size: 18.43px;
     }
-    
     #f_right a {
         padding: 6.14px 6.14px;
     }
-
     #f_right a:hover {
         text-shadow: 0 0 10.24px rgba(255, 255, 255, 0.25);
     }
 }
+
 
 /* BEGIN TEMPORARY CSS */
 
@@ -286,21 +264,23 @@ body {
 }
 
 .welcome {
-   /* border: 1px solid transparent;
+    /* border: 1px solid transparent;
     border-radius: 4px; */
     text-align: center;
     padding: 15px;
     margin-bottom: 20px;
 }
 
-.welcome_h, .h1_alt {
+.welcome_h,
+.h1_alt {
     font-family: 'geometosregular', Arial, sans-serif;
     font-size: 3vw;
     font-variant: small-caps;
     margin: 0.5vw 0 0.5vw 0;
 }
 
-.welcome_wrap, .welcome_wrap a {
+.welcome_wrap,
+.welcome_wrap a {
     background-color: #e5e6ec;
     border-color: rgba(43, 48, 58, 1);
     border-width: 5px;
@@ -330,7 +310,8 @@ audio {
     text-align: left;
 }
 
-p, li {
+p,
+li {
     font-family: 'nexalight', Arial, sans-serif;
     font-size: 1vw;
 }
@@ -377,7 +358,7 @@ hr {
     font-variant: small-caps;
     font-weight: 0;
     letter-spacing: 0.04vw;
-    margin: 0.4vw 0 0.5vw 0;    
+    margin: 0.4vw 0 0.5vw 0;
 }
 
 .h3_alt_alt {
@@ -387,7 +368,7 @@ hr {
     font-size: 0.8vw;
     font-weight: 0;
     letter-spacing: 0.02vw;
-    margin: 0.4vw 0 0.5vw 0;    
+    margin: 0.4vw 0 0.5vw 0;
 }
 
 .show img {
@@ -431,4 +412,10 @@ hr {
     height: 14vw;
 }
 
+
 /*  END TEMPORARY CSS  */
+
+.form {
+    display: block;
+    margin: auto;
+}
