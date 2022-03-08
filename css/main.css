@@ -150,6 +150,7 @@ body {
     transition: all 0.3s ease, width 1ms;
     -webkit-filter: grayscale(100%);
     width: 4vw;
+    padding-right: 0.6vw;
 }
 
 #f_left img:hover {
