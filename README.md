@@ -27,4 +27,9 @@
 * General Things
 * * [ ] Document structure of site
 * * [ ] Templates
-
+*`Site Overhaul`: (Al's Project)
+* * [ ] Develop Persistent Media Player/Get JQuery Working
+* * [ ] Define a theme and persistent colors
+* * [ ] Gather images, make uniform
+* * [ ] Content Creation - Seek Eli
+* * [ ] Potential Update: CMS for blog posting and easier updates.
