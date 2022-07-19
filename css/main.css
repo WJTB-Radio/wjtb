@@ -1,9 +1,16 @@
+/* Style guidelines:
+NavBG: #0D0D0D;
+SUBNAV BG: #2E2E2E;
+Body bg: #9C9C9C;
+Hover color: #F2274C; */
+
 html {
-    background-color: #e5e6ec;
+    background-color: #9C9C9C;
     height: 100%;
 }
 
 body {
+    background-color: #9C9C9C;
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
@@ -35,7 +42,7 @@ body {
 }
 
 .nav {
-    background-color: rgba(43, 48, 58, 1);
+    background-color: #0D0D0D;
     border-bottom: 0.13vw solid rgba(43, 48, 58, 1);
     box-shadow: 0 0.13vw 0.65vw rgba(0, 0, 0, 0.35);
     height: 5.3vw;
@@ -63,16 +70,17 @@ body {
     margin: 0 1.2vw 0 0.6vw;
     padding: 0.7vw 1vw;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.15s ease;
 }
 
 .links a:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    border-radius: 0.6vw;
+    background-color: #F2274C;
+    color: #0D0D0D;
+    border-radius: 0.5vw;
 }
 
 .navtab {
-    background-color: #7B241C;
+    background-color: #2E2E2E;
     box-shadow: 0 0.13vw 0.65vw rgba(0, 0, 0, 0.35);
     display: none;
     height: 2.5vw;
@@ -85,7 +93,7 @@ body {
 }
 
 .navtab span {
-    color: rgba(255, 255, 255, 0.15);
+    color: #2E2E2E;
     float: left;
     font-family: 'geometosregular', Arial, sans-serif;
     font-size: 6vw;
@@ -99,7 +107,7 @@ body {
 }
 
 .sublinks a {
-    color: rgba(255, 255, 255, 1);
+    color: #F2F2F2;
     border-radius: 0.6vw;
     float: left;
     font-family: 'geometosregular', Arial, sans-serif;
@@ -111,7 +119,8 @@ body {
 }
 
 .sublinks a:hover {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: #F2274C;
+    color: #0D0D0D;
     border-radius: 0.6vw;
 }
 
@@ -122,10 +131,10 @@ body {
 }
 
 .footer {
-    background-color: rgba(43, 48, 58, 1);
+    background-color: #0D0D0D;
     border-top: 0.13vw solid rgba(0, 83, 119, 1);
     box-shadow: 0 -0.13vw 0.65vw rgba(0, 0, 0, 0.35);
-    color: rgba(255, 255, 255, 0.5);
+    color: #A6A6A6;
     font-family: 'nexalight', Arial, sans-serif;
     font-size: 1vw;
     font-variant: small-caps;
@@ -282,7 +291,7 @@ body {
 
 .welcome_wrap,
 .welcome_wrap a {
-    background-color: #e5e6ec;
+    background-color: #9C9C9C;
     border-color: rgba(43, 48, 58, 1);
     border-width: 5px;
     color: rgba(43, 48, 58, 1);
