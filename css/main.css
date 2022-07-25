@@ -434,3 +434,11 @@ hr {
     display: block;
     margin: auto;
 }
+
+
+/* CSS changes to come */
+
+
+audio::-webkit-media-controls-panel {
+    background-color: #F2274C;
+}
