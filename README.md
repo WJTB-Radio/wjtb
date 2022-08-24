@@ -28,8 +28,9 @@
 * * [ ] Document structure of site
 * * [ ] Templates
 *`Site Overhaul`: (Al's Project)
-* * [ ] Develop Persistent Media Player/Get JQuery Working
-* * [ ] Define a theme and persistent colors
+* * [x] Develop Persistent Media Player/Get JQuery Working
+* * [x] Define a theme and persistent colors
 * * [ ] Gather images, make uniform
 * * [ ] Content Creation - Seek Eli
-* * [ ] Potential Update: CMS for blog posting and easier updates.
+* * [x] Potential Update: CMS for blog posting and easier updates.
+* * - Note on the Above, CMS on hold as we wait for the DB to be assigned by the school.
