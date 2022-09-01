@@ -1,49 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+
 <head>
-    <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="../img/w.png"/>
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
-    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js%22%3E"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="../js/nav.js"></script>
-    <script src="../js/main.js"></script>
-    <!-- Added Analytics to page: A.S. -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M61XCQT5HZ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-M61XCQT5HZ');
-    </script>
-    <title>WJTB Radio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WJTB</title>
+  <link rel="stylesheet" href="css/super.css">
+  <link rel='stylesheet' href='https://icono-49d6.kxcdn.com/icono.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
-<body class="wrapper">
-    <div id="header"></div>
-    <div class="content">
-        <div class="tmp">
-            <div class="welcome welcome_wrap">
-                <h1 class="welcome_h">Welcome to WJTB Radio!</h1>
-                We're an undergraduate student organization at NJIT focused on broadcasting radio shows, handling sound at events, and providing audio recording services for our members!
-                <br><br>
-                Our broadcast lineup currently features over 15 shows hosted by students, airing throughout the week.
-                These shows span a wide variety of music from indie, electronic, classic rock, and will even host talk shows and dramatic readings.
-                Make sure you check out our <b><a href="/schedule">schedule</a></b> so you don't miss out!
-            </div>
-            <div class="home_img">
-                <img src="../img/home/1.jpg" alt="">
-    
-                <h1 class="h1_alt">Listen <b><a href="/stream">Here!</a></b></h1>
+<header>
 
-                <img src="../img/home/4.jpg" alt="">
+  <nav>
+    <ul class="menu">
+      <li class="logo">
+        <div class="playerBox">
+          <div class="audio-player" id="brand">
+            <div class="timeline">
+              <div class="progress"></div>
             </div>
+            <div class="controls">
+              <div class="play-container">
+                <div class="toggle-play play"></div>
+              </div>
+              <div class="name"><b>WJTB</b></div>
+              <div class="volume-container">
+                <div class="volume-button">
+                  <div class="volume icono-volumeMedium"></div>
+                </div>
+                <div class="volume-slider">
+                  <div class="volume-percentage"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div id="footer"></div>
+      </li>
+      <li class="item"><a href="#" onclick="loadHome()">Home</a></li>
+      <!-- <li class="item"><a href="#">Programming</a></li> -->
+      <li class="item has-submenu">
+        <a tabindex="0">Programming</a>
+        <ul class="submenu">
+          <li class="subitem" onclick="loadShows()"><a href="#">Shows</a></li>
+          <li class="subitem" onclick="loadVariety()"><a href="#">Variety Hour</a></li>
+          <li class="subitem" onclick="loadJoin()"><a href="#">Be a DJ!</a></li>
+        </ul>
+      </li>
+      <li class="item has-submenu">
+        <a tabindex="0">Events</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="#" onclick="loadUpcoming()">Upcoming</a></li>
+          <li class="subitem"><a href="#" onclick="loadPast()">Past Events</a></li>
+          <li class="subitem"><a href="#" onclick="loadSoundRequest()">Request us!</a></li>
+          <li class="subitem"><a href="#" onclick="loadGallery()">Gallery</a></li>
+        </ul>
+      </li>
+      <li class="item has-submenu">
+        <a tabindex="0">About</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="#" onclick="loadStaff()">Staff</a></li>
+          <li class="subitem"><a href="#" onclick="loadHistory()">History</a></li>
+          <li class="subitem"><a href="#" onclick="loadContact()">Contact</a></li>
+          <li class="subitem"><a href="#" onclick="loadJoin()">Become a member</a></li>
+        </ul>
+      </li>
+      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <section id="output">
+    <section class="section-main">
+      <h1>We're Just the best</h1>
+    </section>
+    <section class="section-two">
+      <h2>Streaming Live since the 1990s!</h2>
+
+      <p>WJTB is NJIT's official college radio station - since before NJIT existed!</p>
+      <p>WJTB is an undergraduate student organization at the New Jersey Institute of Technology
+        focused on broadcasting radio shows, DJing live events, and providing audio recording services for our members.
+        Every semester our schedule is filled with programming developed by the student members of the org.</p>
+      <p></p>
+      <h2>Get Heard</h2>
+      <p>Want to get involved? Connect with us on Discord, Highlander Hub, or in person!</p>
+      <p></p>
+    </section>
+  </section>
 </body>
+<script src="./js/nav.js"></script>
+<script src="./js/pgloader.js"></script>
+<script src="./js/player.js"></script>
+</body>
+
 </html>

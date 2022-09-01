@@ -1,0 +1,12 @@
+    <section class="section-main">
+      <h1>We're Just the best</h1>
+    </section>
+    <section class="section-two">
+      <h2>Streaming Live since the 1900s</h2>
+      <p>WJTB is NJIT's official college radio station - since before NJIT existed!</p>
+      <p>WJTB is an undergraduate student organization at the New Jersey Institute of Technology focused on broadcasting radio shows, DJing live events, and providing audio recording services for our members. Every semester our schedule is filled with programming developed by the student members of the org.</p>
+      <p></p>
+      <h2>Get Heard</h2>
+      <p>Want to get involved? Connect with us on Discord, Highlander Hub, or in person!</p>
+      <p></p>
+    </section>

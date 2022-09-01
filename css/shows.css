@@ -1,0 +1,71 @@
+section.shows {
+    background: black url("../img/wall.jpg") repeat center/30%;
+    min-height: 100vh;
+}
+section.posterBox{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2vh;
+}
+div.card {
+    background-color: transparent;
+    width: 40vh;
+    height: 60vh;
+    perspective: 1000px;
+    /* border: 1.5px solid #0D0D0D; */
+}
+
+div.posterFrame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+div.card:hover .posterFrame{
+    transform: rotateY(180deg);
+}
+
+div#poster_front>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#poster_front, #poster_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+#poster_front{
+    background-color: #0D0D0D;
+}
+
+#poster_back {
+    background-color: #0d0d0d;
+    color: #FFD700;
+    transform: rotateY(180deg);
+  } 
+
+.card:nth-child(odd){
+    transform: rotate(7deg);
+}
+.card:nth-child(even){
+    transform: rotate(-2deg);
+}
+.card:nth-child(-n*3) {
+    transform: rotate(0);
+}
+
+/* I still want to make the poster larger and then put the info to the right as an option, when clicked. */

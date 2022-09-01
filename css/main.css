@@ -1,0 +1,55 @@
+
+.section-main {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    background-color: #0D0D0D;
+    background: black no-repeat center/50% url(../img/wjtb.png);
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.section-main h1 {
+    color: rgba(255, 0, 0, 0.822);
+    text-shadow: 5px 3px #1E1E1E;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 80px;
+    text-align: center;
+}
+
+div.playerBox {
+    position: sticky;
+    right: 50%;
+}
+
+.section-two {
+    min-height: 100vh;
+    background: #001018;
+    padding: 20px 100px;
+}
+
+.section-two h2 {
+    color: #FF7D0F;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.section-two p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.section-main h1 {
+    font-size: 40px;
+    line-height: 60px;
+}

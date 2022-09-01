@@ -1,0 +1,13 @@
+    <section class="section-main">
+      <h1>History</h1>
+    </section>
+    <section class="section-two">
+      <h2>WNCE</h2>
+      <p>WJTB's roots began as a college radio station broadcasting over the AM radio for Newark College of Engineering - the precursor to NJIT.</p>
+      <p></p>
+      <p></p>
+      <h2>Digital Only</h2>
+      <p>Nobody can figure out exactly why WJTB stopped broadcasting on the radio waves. There are, of course, rumors. A history of trouble making by members, the natural curiosity that plagues all STEM students, and the rambunctioness that comes with city living all lend credibility to even the wildest of rumors. Did WJTB storm Newark Airport with a rager? Maybe. Did WJTB try to tap into the train tracks to draw more electricity to increase our amplification? It's possible. Did WJTB just forget to renew our license? Yeah, that sounds like us. Is it possible that NJIT just really didn't trust us to not be vulgar over the air? I mean... It's not unlike our members.</p>
+      <p>The point is -- nobody knows for sure why or how we lost our ability to broadcast over the air. What <i>is</i> certain is that around 1997-1998, WJTB started broadcasting online. That makes this radio station not only one of the longest internet radio stations, but one of the raddest.</p>
+      <p></p>
+    </section>
