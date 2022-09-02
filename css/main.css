@@ -53,3 +53,12 @@ div.playerBox {
     font-size: 40px;
     line-height: 60px;
 }
+
+ol.body_li li{
+    color: #F2274C;
+    line-height: 3vh;
+}
+
+ol.body_li {
+    padding: 5vh 10vh;
+}

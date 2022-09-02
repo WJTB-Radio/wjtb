@@ -21,7 +21,7 @@
             <div id="card_contents">
                 <h2>Ian Atkins</h2>
                 <p id="title">Station Manager</p>
-                <p>Clam.</p>
+                <p>Clam</p>
             </div>
         </div>
         <div class="staffCard">
@@ -51,7 +51,7 @@
             <div id="card_contents">
                 <h2>Mohammad Ammar</h2>
                 <p id="title">Content Manager</p>
-                <p>Pretty cool.</p>
+                <p>Hustlers Academy Headmaster</p>
             </div>
         </div>
         <div class="staffCard">
@@ -61,7 +61,7 @@
             <div id="card_contents">
                 <h2>Dana Cuan</h2>
                 <p id="title">Program Manager</p>
-                <p>Pretty cool.</p>
+                <p>rib thief.</p>
             </div>
         </div>
         <div class="staffCard">
@@ -91,7 +91,7 @@
             <div id="card_contents">
                 <h2>Skell E. Bones</h2>
                 <p id="title">Mascot</p>
-                <p>Walked under the clocktower.</p>
+                <p>Walked under the clocktower</p>
             </div>
         </div>
     </div>
