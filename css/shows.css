@@ -1,6 +1,7 @@
 section.shows {
     background: black url("../img/wall.jpg") repeat center/30%;
     min-height: 100vh;
+    padding: 5vh 10vh;
 }
 section.posterBox{
     width: 80vw;
@@ -18,7 +19,6 @@ div.card {
     width: 40vh;
     height: 60vh;
     perspective: 1000px;
-    /* border: 1.5px solid #0D0D0D; */
 }
 
 div.posterFrame {

@@ -10,13 +10,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 100px;
+    padding: 20px 5vh;
 }
 
 .section-main h1 {
     color: rgba(255, 0, 0, 0.822);
     text-shadow: 5px 3px #1E1E1E;
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -32,7 +32,7 @@ div.playerBox {
 .section-two {
     min-height: 100vh;
     background: #001018;
-    padding: 20px 100px;
+    padding: 20px 5vh;
 }
 
 .section-two h2 {

@@ -6,27 +6,27 @@
     <div class="staffBox">
         <div class="staffCard">
             <div id="image">
-                <img src="img/al.jpg">
+                <img src="img/al.jpg" alt="Photo of Alfred Simpson">
             </div>
             <div id="card_contents">
                 <h2>Alfred Simpson</h2>
                 <p id="title">General Manager</p>
-                <p>Pretty cool.</p>
+                <p>DJs: Blackhat Briefing, NICC @ Nite</p>
             </div>
         </div>
         <div class="staffCard">
             <div id="image">
-                <img src="img/ian.png">
+                <img src="img/ian.png" alt="Photo of a clam">
             </div>
             <div id="card_contents">
                 <h2>Ian Atkins</h2>
                 <p id="title">Station Manager</p>
-                <p>Pretty cool.</p>
+                <p>Clam.</p>
             </div>
         </div>
         <div class="staffCard">
             <div id="image">
-                <img src="img/dom.jpg">
+                <img src="img/dom.jpg" alt="Photo of Dom Rozum">
             </div>
             <div id="card_contents">
                 <h2>Dom Rozum</h2>
@@ -36,7 +36,7 @@
         </div>
         <div class="staffCard">
             <div id="image">
-                <img src="img/skelly.jpg">
+                <img src="img/skelly.jpg" alt="Photo of Sarah Jane Mee">
             </div>
             <div id="card_contents">
                 <h2>Sarah Jane Mee</h2>
@@ -56,7 +56,7 @@
         </div>
         <div class="staffCard">
             <div id="image">
-                <img src="img/dana.jpg">
+                <img src="img/dana.jpg" alt="Photo of Dana Cuan">
             </div>
             <div id="card_contents">
                 <h2>Dana Cuan</h2>
@@ -66,7 +66,7 @@
         </div>
         <div class="staffCard">
             <div id="image">
-                <img src="img/eli.jpg">
+                <img src="img/eli.jpg" alt="Photo of Eli Nutt">
             </div>
             <div id="card_contents">
                 <h2>Eli Nutt</h2>
@@ -76,12 +76,22 @@
         </div>
         <div class="staffCard">
             <div id="image">
-                <img src="img/skelly.jpg">
+                <img src="img/skelly.jpg" alt="Skelly, the mascot, since Max doesn't have a photo">
             </div>
             <div id="card_contents">
                 <h2>Max Huerta</h2>
                 <p id="title">Treasurer</p>
                 <p>Pretty cool.</p>
+            </div>
+        </div>
+        <div class="staffCard">
+            <div id="image">
+                <img src="img/skellebones.png" alt="A skeleton speaking into a microphone.">
+            </div>
+            <div id="card_contents">
+                <h2>Skell E. Bones</h2>
+                <p id="title">Mascot</p>
+                <p>Walked under the clocktower.</p>
             </div>
         </div>
     </div>
