@@ -49,7 +49,7 @@
                 <img src="img/ham.jpg">
             </div>
             <div id="card_contents">
-                <h2>Mohammad Ammar</h2>
+                <h2>Mohammed Ammar</h2>
                 <p id="title">Content Manager</p>
                 <p>Hustlers Academy Headmaster</p>
             </div>
