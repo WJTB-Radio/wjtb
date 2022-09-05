@@ -11,7 +11,7 @@
             <div id="card_contents">
                 <h2>Alfred Simpson</h2>
                 <p id="title">General Manager</p>
-                <p>DJs: Blackhat Briefing, NICC @ Nite</p>
+                <p>Cyber geek</p>
             </div>
         </div>
         <div class="staffCard">
@@ -71,7 +71,7 @@
             <div id="card_contents">
                 <h2>Eli Nutt</h2>
                 <p id="title">PR Manager</p>
-                <p>Pretty cool.</p>
+                <p>Unlicensed Dental Practitioner</p>
             </div>
         </div>
         <div class="staffCard">
