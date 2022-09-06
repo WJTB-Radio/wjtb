@@ -105,7 +105,7 @@ function loadContact() {
 function loadShowRequest() {
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function() {
-        document.getElementsByClassName("forms").innerHTML = this.responseText;
+        document.getElementById("output").innerHTML = this.responseText;
     }
     xhttp.open("GET", "./pages/showrequest.txt");
     xhttp.send();
