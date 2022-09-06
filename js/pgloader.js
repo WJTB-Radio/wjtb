@@ -97,8 +97,16 @@ function loadContact() {
     xhttp.onload = function () {
         document.getElementById("output").innerHTML = this.responseText;
     }
-    xhttp.open("GET", "./pages/contact.txt")
+    xhttp.open("GET", "./pages/contact.txt");
     xhttp.send();
 }
 
 
+function loadShowRequest() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+        document.getElementsByClassName("forms").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "./pages/showrequest.txt");
+    xhttp.send();
+}

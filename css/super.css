@@ -5,7 +5,15 @@
 @import url("./staff.css");
 @import url("./shows.css");
 @import url("./main.css");
+@import url("./history.css");
+
 
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=RocknRoll+One&display=swap');
+
+.forms {
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+}

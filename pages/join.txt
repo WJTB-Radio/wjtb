@@ -25,7 +25,7 @@
                     href="./docs/WJTB_Gen_Member_Contract_2022.pdf" target="_blank">General Member Contract</a>.
                 <!--LINK TO RULES/REGS PDF-->   
             </p>
-            <p>To apply for air time, you'll need to fill out a form. You can find that on here once it goes live!</p>
+            <p>To apply for air time, you'll need to fill out a form. Ready to get heard? Fill out the <a href="#" onclick="loadShowRequest()">form</a> today!</p>
             <h2>What to know</h2>
             <p>WJTB <b>does</b> have a few rules. To learn more about our rules, you can take a look at our
                 constitution, membership contract, and Highlander Hub. </p>

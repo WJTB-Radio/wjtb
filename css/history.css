@@ -1,0 +1,105 @@
+/* Mobile first */
+.section-two h2 {
+    text-align: center;
+}
+
+div.photo_left , div.photo_right{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 1vh;
+    justify-items: center;
+    justify-content: center;
+}
+
+/* Text Box */
+.photo_left .history_text , .photo_right .history_text{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+/* Establishes grid for photos, caption, etc. */
+div.photo_left .history_photo , div.photo_right .history_photo{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    max-width: 60vh;
+}
+
+figure {
+    /* probably redundant, tbh */
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+.history_photo figure>img {
+    padding-bottom: 1vh;
+    max-width: 100%;
+    grid-area: 1 / 1 / 2/ 2;
+}
+
+.history_photo figure>figcaption {
+    /* just the caption itself */
+    grid-area: 2 / 2 / 2 / 2;
+    color: #FFD700;
+    font-size: smaller;
+    text-align: justify;
+}
+
+
+
+/* Photos only separator */
+.photos_only {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 90vh;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 2vh 0vh 2vh 0vh;
+    margin-top: 1vh;
+}
+
+.photos_only .history_photo {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    max-width: 90vh; /*Reduce for tablet, and again for mobile */
+    padding: 1vh 0vh 2vh 0vh;
+}
+
+
+/* Tablet */
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+    div.photo_left , div.photo_right{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    div.photo_left .history_photo {
+        padding-right: 3vh;
+    }
+    .history_text p{
+        margin: 0vh 1vh 1vh 0vh;
+        padding-right: 1vh;
+    }
+
+    /* Photos Only */
+    .photos_only {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 2vh;
+        max-width: 100%
+    }
+    .photos_only .history_photo {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        max-width: 33vh; /*Reduce for tablet, and again for mobile */
+    }
+    
+}
