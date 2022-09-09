@@ -153,4 +153,4 @@
     <p> Every semester students can request to be on the radio. Shows must be approval criteria set forth by the Executive Board and Program Manager.</p>
     <p>All submissions must be approved by the third week of the semester.</p>
     <h2>Ready to get started? </h2>
-    <p> Just go fill out the <a href="#" onclick="loadRequestShow()">form</a> already!</p>
+    <p> Just go fill out the <a href="#" onclick="loadShowRequest()">form</a> already!</p>

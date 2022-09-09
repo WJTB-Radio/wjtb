@@ -1,10 +1,14 @@
     <section class="section-main">
-      <h1>In Progress</h1>
+      <h1>Upcoming Events</h1>
     </section>
     <section class="section-two">
       <h2>  </h2>
       <p>This is still being worked on! </p>
-      <p></p>
+      <p>However, here are some events you can find us at:<br>
+      Student Involvement Fair 11:30am - 1:00pm | 09/09<br>
+      Murder Mystery Night 6:30pm - 10:00pm | 09/23 <br>
+      Unnamed PSafe Event(?) 11:00am - 6:00pm | 09/28<br>
+      Homecoming Time TBD | 10/6</p>
       <p></p>
       <h2></h2>
       <p></p>
