@@ -41,7 +41,12 @@ div.staffCard:hover>div#image{
 
 #title {
     color: red;
+    font-family: 'Special Elite', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
 }
 div#card_contents>h2{
     color: #FFD700;
+    font-family: 'Permanent Marker', sans-serif;
+    font-weight: 300;
 }

@@ -14,12 +14,13 @@
 }
 
 .section-main h1 {
-    color: rgba(255, 0, 0, 0.822);
-    text-shadow: 5px 3px #1E1E1E;
-    font-size: 70px;
+    color: #AC1b20;
+    text-shadow: 5px 4px #1E1E1E;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 45px;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     line-height: 80px;
     text-align: center;
 }
@@ -36,9 +37,10 @@ div.playerBox {
 }
 
 .section-two h2 {
-    color: #FF7D0F;
+    color: #FFD700;
+    font-family: 'Permanent Marker', sans-serif;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     margin: 30px 0;
 }
@@ -49,10 +51,6 @@ div.playerBox {
     margin: 30px 0;
 }
 
-.section-main h1 {
-    font-size: 40px;
-    line-height: 60px;
-}
 
 ol.body_li li{
     color: #F2274C;
@@ -61,4 +59,18 @@ ol.body_li li{
 
 ol.body_li {
     padding: 5vh 10vh;
+}
+
+@media only screen and (min-width: 900px) {
+
+    .section-main h1{
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+
+    .section-main h1{
+        font-size: 70px;
+    }
 }
