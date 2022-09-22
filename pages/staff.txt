@@ -69,7 +69,7 @@
                 <img src="img/eli.jpg" alt="Photo of Eli Nutt">
             </div>
             <div id="card_contents">
-                <h2>Eli Nutt</h2>
+                <h2>Rain Nutt</h2>
                 <p id="title">PR Manager</p>
                 <p>Unlicensed Dental Practitioner</p>
             </div>
