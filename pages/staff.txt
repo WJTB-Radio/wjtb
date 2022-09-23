@@ -30,7 +30,7 @@
             </div>
             <div id="card_contents">
                 <h2>Dom Rozum</h2>
-                <p id="title">General Manager</p>
+                <p id="title">Live Events Manager</p>
                 <p>Pretty cool.</p>
             </div>
         </div>
