@@ -1,12 +1,24 @@
+  <section id="output">
     <section class="section-main">
       <h1>We're Just the best</h1>
     </section>
     <section class="section-two">
-      <h2>Streaming Live since the 1900s</h2>
+      <h2>Streaming Live since the 1990s!</h2>
+
       <p>WJTB is NJIT's official college radio station - since before NJIT existed!</p>
-      <p>WJTB is an undergraduate student organization at the New Jersey Institute of Technology focused on broadcasting radio shows, DJing live events, and providing audio recording services for our members. Every semester our schedule is filled with programming developed by the student members of the org.</p>
+      <p>WJTB is an undergraduate student organization at the New Jersey Institute of Technology
+        focused on broadcasting radio shows, DJing live events, and providing audio recording services for our members.
+        Every semester our schedule is filled with programming developed by the student members of the org.</p>
       <p></p>
       <h2>Get Heard</h2>
       <p>Want to get involved? Connect with us on Discord, Highlander Hub, or in person!</p>
       <p></p>
+      <h2>Want a show?</h2>
+      <p>Awesome &mdash; we love to hear it. All DJs must be active members of the club, get trained, and follow our rules of broadcast.</p>
+      <p>If you're ready, fill out this <a href="#" onclick="loadShowRequest()">form</a>! </p>
+      <h2>Want to book our team?</h2>
+      <p>We're happy to provide sound for your live event if we're not already booked.</p>
+      <p>Fill out this <a href="#" onclick="loadSoundRequest()">form</a> to submit your request!</p>
+      <p>We'll get back to you to confirm once we see your request. Please give us 24-48 hours to process your request. All events are contingent on being approved and accepted - so we'll be in touch!</p>
     </section>
+  </section>
