@@ -29,9 +29,15 @@
                 <img src="img/dom.jpg" alt="Photo of Dom Rozum">
             </div>
             <div id="card_contents">
+<<<<<<< HEAD
                 <h2>Dominik Rozum</h2>
                 <p id="title">General Manager</p>
                 <p>Professional Noise Maker</p>
+=======
+                <h2>Dom Rozum</h2>
+                <p id="title">Live Events Manager</p>
+                <p>Pretty cool.</p>
+>>>>>>> 3c21136a1980cb6a7e2f92fe5347864603c0e6f7
             </div>
         </div>
         <div class="staffCard">
@@ -69,7 +75,7 @@
                 <img src="img/eli.jpg" alt="Photo of Eli Nutt">
             </div>
             <div id="card_contents">
-                <h2>Eli Nutt</h2>
+                <h2>Rain Nutt</h2>
                 <p id="title">PR Manager</p>
                 <p>Unlicensed Dental Practitioner</p>
             </div>
