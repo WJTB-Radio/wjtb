@@ -29,9 +29,9 @@
                 <img src="img/dom.jpg" alt="Photo of Dom Rozum">
             </div>
             <div id="card_contents">
-                <h2>Dom Rozum</h2>
+                <h2>Dominik Rozum</h2>
                 <p id="title">General Manager</p>
-                <p>Pretty cool.</p>
+                <p>Professional Noise Maker</p>
             </div>
         </div>
         <div class="staffCard">
