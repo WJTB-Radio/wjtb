@@ -17,3 +17,12 @@
     justify-content: center;
     justify-items: center;
 }
+
+/* 
+ * Navigation.css controls audio player's position in the nav bar and the nav bar itself
+ * player.css controls the audio player styling
+ * staff.css controls the staff pages
+ * shows.css controls the show-specific pages
+ * history is history page content
+ * main.css controls all main content - including that which shows up on on individual players (basically all that's below the logo)
+ */

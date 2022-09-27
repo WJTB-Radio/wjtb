@@ -1,11 +1,10 @@
-
+/* Main.css contains all styling related to the main pages of the site */
 .section-main {
     position: relative;
     width: 100%;
     min-height: 50vh;
-    background-color: #0D0D0D;
-    background: black no-repeat center/50% url(../img/wjtb.png);
-    background-size: contain;
+    background: #0D0D0D no-repeat center/50% url(../img/wjtb.png);
+    /* background-size: contain; */
     background-position: center;
     display: flex;
     justify-content: center;
@@ -14,13 +13,13 @@
 }
 
 .section-main h1 {
-    color: #AC1b20;
+    color: #AC1b20; /* This is to be WJTB's Red! */
     text-shadow: 5px 4px #1E1E1E;
-    font-family: 'RocknRoll One', sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     font-size: 45px;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     line-height: 80px;
     text-align: center;
 }
@@ -32,7 +31,7 @@ div.playerBox {
 
 .section-two {
     min-height: 100vh;
-    background: #001018;
+    background: #0D0D0D;
     padding: 20px 5vh;
 }
 
