@@ -15,7 +15,7 @@
       <p></p>
       <h2>Want a show?</h2>
       <p>Awesome &mdash; we love to hear it. All DJs must be active members of the club, get trained, and follow our rules of broadcast.</p>
-      <p>If you're ready, fill out this <a href="#" onclick="loadShowRequest()">form</a>! </p>
+      <p>The fall schedule is set - so look here in the future to apply for Spring's schedule!</p>
       <h2>Want to book our team?</h2>
       <p>We're happy to provide sound for your live event if we're not already booked.</p>
       <p>Fill out this <a href="#" onclick="loadSoundRequest()">form</a> to submit your request!</p>
