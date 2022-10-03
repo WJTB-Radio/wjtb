@@ -13,6 +13,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive&family=Oswald:wght@500&family=Permanent+Marker&family=Roboto:wght@300&family=Rock+Salt&family=RocknRoll+One&family=Special+Elite&display=swap');
 
 .forms {
+    display: flex;
     margin: auto;
     justify-content: center;
     justify-items: center;
