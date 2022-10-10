@@ -1,0 +1,69 @@
+    <section class="section-main">
+      <h1>Shows on Tuesday</h1>
+    </section>
+    <section class="shows">
+        <section class="posterBox">
+            <div class="card">
+                <div class="posterFrame">
+                    <div id="poster_front">
+                        <img src="./img/posters/ROTV.jpg">
+                    </div>
+                    <div id="poster_back">
+                        <h2>The Vibes</h2>
+                        <br>
+                        <p>Tuesdays 1PM - 2PM</p>
+                        <br>
+                        <p>DJ Blackhat's back with Return of the Vibes - playing the campus vibes or whatever the mood of the week might be.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="posterFrame">
+                    <div id="poster_front">
+                        <img src="./img/posters/trz.png">
+                    </div>
+                    <div id="poster_back">
+                        <h2>The Rat Zone</h2>
+                        <p>Mondays 2PM - 3PM</p>
+                        <br>
+                        <p>The Rat Man takes you into the Rat Zone - a dive into their mind and their vibes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="posterFrame">
+                    <div id="poster_front">
+                        <img src="./img/posters/mwmee.jpg">
+                    </div>
+                    <div id="poster_back">
+                        <h2>Music With Mee</h2>
+                        <p>Tuesdays 3PM - 4PM</p>
+                        <br>
+                        <p>DJ Sarah Jane Mee  - Minimal talking, maximum grooving</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="posterFrame">
+                    <div id="poster_front">
+                        <img src="./img/WJTBPresents.png">
+                    </div>
+                    <div id="poster_back">
+                        <h2>Variety Hour</h2>
+                        <p>Tuesdays 5PM - 6PM</p>
+                        <p>This could be your show! Commit to one day or a few weeks in a row! See Programming > Variety Hour to learn more!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="posterFrame">
+                    <div id="poster_front">
+                        <img src="./img/posters/campfire.png">
+                    </div>
+                    <div id="poster_back">
+                        <h2>Camp Night</h2>
+                        <p>Mondays 6PM - 7PM</p>
+                        <p>Bear Dentist brings you an hour of soft music and sunset songs - usually indie, sometimes electronic - for the twilight hour. Set up a FM radio by the fire, and watch the sky turn orange.</p>
+                    </div>
+                </div>
+            </div>
