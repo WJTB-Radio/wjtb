@@ -110,3 +110,44 @@ function loadShowRequest() {
     xhttp.open("GET", "./pages/showrequest.txt");
     xhttp.send();
 }
+
+function loadMondays() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+        document.getElementById("output").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "./pages/mondays.txt");
+    xhttp.send();
+}
+function loadTuesdays() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+        document.getElementById("output").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "./pages/tuesdays.txt");
+    xhttp.send();
+}
+function loadWednesdays() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+        document.getElementById("output").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "./pages/wednesdays.txt");
+    xhttp.send();
+}
+function loadThursdays() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+        document.getElementById("output").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "./pages/thursdays.txt");
+    xhttp.send();
+}
+function loadFridays() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+        document.getElementById("output").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "./pages/fridays.txt");
+    xhttp.send();
+}
