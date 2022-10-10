@@ -36,7 +36,7 @@
         </div>
         <div class="staffCard">
             <div id="image">
-                <img src="img/skelly.jpg" alt="Photo of Sarah Jane Mee">
+                <img src="img/sj.png" alt="Photo of Sarah Jane Mee">
             </div>
             <div id="card_contents">
                 <h2>Sarah Jane Mee</h2>
