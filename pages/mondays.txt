@@ -1,0 +1,102 @@
+    <section class="section-main">
+      <h1>Shows</h1>
+    </section>
+    <section class="shows">
+        <section class="posterBox">
+            <div class="card">
+                <div class="posterFrame">
+                    <div id="poster_front">
+                        <img src="./img/posters/ether.jpg">
+                    </div>
+                    <div id="poster_back">
+                        <h2>Ether</h2>
+                        <p>Mondays 11:30AM - 12:00PM</p>
+                        <p>DJ Hugo and DJ Alex play mostly cloud rap, alternative r&b, electronica, house, alt-rock, lo-fi, folktronica and dance music.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="posterFrame">
+                    <div id="poster_front">
+                        <img src="./img/posters/ybsc.png">
+                    </div>
+                    <div id="poster_back">
+                        <h2>Young Boomer Social Club</h2>
+                        <p>Mondays 2PM - 3PM</p>
+                        <p>DJs Alara Bread & DJ "Big Guy" Alex play some older music and chat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="posterFrame">
+                    <div id="poster_front">
+                        <img src="./img/posters/enbtch.jpg">
+                    </div>
+                    <div id="poster_back">
+                        <h2>enb!tchment</h2>
+                        <p>Mondays 3PM - 4PM</p>
+                        <p>DJs Rae and Joss chat about their experiences navigating the college scene at a tech school, scheming their way to health and happiness, and designing their post-college lives. tune in for a life-enb!tching pod!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="posterFrame">
+                    <div id="poster_front">
+                        <img src="./img/posters/WJTBPresents.png">
+                    </div>
+                    <div id="poster_back">
+                        <h2>Garbage Theatre</h2>
+                        <p>Mondays 4PM to 5PM</p>
+                        <p>DJ Hammywammy and a rotating cast badly read bad fanfiction.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="posterFrame">
+                    <div id="poster_front">
+                        <img src="./img/WJTBPresents.png">
+                    </div>
+                    <div id="poster_back">
+                        <h2>Variety Hour</h2>
+                        <p>Mondays 5PM - 6PM</p>
+                        <p>This could be your show! Commit to one day or a few weeks in a row! See Programming > Variety Hour to learn more!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="posterFrame">
+                    <div id="poster_front">
+                        <img src="./img/posters/campnight.jpg">
+                    </div>
+                    <div id="poster_back">
+                        <h2>Camp Night</h2>
+                        <p>Mondays 6PM - 7PM</p>
+                        <p>Bear Dentist brings you an hour of soft music and sunset songs - usually indie, sometimes electronic - for the twilight hour. Set up a FM radio by the fire, and watch the sky turn orange.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="posterFrame">
+                    <div id="poster_front">
+                        <img src="./img/posters/ROTB.jpg">
+                    </div>
+                    <div id="poster_back">
+                        <h2>Right Off The Bat</h2>
+                        <p>Mondays 7PM - 8PM</p>
+                        <p>DJ Etan talking about sports to people who dont know a lot about sports.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="posterFrame">
+                    <div id="poster_front">
+                        <img src="./img/posters/drummarts.png">
+                    </div>
+                    <div id="poster_back">
+                        <h2>The Drummarts Show</h2>
+                        <p>Mondays 8PM - 9PM</p>
+                        <p>DJ Red Drummarts discussing movies and other forms of art. Also just random stuff on their mind.</p>
+                    </div>
+                </div>
+            </div>
+        

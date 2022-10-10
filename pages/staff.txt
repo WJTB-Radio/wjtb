@@ -41,7 +41,7 @@
             <div id="card_contents">
                 <h2>Sarah Jane Mee</h2>
                 <p id="title">Webmaster</p>
-                <p>Pretty cool.</p>
+                <p>Pickle enthusiast.</p>
             </div>
         </div>
         <div class="staffCard">
