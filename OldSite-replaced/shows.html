@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+  <meta keywords="radio, music, college radio station, college, NJIT radio">
+  <meta name="description"
+    content="College Radio Station, University: NJIT New Jersey Institute of Technology, Category: Radio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WJTB</title>
+  <link rel="shortcut icon" type="image/png" href="./img/w.png"/>
+  <link rel="stylesheet" href="../css/super.css">
+  <link rel='stylesheet' href='https://icono-49d6.kxcdn.com/icono.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- Added Analytics to page: A.S. -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M61XCQT5HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-M61XCQT5HZ');
+  </script>
+</head>
+<header>
+  <nav>
+    <ul class="menu">
+      <li class="logo">
+        <div class="playerBox">
+          <div class="audio-player" id="brand">
+            <div class="timeline">
+              <div class="progress"></div>
+            </div>
+            <div class="controls">
+              <div class="play-container">
+                <div class="toggle-play play"></div>
+              </div>
+              <div class="name"><b>WJTB</b></div>
+              <div class="volume-container">
+                <div class="volume-button">
+                  <div class="volume icono-volumeMedium"></div>
+                </div>
+                <div class="volume-slider">
+                  <div class="volume-percentage"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="item"><a href="#" onclick="loadHome()">Home</a></li>
+      <!-- <li class="item"><a href="#">Programming</a></li> -->
+      <li class="item has-submenu">
+        <a tabindex="0">Programming</a>
+        <ul class="submenu">
+          <li class="subitem" onclick="loadShows()"><a href="#">Shows</a></li>
+          <li class="subitem" onclick="loadVariety()"><a href="#">Variety Hour</a></li>
+          <li class="subitem" onclick="loadJoin()"><a href="#">Be a DJ!</a></li>
+        </ul>
+      </li>
+      <li class="item has-submenu">
+        <a tabindex="0">Events</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="#" onclick="loadUpcoming()">Upcoming</a></li>
+          <li class="subitem"><a href="#" onclick="loadPast()">Past Events</a></li>
+          <li class="subitem"><a href="#" onclick="loadSoundRequest()">Request us!</a></li>
+          <li class="subitem"><a href="#" onclick="loadGallery()">Gallery</a></li>
+        </ul>
+      </li>
+      <li class="item has-submenu">
+        <a tabindex="0">About</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="#" onclick="loadStaff()">Staff</a></li>
+          <li class="subitem"><a href="#" onclick="loadHistory()">History</a></li>
+          <li class="subitem"><a href="#" onclick="loadContact()">Contact</a></li>
+          <li class="subitem"><a href="#" onclick="loadJoin()">Become a member</a></li>
+        </ul>
+      </li>
+      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <section id="output">
+    <section class="section-main">
+        <h1>Shows</h1>
+      </section>
+      <!--<a href="#" onclick="loadMondays()"> Monday </a> Commenting out for now will come back to put in buttons-->
+      <div id="showButtons">
+        <btn class="showBtn" onclick="loadMondays()">Mondays</btn>
+        <btn class="showBtn" onclick="loadTuesdays()">Tuesdays</btn>
+        <btn class="showBtn" onclick="loadWednesdays()">Wednesdays</btn>
+        <btn class="showBtn" onclick="loadThursdays()">Thursdays</btn>
+        <btn class="showBtn" onclick="loadFridays()">Fridays</btn>
+      </div>
+      <section class="shows">
+          <section class="posterBox">
+              <div class="card">
+                  <div class="posterFrame">
+                      <div id="poster_front">
+                          <img src="./img/WJTBPresents.png">
+                      </div>
+                      <div id="poster_back">
+                          <h2>Your Show Here!</h2>
+                          <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="posterFrame">
+                      <div id="poster_front">
+                          <img src="./img/WJTBPresents.png">
+                      </div>
+                      <div id="poster_back">
+                          <h2>Your Show Here!</h2>
+                          <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="posterFrame">
+                      <div id="poster_front">
+                          <img src="./img/WJTBPresents.png">
+                      </div>
+                      <div id="poster_back">
+                          <h2>Your Show Here!</h2>
+                          <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="posterFrame">
+                      <div id="poster_front">
+                          <img src="./img/WJTBPresents.png">
+                      </div>
+                      <div id="poster_back">
+                          <h2>Your Show Here!</h2>
+                          <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="posterFrame">
+                      <div id="poster_front">
+                          <img src="./img/WJTBPresents.png">
+                      </div>
+                      <div id="poster_back">
+                          <h2>Your Show Here!</h2>
+                          <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="posterFrame">
+                      <div id="poster_front">
+                          <img src="./img/WJTBPresents.png">
+                      </div>
+                      <div id="poster_back">
+                          <h2>Your Show Here!</h2>
+                          <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="posterFrame">
+                      <div id="poster_front">
+                          <img src="./img/WJTBPresents.png">
+                      </div>
+                      <div id="poster_back">
+                          <h2>Your Show Here!</h2>
+                          <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="posterFrame">
+                      <div id="poster_front">
+                          <img src="./img/WJTBPresents.png">
+                      </div>
+                      <div id="poster_back">
+                          <h2>Your Show Here!</h2>
+                          <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="posterFrame">
+                      <div id="poster_front">
+                          <img src="./img/WJTBPresents.png">
+                      </div>
+                      <div id="poster_back">
+                          <h2>Your Show Here!</h2>
+                          <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="posterFrame">
+                      <div id="poster_front">
+                          <img src="./img/WJTBPresents.png">
+                      </div>
+                      <div id="poster_back">
+                          <h2>Your Show Here!</h2>
+                          <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="posterFrame">
+                      <div id="poster_front">
+                          <img src="./img/WJTBPresents.png">
+                      </div>
+                      <div id="poster_back">
+                          <h2>Your Show Here!</h2>
+                          <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="posterFrame">
+                      <div id="poster_front">
+                          <img src="./img/WJTBPresents.png">
+                      </div>
+                      <div id="poster_back">
+                          <h2>Your Show Here!</h2>
+                          <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="posterFrame">
+                      <div id="poster_front">
+                          <img src="./img/WJTBPresents.png">
+                      </div>
+                      <div id="poster_back">
+                          <h2>Your Show Here!</h2>
+                          <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </section>
+  <section class="section-two">
+      <h2> Want to be on air? </h2>
+      <p> Every semester students can request to be on the radio. Shows must be approval criteria set forth by the Executive Board and Program Manager.</p>
+      <p>All submissions must be approved by the third week of the semester.</p>
+      <h2>Ready to get started? </h2>
+      <p> Just go fill out the <a href="#" onclick="loadShowRequest()">form</a> already!</p>
+  </section>
+</body>
+<script src="./js/nav.js"></script>
+<script src="./js/pgloader.js"></script>
+<script src="./js/player.js"></script>
+<script type="text/javascript">
+  alert("Oh, you found the second flag! Great job following the clue of the missing ). Now let's do one slightly more challenging. Go to njiticc.com/final"
+</script>
+</body>
+
+</html>

@@ -2,118 +2,10 @@
       <h1>Shows</h1>
     </section>
     <!--<a href="#" onclick="loadMondays()"> Monday </a> Commenting out for now will come back to put in buttons-->
+    <div id="showButtons">
+    </div>
     <section class="shows">
         <section class="posterBox">
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/WJTBPresents.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Your Show Here!</h2>
-                        <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/WJTBPresents.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Your Show Here!</h2>
-                        <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/WJTBPresents.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Your Show Here!</h2>
-                        <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/WJTBPresents.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Your Show Here!</h2>
-                        <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/WJTBPresents.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Your Show Here!</h2>
-                        <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/WJTBPresents.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Your Show Here!</h2>
-                        <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/WJTBPresents.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Your Show Here!</h2>
-                        <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/WJTBPresents.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Your Show Here!</h2>
-                        <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/WJTBPresents.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Your Show Here!</h2>
-                        <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/WJTBPresents.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Your Show Here!</h2>
-                        <p>Your show could be here!<br>If you're interested in joining, scroll down and submit your application!</p>
-                    </div>
-                </div>
-            </div>
             <div class="card">
                 <div class="posterFrame">
                     <div id="poster_front">
@@ -154,4 +46,4 @@
     <p> Every semester students can request to be on the radio. Shows must be approval criteria set forth by the Executive Board and Program Manager.</p>
     <p>All submissions must be approved by the third week of the semester.</p>
     <h2>Ready to get started? </h2>
-    <p> Just go fill out the <a href="#" onclick="loadShowRequest()">form</a> already!</p>
+    <p> Just go fill out the <a href="#" onclick="loadShowRequest()">form</a> already! If it's closed, try again next semester!</p>
