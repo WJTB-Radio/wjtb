@@ -68,4 +68,8 @@ div#poster_front>img{
     transform: rotate(0);
 }
 
+#showButtons {
+    display: flex;
+    
+}
 /* I still want to make the poster larger and then put the info to the right as an option, when clicked. */
