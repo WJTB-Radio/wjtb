@@ -53,7 +53,7 @@
             <div class="card">
                 <div class="posterFrame">
                     <div id="poster_front">
-                        <img src="./img/posters/ibwfm.jiff">
+                        <img src="./img/posters/ibwfm.jfif">
                     </div>
                     <div id="poster_back">
                         <h2>in-between fm</h2>
