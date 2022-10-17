@@ -1,6 +1,13 @@
     <section class="section-main">
       <h1>Shows on Monday</h1>
     </section>
+    <div id="showButtons">
+        <btn class="showBtn" onclick="loadMondays()">Mondays</btn>
+        <btn class="showBtn" onclick="loadTuesdays()">Tuesdays</btn>
+        <btn class="showBtn" onclick="loadWednesdays()">Wednesdays</btn>
+        <btn class="showBtn" onclick="loadThursdays()">Thursdays</btn>
+        <btn class="showBtn" onclick="loadFridays()">Fridays</btn>
+    </div>
     <section class="shows">
         <section class="posterBox">
             <div class="card">
@@ -11,7 +18,7 @@
                     <div id="poster_back">
                         <h2>Ether</h2>
                         <p>Mondays 11:30AM - 12:00PM</p>
-                        <p>DJ Hugo and DJ Alex play mostly cloud rap, alternative r&b, electronica, house, alt-rock, lo-fi, folktronica and dance music.</p>
+                        <p>Ether is a welcome diversion into the offbeat and experimental. <br><br>From Oneohtrix Point Never to Bladee, this is a fast track into the best of of the electronic underground. Representative playlist attached! </p>
                     </div>
                 </div>
             </div>
@@ -23,7 +30,7 @@
                     <div id="poster_back">
                         <h2>Young Boomer Social Club</h2>
                         <p>Mondays 2PM - 3PM</p>
-                        <p>DJs Alara Bread & DJ "Big Guy" Alex play some older music and chat.</p>
+                        <p>Big Guy Alex and Alara Bread put on a simultaneously sophisticated and hilarious show, with "boomer music" (with Real Instruments™!), deeply intricate bits, and some of the best chemistry on our station.</p>
                     </div>
                 </div>
             </div>
@@ -35,19 +42,19 @@
                     <div id="poster_back">
                         <h2>enb!tchment</h2>
                         <p>Mondays 3PM - 4PM</p>
-                        <p>DJs Rae and Joss chat about their experiences navigating the college scene at a tech school, scheming their way to health and happiness, and designing their post-college lives. tune in for a life-enb!tching pod!</p>
+                        <p>Enb!tchment is a podcast for your college era. <br><br>Rae and Joss chat about self-improvement, self-direction, and self-health of all kinds during their Monday hour, even further rounding out the diversity of our Monday roster.</p>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="posterFrame">
                     <div id="poster_front">
-                        <img src="./img/posters/WJTBPresents.png">
+                        <img src="./img/posters/grbgthtr.png">
                     </div>
                     <div id="poster_back">
                         <h2>Garbage Theatre</h2>
                         <p>Mondays 4PM to 5PM</p>
-                        <p>DJ Hammywammy and a rotating cast badly read bad fanfiction.</p>
+                        <p>Garbage Theater is a show about reading bad fanfiction, sometimes good fanfiction, and at least once the pilot episode of Breaking Bad. <br><br>Either way, you can rely on DJ Hammywammy bringing a welcoming and hysterical atmosphere to your local radio.</p>
                     </div>
                 </div>
             </div>
@@ -59,7 +66,7 @@
                     <div id="poster_back">
                         <h2>Variety Hour</h2>
                         <p>Mondays 5PM - 6PM</p>
-                        <p>This could be your show! Commit to one day or a few weeks in a row! See Programming > Variety Hour to learn more!</p>
+                        <p>This could be your show!<br> Commit to one day or a few weeks in a row! <br><br>See Programming > Variety Hour to learn more!</p>
                     </div>
                 </div>
             </div>
@@ -71,7 +78,10 @@
                     <div id="poster_back">
                         <h2>Camp Night</h2>
                         <p>Mondays 6PM - 7PM</p>
-                        <p>Bear Dentist brings you an hour of soft music and sunset songs - usually indie, sometimes electronic - for the twilight hour. Set up a FM radio by the fire, and watch the sky turn orange.</p>
+                        <p>Camp Night's time slot is very intentional.<br><br> 
+                        physi and sarene! have honed both a song
+                        selection and campfire-side banter to help you
+                        appreciate the sun going down, crafting maybe the coziest show on our roster. </p>
                     </div>
                 </div>
             </div>
@@ -83,7 +93,7 @@
                     <div id="poster_back">
                         <h2>Right Off The Bat</h2>
                         <p>Mondays 7PM - 8PM</p>
-                        <p>DJ Etan talking about sports to people who dont know a lot about sports.</p>
+                        <p>A sports show?! Isn't this station just for losers?<br><br> DJ Blue Jay's enthusiasm and knowledge is infectious, and will have you cheering along even if you're not actually sure which team is the Mets.</p>
                     </div>
                 </div>
             </div>
@@ -95,7 +105,7 @@
                     <div id="poster_back">
                         <h2>The Drummarts Show</h2>
                         <p>Mondays 8PM - 9PM</p>
-                        <p>DJ Red Drummarts discussing movies and other forms of art. Also just random stuff on their mind.</p>
+                        <p>Red Drummarts brings you an mix of film news and criticism from all around. <br><br>When asked to represent the vibe of his show, he submitted a video of Norm Macdonald doing Quentin Tarantino impressions, which should to get the vibe across.</p>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,13 @@
     <section class="section-main">
       <h1>Shows on Tuesday</h1>
     </section>
+    <div id="showButtons">
+        <btn class="showBtn" onclick="loadMondays()">Mondays</btn>
+        <btn class="showBtn" onclick="loadTuesdays()">Tuesdays</btn>
+        <btn class="showBtn" onclick="loadWednesdays()">Wednesdays</btn>
+        <btn class="showBtn" onclick="loadThursdays()">Thursdays</btn>
+        <btn class="showBtn" onclick="loadFridays()">Fridays</btn>
+    </div>
     <section class="shows">
         <section class="posterBox">
             <div class="card">
@@ -13,7 +20,7 @@
                         <br>
                         <p>Tuesdays 1PM - 2PM</p>
                         <br>
-                        <p>DJ Blackhat's back with Return of the Vibes - playing the campus vibes or whatever the mood of the week might be.</p>
+                        <p>It's a return of the vibes... And how they were missed! DJ Blackhat's back and diving through punk, hardcore, rock, rap - anything and everything that takes 25 songs to fill out an hour. <br><br>Vibes tries to emulate the campus vibes or whatever the mood of the week might be.</p>
                     </div>
                 </div>
             </div>
@@ -24,9 +31,11 @@
                     </div>
                     <div id="poster_back">
                         <h2>The Rat Zone</h2>
-                        <p>Mondays 2PM - 3PM</p>
+                        <p>Tuesdays 2PM - 3PM</p>
                         <br>
-                        <p>The Rat Man takes you into the Rat Zone - a dive into their mind and their vibes.</p>
+                        <p>
+                        🐀🐀ENTER THE RAT ZONE🐀🐀<br>
+                        DJ The Rat Man brings you a self-described musical diary - a playlist of emotions, genres, etc. Some indie, some pop, 🐀🐀ALL RAT🐀🐀</p>
                     </div>
                 </div>
             </div>
@@ -39,7 +48,9 @@
                         <h2>Music With Mee</h2>
                         <p>Tuesdays 3PM - 4PM</p>
                         <br>
-                        <p>DJ Sarah Jane Mee  - Minimal talking, maximum grooving</p>
+                        <p>Resident webmaster SJ brings a collection of music as
+                        stylish as their poster.<br><br> Sometimes rock, but just as often not, Music with Mee earns its place as one of our
+                        most popular shows.<br><br> Minimal talking, maximum grooving.</p>
                     </div>
                 </div>
             </div>
@@ -61,9 +72,10 @@
                         <img src="./img/posters/campfire.png">
                     </div>
                     <div id="poster_back">
-                        <h2>Camp Night</h2>
-                        <p>Mondays 6PM - 7PM</p>
-                        <p>Bear Dentist brings you an hour of soft music and sunset songs - usually indie, sometimes electronic - for the twilight hour. Set up a FM radio by the fire, and watch the sky turn orange.</p>
+                        <h2>The Campfire</h2>
+                        <p>Tuesdays 7PM - 8PM</p>
+                        <p>DJ Stardust brings a late night tale of horrors, monsters, cryptids, and the works, accompanied with a healthy(?) dose of Internet lore.<br><br> 
+                        Part history show and part solo radio hour, it's a hell of a blast of personality for a Tuesday night.</p>
                     </div>
                 </div>
             </div>

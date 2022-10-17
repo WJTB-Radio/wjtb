@@ -70,6 +70,27 @@ div#poster_front>img{
 
 #showButtons {
     display: flex;
-    
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #0D0D0D;
 }
+
+.showBtn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Georgia;
+    color: #FFD700;
+    font-size: 27px;
+    padding: 6px 18px 10px 20px;
+    border: solid #ffd700 2px;
+    text-decoration: none;
+    cursor:pointer;
+  }
+  
+  .showBtn:hover {
+    background: #666666;
+    text-decoration: none;
+  }
 /* I still want to make the poster larger and then put the info to the right as an option, when clicked. */
