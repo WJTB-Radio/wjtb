@@ -40,7 +40,7 @@
             <div class="card">
                 <div class="posterFrame">
                     <div id="poster_front">
-                        <img src="./img/posters/trz.png">
+                        <img src="./img/posters/Cypher.png">
                     </div>
                     <div id="poster_back">
                         <h2></h2>

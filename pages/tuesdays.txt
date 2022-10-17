@@ -42,7 +42,7 @@
             <div class="card">
                 <div class="posterFrame">
                     <div id="poster_front">
-                        <img src="./img/posters/mwmee.jpg">
+                        <img src="./img/posters/mwmee.png">
                     </div>
                     <div id="poster_back">
                         <h2>Music With Mee</h2>
@@ -61,7 +61,7 @@
                     </div>
                     <div id="poster_back">
                         <h2>Variety Hour</h2>
-                        <p>Tuesdays 5PM - 6PM</p>
+                        <p>Everyday 5PM - 6PM</p>
                         <p>This could be your show! Commit to one day or a few weeks in a row! See Programming > Variety Hour to learn more!</p>
                     </div>
                 </div>

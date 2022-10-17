@@ -65,7 +65,7 @@
                     </div>
                     <div id="poster_back">
                         <h2>Variety Hour</h2>
-                        <p>Mondays 5PM - 6PM</p>
+                        <p>Everday 5PM - 6PM</p>
                         <p>This could be your show!<br> Commit to one day or a few weeks in a row! <br><br>See Programming > Variety Hour to learn more!</p>
                     </div>
                 </div>
