@@ -77,7 +77,7 @@
             <div class="card">
                 <div class="posterFrame">
                     <div id="poster_front">
-                        <img src="./img/posters/@NITE.png">
+                        <img src="./img/posters/NICC.png">
                     </div>
                     <div id="poster_back">
                         <h2>NICC@Nite</h2>
