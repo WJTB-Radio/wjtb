@@ -82,7 +82,9 @@
                     <div id="poster_back">
                         <h2>NICC@Nite</h2>
                         <p>Wednesdays 830PM - 9PM</p>
-                        <p>NICC is NJIT's new cybersecurity club, both aware and maybe a bit concerned that it's so easy to hack a good bit of Fortune 500.<br><br> Tune in to both keep updated about the latest of the field, hear about the club's events, and get some tips about how to be secure yourself (or take advantage of insecurities you might find)!</p>
+                        <p>NICC is NJIT's new cybersecurity club, both aware and maybe a bit concerned that it's so easy to hack a good bit of Fortune 500.<br><br><a href="https://njiticc.com/l0absla1r/">
+                        <img src="./img/loab.jpg" style="max-width: 200px; max-height: 200px">
+                        </a> <br><br>Tune in to both keep updated about the latest of the field, hear about the club's events, and get some tips about how to be secure yourself (or take advantage of insecurities you might find)!</p>
                     </div>
                 </div>
             </div>
