@@ -76,4 +76,12 @@ ol.body_li {
     .section-main h1{
         font-size: 70px;
     }
+    .polaroid {
+        position: absolute;
+        width: 330.66px;
+        height: 349.1px;
+        left: 160px;
+        top: 653.36px;
+        transform: rotate(-3.88deg);
+    }
 }
