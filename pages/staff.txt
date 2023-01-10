@@ -76,12 +76,12 @@
         </div>
         <div class="staffCard">
             <div id="image">
-                <img src="img/skelly.jpg" alt="Skelly, the mascot, since Max doesn't have a photo">
+                <img src="img/alex.jpg" alt="Alex P, who prefers punk secretly">
             </div>
             <div id="card_contents">
                 <h2>Alex Patchedjiev</h2>
                 <p id="title">Treasurer</p>
-                <p>Prefers modern pop.</p>
+                <p>The Prog Peddler</p>
             </div>
         </div>
         <div class="staffCard">
