@@ -13,77 +13,16 @@
             <div class="card">
                 <div class="posterFrame">
                     <div id="poster_front">
-                        <img src="./img/posters/dttb.jpg">
+                        <img src="./img/posters/WJTBPresents.png">
                     </div>
                     <div id="poster_back">
-                        <h2>Down To the Bone</h2>
+                        <h2></h2>
                         <br>
-                        <p>Thursdays 1PM - 2PM</p>
+                        <p></p>
                         <br>
-                        <p>Down to the Bone is a show about student music!<br><br>
-                         DJ Cup is open for whatever, and wants to show what the student body is capable of. Hear consistently cool music from students, or submit your own at http://bone.freegender.info (real link)!</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/tth.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Turntable Highway</h2>
-                        <p>Thursdays 2PM - 3PM</p>
-                        <br>
-                        <p>DJ MattyS is a killer DJ (that you might recognize from Homecoming!) who knows exactly what to play to get people moving. <br><br>The transitions are smooth, the music's smoother. You probably already knew that from their Homecoming set, though!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/softshell.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Soft Shelled</h2>
-                        <p>Thursdays  4PM - 5PM</p>
-                        <br>
-                        <p>Soft Shelled (🦀) is a rotating door of musical themes. <br><br>Composed very intentionally, DJ Crab organizes each week around a specific topic with music to match, from the oldies to beyond.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/WJTBPresents.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Variety Hour</h2>
-                        <p>Everday 5PM - 6PM</p>
-                        <p>This could be your show! <br><br>Commit to one day or a few weeks in a row! See Programming > Variety Hour to learn more!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/cybertrance.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>CYBERTRANCE</h2>
-                        <p>Mondays 6PM - 7PM</p>
-                        <p>DJ.dom is deeply connected to the underground of trance and techno.<br><br> If you want to hear the best of the scene, then take it from someone who's probably DJed for half the clubs in the state.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/hoa.jpg">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Hour of Anarchy</h2>
-                        <p>Thursdays 7PM - 8PM</p>
-                        <p>The sun has left, and Anarchy is here, blasting a fiery mix of metal and punk that sounds like the dingy garage show this poster is a flyer for.</p>
-                    </div>
-                </div>
-            </div>
+        </section>
+    </section>

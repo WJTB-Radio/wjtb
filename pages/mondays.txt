@@ -13,100 +13,14 @@
             <div class="card">
                 <div class="posterFrame">
                     <div id="poster_front">
-                        <img src="./img/posters/ether.jpg">
+                        <img src="./img/posters/WJTBPresents.png">
                     </div>
                     <div id="poster_back">
-                        <h2>Ether</h2>
-                        <p>Mondays 11:30AM - 12:00PM</p>
-                        <p>Ether is a welcome diversion into the offbeat and experimental. <br><br>From Oneohtrix Point Never to Bladee, this is a fast track into the best of of the electronic underground. Representative playlist attached! </p>
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/ybsc.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Young Boomer Social Club</h2>
-                        <p>Mondays 2PM - 3PM</p>
-                        <p>Big Guy Alex and Alara Bread put on a simultaneously sophisticated and hilarious show, with "boomer music" (with Real Instruments™!), deeply intricate bits, and some of the best chemistry on our station.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/enbtch.jpg">
-                    </div>
-                    <div id="poster_back">
-                        <h2>enb!tchment</h2>
-                        <p>Mondays 3PM - 4PM</p>
-                        <p>Enb!tchment is a podcast for your college era. <br><br>Rae and Joss chat about self-improvement, self-direction, and self-health of all kinds during their Monday hour, even further rounding out the diversity of our Monday roster.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/grbgthtr.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Garbage Theatre</h2>
-                        <p>Mondays 4PM to 5PM</p>
-                        <p>Garbage Theater is a show about reading bad fanfiction, sometimes good fanfiction, and at least once the pilot episode of Breaking Bad. <br><br>Either way, you can rely on DJ Hammywammy bringing a welcoming and hysterical atmosphere to your local radio.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/WJTBPresents.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Variety Hour</h2>
-                        <p>Everday 5PM - 6PM</p>
-                        <p>This could be your show!<br> Commit to one day or a few weeks in a row! <br><br>See Programming > Variety Hour to learn more!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/campnight.jpg">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Camp Night</h2>
-                        <p>Mondays 6PM - 7PM</p>
-                        <p>Camp Night's time slot is very intentional.<br><br> 
-                        physi and sarene! have honed both a song
-                        selection and campfire-side banter to help you
-                        appreciate the sun going down, crafting maybe the coziest show on our roster. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/ROTB.jpg">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Right Off The Bat</h2>
-                        <p>Mondays 7PM - 8PM</p>
-                        <p>A sports show?! Isn't this station just for losers?<br><br> DJ Blue Jay's enthusiasm and knowledge is infectious, and will have you cheering along even if you're not actually sure which team is the Mets.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/drummarts.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>The Drummarts Show</h2>
-                        <p>Mondays 8PM - 9PM</p>
-                        <p>Red Drummarts brings you an mix of film news and criticism from all around. <br><br>When asked to represent the vibe of his show, he submitted a video of Norm Macdonald doing Quentin Tarantino impressions, which should to get the vibe across.</p>
-                    </div>
-                </div>
-            </div>
+    </section>
         

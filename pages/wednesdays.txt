@@ -13,78 +13,16 @@
             <div class="card">
                 <div class="posterFrame">
                     <div id="poster_front">
-                        <img src="./img/posters/niche.jpg">
+                        <img src="./img/posters/WJTBPresents.png">
                     </div>
                     <div id="poster_back">
-                        <h2>Niche</h2>
+                        <h2></h2>
                         <br>
-                        <p>Wednesdays 1PM - 2PM</p>
+                        <p></p>
                         <br>
-                        <p>A Niche is nice! That's the best word for it.<br><br> DJs Anika and Esha bring you into a friendly banter about everything from cartoons to the Phoebe Bridgers song that just played.</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/bdd.jpg">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Bats Don't Dance</h2>
-                        <p>Wednesdays 2:00-2:30</p>
-                        <br>
-                        <p>Armed with a (very nice) cat, DJ Toast helps us all understand what being goth actually means. Hop in for a mosh pit like no other while DJ Toast showcases gothic rock and post punk with occasional guest co-host DJ Finger AKA DJ Carbon AKA Kitty Worldwide.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/dropt.jpg">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Drop Table</h2>
-                        <p>Wednesdays  3PM - 4:30PM</p>
-                        <br>
-                        <p>Drop Table is an utterly chaotic show on the cutting edge of distorted music, elevated by the constant interplay between Curro, Niko and a gallery of guests.<br><br> Hyperpop is a community, and this is the easiest way to get in.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/WJTBPresents.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Variety Hour</h2>
-                        <p>Everyday 5PM - 6PM</p>
-                        <p>This could be your show! Commit to one day or a few weeks in a row! See Programming > Variety Hour to learn more!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/ohp.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Office House Party</h2>
-                        <p>Wednesdays 7PM - 7:30PM</p>
-                        <p>It's always a good time to spice the office up. The Boss is always to be relied on for some killer dance music. Turn on the blue laser lights and enjoy a quick 30 minute, fully mixed throwdown!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/NICC.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>NICC@Nite</h2>
-                        <p>Wednesdays 830PM - 9PM</p>
-                        <p>NICC is NJIT's new cybersecurity club, both aware and maybe a bit concerned that it's so easy to hack a good bit of Fortune 500.<br><br><a href="https://njiticc.com/l0absla1r/">
-                        <img src="./img/loab.jpg" style="max-width: 100px; max-height: 100px">
-                        </a> <br><br>Tune in to both keep updated about the latest of the field, hear about the club's events, and get some tips about how to be secure yourself (or take advantage of insecurities you might find)!</p>
-                    </div>
-                </div>
-            </div>
+        </section>
+    </section>

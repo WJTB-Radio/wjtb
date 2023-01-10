@@ -13,69 +13,16 @@
             <div class="card">
                 <div class="posterFrame">
                     <div id="poster_front">
-                        <img src="./img/posters/ROTV.jpg">
+                        <img src="./img/posters/WJTBPresents.png">
                     </div>
                     <div id="poster_back">
-                        <h2>The Vibes</h2>
+                        <h2></h2>
                         <br>
-                        <p>Tuesdays 1PM - 2PM</p>
+                        <p></p>
                         <br>
-                        <p>It's a return of the vibes... And how they were missed! DJ Blackhat's back and diving through punk, hardcore, rock, rap - anything and everything that takes 25 songs to fill out an hour. <br><br>Vibes tries to emulate the campus vibes or whatever the mood of the week might be.</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/trz.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>The Rat Zone</h2>
-                        <p>Tuesdays 2PM - 3PM</p>
-                        <br>
-                        <p>
-                        🐀🐀ENTER THE RAT ZONE🐀🐀<br>
-                        DJ The Rat Man brings you a self-described musical diary - a playlist of emotions, genres, etc. Some indie, some pop, 🐀🐀ALL RAT🐀🐀</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/mwmee.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Music With Mee</h2>
-                        <p>Tuesdays 3PM - 4PM</p>
-                        <br>
-                        <p>Resident webmaster SJ brings a collection of music as
-                        stylish as their poster.<br><br> Sometimes rock, but just as often not, Music with Mee earns its place as one of our
-                        most popular shows.<br><br> Minimal talking, maximum grooving.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/WJTBPresents.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Variety Hour</h2>
-                        <p>Everyday 5PM - 6PM</p>
-                        <p>This could be your show! Commit to one day or a few weeks in a row! See Programming > Variety Hour to learn more!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/campfire.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>The Campfire</h2>
-                        <p>Tuesdays 7PM - 8PM</p>
-                        <p>DJ Stardust brings a late night tale of horrors, monsters, cryptids, and the works, accompanied with a healthy(?) dose of Internet lore.<br><br> 
-                        Part history show and part solo radio hour, it's a hell of a blast of personality for a Tuesday night.</p>
-                    </div>
-                </div>
-            </div>
+        </section>
+    </section>

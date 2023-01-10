@@ -13,94 +13,16 @@
             <div class="card">
                 <div class="posterFrame">
                     <div id="poster_front">
-                        <img src="./img/posters/riib.jpg">
-                    </div>
-                    <div id="poster_back">
-                        <h2>riiib</h2>
-                        <br>
-                        <p>Fridays 12PM - 1PM</p>
-                        <br>
-                        <p>The third iiiteration of one of our most beloved shows, riiib.<br><br> DJ Rib brings you in with a selection of rocky and poppy tunes from all around. It's always a good opportunity to jam out for a little while. (Also heard at Intrinsic Cafe!)</p>
-                    </div>
-                </div>
-            </div><!--
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/vector.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>The Vector</h2>
-                        <p>Fridays 1PM - 1:30PM</p>
-                        <br>
-                        <p>NJIT's The Vector talks about what's going on - both here on campus and around the world!</p>
-                    </div>
-                </div>
-            </div>-->
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/Cypher.png">
+                        <img src="./img/posters/WJTBPresents.png">
                     </div>
                     <div id="poster_back">
                         <h2></h2>
-                        <p>Fridays 2PM - 3PM</p>
                         <br>
-                        <p>Each week, get a look into DJ Cypher's brain with an unpredictable, weekly themed show.<br><br> Last week was all pop music, and I was totally prepared to write a summary about pop music, but this week's been all Indian music, so really anything goes!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/ibwfm.jfif">
-                    </div>
-                    <div id="poster_back">
-                        <h2>in-between fm</h2>
-                        <p>Fridays 4PM - 5PM</p>
+                        <p></p>
                         <br>
-                        <p>in-between fm is the most lethal show on our network (but in a good way!).<br><br> sarene! knows the ins and outs of noisy-as-hell music, and might make you start to like it too! An autotuned power drill has never gone so hard.</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/WJTBPresents.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Variety Hour</h2>
-                        <p>Everyday 5PM - 6PM</p>
-                        <p>This could be your show! Commit to one day or a few weeks in a row! See Programming > Variety Hour to learn more!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/pats.jpg">
-                    </div>
-                    <div id="poster_back">
-                        <h2>Pat's Crap</h2>
-                        <p>Fridays 6PM - 7PM</p>
-                        <p>It's pretty hard to run a solo talk show, but Pat pulls this off with flying colors.<br><br> He bounces all over with a madcap charisma of all kinds, with just enough music to keep the momentum going.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="posterFrame">
-                    <div id="poster_front">
-                        <img src="./img/posters/DDR.png">
-                    </div>
-                    <div id="poster_back">
-                        <h2>DDR22000</h2>
-                        <p>Fidays 7PM - 8:30PM</p>
-                        <p>A SHOW FOR THE DIGITAL AGE<br>
-                        IPOD CLASSIC, PSP LOST IN THE RAVE
-                        <br>THE CITY LIGHTS BURN BRIGHT<br>
-                        ONLY ON THE INTERNET
-                        <br><br>
-                        (digital dance music of all kinds!) </p>
-                    </div>
-                </div>
-            </div>
+        </section>
+    </section>
