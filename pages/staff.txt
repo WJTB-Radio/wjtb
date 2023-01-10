@@ -21,7 +21,7 @@
             <div id="card_contents">
                 <h2>Ian Atkins</h2>
                 <p id="title">Station Manager</p>
-                <p>Clam</p>
+                <p>Computerized Tomography Scan Enjoyer</p>
             </div>
         </div>
         <div class="staffCard">
