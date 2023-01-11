@@ -13,7 +13,8 @@
 }
 
 .section-main h1 {
-    color: #AC1b20; /* This is to be WJTB's Red! */
+    color: #AC1b20;
+    /* This is to be WJTB's Red! */
     text-shadow: 5px 4px #1E1E1E;
     font-family: 'Permanent Marker', sans-serif;
     font-size: 45px;
@@ -52,7 +53,7 @@ div.playerBox {
 }
 
 
-ol.body_li li{
+ol.body_li li {
     color: #F2274C;
     line-height: 3vh;
 }
@@ -60,28 +61,82 @@ ol.body_li li{
 ol.body_li {
     padding: 5vh 10vh;
 }
+
 /* Begin tablet sizing */
 @media only screen and (min-width: 900px) {
 
-    .section-main h1{
+    .section-main h1 {
         font-size: 60px;
     }
 }
+
 /* Begind esktop sizing */
 @media only screen and (min-width: 1300px) {
-
     .section-main {
         align-items: end;
+
     }
-    .section-main h1{
+
+    .section-main h1 {
         font-size: 70px;
     }
+
+    .section-bleed {
+        width: 100%;
+        background-color: #0D0D0D;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .section-two {
+        position: relative;
+        width: 1440px;
+        height: 1987px;
+    }
+
+
+    .content {
+        display: flex;
+
+    }
+    /*Main Page polaroid styling */
+
+    /*The container the polaroid sits in*/
+    .img-icon{
+        width: 30%;
+        padding-right: 5%;
+        display: flex;
+        align-items: center;
+    }
+
+    
+     .polaroid-frame {
+        display: inline-block;
+        margin-top: 10%;
+        padding-top: 5%;
+        padding-bottom: 15%;
+    } 
+
     .polaroid {
-        position: absolute;
-        width: 330.66px;
-        height: 349.1px;
-        left: 160px;
-        top: 653.36px;
+        background: #FFFFFF;
+        min-height: 100%;
+        padding-top: 7%;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-bottom: 13%;
+        /* box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2); */
+        box-shadow: 13px 1rem 2rem 8px rgb(255 0 0 / 20%);
         transform: rotate(-3.88deg);
+    }
+    .polaroid>img{
+        max-width: 100%;
+        height: auto;
+    }
+    .polaroid-caption {
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 2em;
+        color: #FFD700;
     }
 }
