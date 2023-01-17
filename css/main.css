@@ -62,16 +62,73 @@ ol.body_li {
     padding: 5vh 10vh;
 }
 
+
+.content{
+    min-width: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;;
+}
+.section-bleed{
+    min-width: 300px;
+    max-width: 899px;
+}
+.img-icons{
+    max-width:100%;
+}
+.img-icons>img{
+    max-width: 100%;
+}
+/* .text{
+
+} */
+
+
 /* Begin tablet sizing */
 @media only screen and (min-width: 900px) {
 
     .section-main h1 {
         font-size: 60px;
     }
+    .section-bleed{
+        width:100%;
+        background-color: #0D0D0D;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        min-width: 900px;
+        max-width: 1399px;
+    }
+    .section-two{
+        width: 100%;
+    }
+
+    .content{
+        min-width: 900px;
+        display: flex;     
+        flex-direction: unset;
+        padding: 3%;
+    }
+    .img-icons{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3%;
+        padding-right: 3%;
+        /* max-height: 50%; */
+    }
+    .img-icons>img{
+        /* max-height: 50%; */
+    }
+    .text{
+
+    }
+
 }
 
-/* Begind esktop sizing */
-@media only screen and (min-width: 1300px) {
+/* Begind desktop sizing */
+@media only screen and (min-width: 1400px) {
     .section-main {
         align-items: end;
 
@@ -87,6 +144,8 @@ ol.body_li {
         justify-content: center;
         align-items: center;
         display: flex;
+        min-width:1400px;
+        max-width: unset;
     }
 
     .section-two {
@@ -98,7 +157,8 @@ ol.body_li {
 
     .content {
         display: flex;
-
+        flex-direction:unset;
+        align-items: center;
     }
     /*Main Page polaroid styling */
 
