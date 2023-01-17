@@ -103,40 +103,18 @@ ol.body_li {
     /*Main Page polaroid styling */
 
     /*The container the polaroid sits in*/
-    .img-icon{
+    .img-icons{
         width: 30%;
         padding-right: 5%;
         display: flex;
         align-items: center;
     }
-
-    
-     .polaroid-frame {
-        display: inline-block;
-        margin-top: 10%;
-        padding-top: 5%;
-        padding-bottom: 15%;
-    } 
-
-    .polaroid {
-        background: #FFFFFF;
-        min-height: 100%;
-        padding-top: 7%;
-        padding-right: 5%;
-        padding-left: 5%;
-        padding-bottom: 13%;
-        /* box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2); */
-        box-shadow: 13px 1rem 2rem 8px rgb(255 0 0 / 20%);
-        transform: rotate(-3.88deg);
-    }
-    .polaroid>img{
+    .img-icons>img{
         max-width: 100%;
-        height: auto;
+        max-height: 100%;
     }
-    .polaroid-caption {
-        font-size: 1.8rem;
-        text-align: center;
-        line-height: 2em;
-        color: #FFD700;
+    .text {
+        /* display: flex; */
+        width: 60%;
     }
 }
