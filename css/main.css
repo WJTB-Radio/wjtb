@@ -65,6 +65,7 @@ ol.body_li {
 
 .content{
     min-width: 300px;
+    max-width: 900px;
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
@@ -81,9 +82,9 @@ ol.body_li {
 .img-icons>img{
     max-width: 100%;
 }
-/* .text{
-
-} */
+.text{
+    width: 100%;
+} 
 
 
 /* Begin tablet sizing */
@@ -107,23 +108,27 @@ ol.body_li {
 
     .content{
         min-width: 900px;
+        max-width: 1400px;
         display: flex;     
         flex-direction: unset;
         padding: 3%;
     }
+
     .img-icons{
+        width: 33%;
         display: flex;
         justify-content: center;
         padding-bottom: 3%;
         padding-right: 3%;
-        /* max-height: 50%; */
+        
     }
     .img-icons>img{
-        /* max-height: 50%; */
+        
+        width: 100%;
     }
     .text{
-
-    }
+        width: 100%
+    } 
 
 }
 
@@ -159,22 +164,26 @@ ol.body_li {
         display: flex;
         flex-direction:unset;
         align-items: center;
+        min-width: 1200px;
+        max-width: 2000px;
     }
     /*Main Page polaroid styling */
 
     /*The container the polaroid sits in*/
     .img-icons{
-        width: 30%;
-        padding-right: 5%;
+        width: 33%;
         display: flex;
         align-items: center;
+        padding-right: 10px;
+        padding-top: 10px;
+        justify-content:space-around;
     }
     .img-icons>img{
         max-width: 100%;
         max-height: 100%;
     }
     .text {
-        /* display: flex; */
-        width: 60%;
-    }
+        padding-left: 10px;
+        width: 100%; 
+    } 
 }
