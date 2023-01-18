@@ -2,45 +2,47 @@
         <section class="section-main">
             <h1>Membership Info</h1>
         </section>
-        <section class="section-two">
-            <h2>Want to become a member?</h2>
+        <section class="section-bleed">
+            <section class="section-two">
+                <h2>Want to become a member?</h2>
 
-            <p>Joining WJTB is easy! Your first step: Go to our <a
-                    href="https://njit.campuslabs.com/engage/organization/wjtb" target="_blank">Highlander Hub</a> and
-                request membership. Membership is extended to every NJIT student, regardless of major or class.
-                Non-students can still enjoy associative membership, but cannot host their own shows.</p>
-            <p>After you've submitted your application on Highlander Hub, join us on our <a
-                    href="https://wjtb.njit.edu/discord" target="_blank">discord!</a> This is where you'll
-                find all of our members and be able to reach out to us if you need anything.</p>
-            <h2>Why Join?</h2>
-            <p>There are a ton of reasons to join WJTB! Not every member needs to have a show, but every member
-                <i>can</i> have a show, assuming time permits and they're agree to a few basic rules. Members get access
-                to the club space, our recording room, members-only events, trainings, studio time, and more!
-            </p>
-            <h2>Want air time?</h2>
-            <p>Every semester we open up time slots to active members of WJTB. Time slots are first reserved for
-                Executive Board, Senior DJs, and other student organizations. The remaining time slots operate on a
-                first-come, first-served basis.</p>
-            <p>All DJs have to follow some basic rules for airtime. Learn more here: <a
-                    href="./docs/WJTB_Gen_Member_Contract_2022.pdf" target="_blank">General Member Contract</a>.
-                <!--LINK TO RULES/REGS PDF-->   
-            </p>
-            <p>To apply for air time, you'll need to fill out a form. Ready to get heard? Fill out the <a href="#" onclick="loadShowRequest()">form</a> today!</p>
-            <h2>What to know</h2>
-            <p>WJTB <b>does</b> have a few rules. To learn more about our rules, you can take a look at our
-                constitution, membership contract, and Highlander Hub. </p>
-            <p>If you're too busy to look at there, our summarized basic rules include (but are not limited to):
-            <ol>
-                <li>No discrimination.</li>
-                <li>Keep eachother safe!</li>
-                <li>No hate speech.</li>
-                <li>Work together.</li>
-                <li>Follow NJIT rules.</li>
-                <li>No sexual harassment as covered by Title IX.</li>
-                <li>Respect the office - clean up!</li>
-                <li>Be liable for your own actions.</li>
-            </ol>
-            </p>
-            <p>If you're interested, you can also take a look at our entire <a href="./docs/wjtbConstitution.pdf" target="_blank">WJTB Constitution</a>.</p>
+                <p>Joining WJTB is easy! Your first step: Go to our <a
+                        href="https://njit.campuslabs.com/engage/organization/wjtb" target="_blank">Highlander Hub</a> and
+                    request membership. Membership is extended to every NJIT student, regardless of major or class.
+                    Non-students can still enjoy associative membership, but cannot host their own shows.</p>
+                <p>After you've submitted your application on Highlander Hub, join us on our <a
+                        href="https://wjtb.njit.edu/discord" target="_blank">discord!</a> This is where you'll
+                    find all of our members and be able to reach out to us if you need anything.</p>
+                <h2>Why Join?</h2>
+                <p>There are a ton of reasons to join WJTB! Not every member needs to have a show, but every member
+                    <i>can</i> have a show, assuming time permits and they're agree to a few basic rules. Members get access
+                    to the club space, our recording room, members-only events, trainings, studio time, and more!
+                </p>
+                <h2>Want air time?</h2>
+                <p>Every semester we open up time slots to active members of WJTB. Time slots are first reserved for
+                    Executive Board, Senior DJs, and other student organizations. The remaining time slots operate on a
+                    first-come, first-served basis.</p>
+                <p>All DJs have to follow some basic rules for airtime. Learn more here: <a
+                        href="./docs/WJTB_Gen_Member_Contract_2022.pdf" target="_blank">General Member Contract</a>.
+                    <!--LINK TO RULES/REGS PDF-->   
+                </p>
+                <p>To apply for air time, you'll need to fill out a form. Ready to get heard? Fill out the <a href="#" onclick="loadShowRequest()">form</a> today!</p>
+                <h2>What to know</h2>
+                <p>WJTB <b>does</b> have a few rules. To learn more about our rules, you can take a look at our
+                    constitution, membership contract, and Highlander Hub. </p>
+                <p>If you're too busy to look at there, our summarized basic rules include (but are not limited to):
+                <ol>
+                    <li>No discrimination.</li>
+                    <li>Keep eachother safe!</li>
+                    <li>No hate speech.</li>
+                    <li>Work together.</li>
+                    <li>Follow NJIT rules.</li>
+                    <li>No sexual harassment as covered by Title IX.</li>
+                    <li>Respect the office - clean up!</li>
+                    <li>Be liable for your own actions.</li>
+                </ol>
+                </p>
+                <p>If you're interested, you can also take a look at our entire <a href="./docs/wjtbConstitution.pdf" target="_blank">WJTB Constitution</a>.</p>
+            </section>
         </section>
     </section>
