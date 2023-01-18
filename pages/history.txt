@@ -2,6 +2,7 @@
     <section class="section-main">
       <h1>History</h1>
     </section>
+    <section class="section-bleed">
     <section class="section-two-history">
       <h2>WNCE - Our Roots</h2>
       <div class="photo_left">
@@ -105,5 +106,6 @@
         certain is that around 1997-1998, WJTB started broadcasting online. That makes this radio station not only one
         of the longest internet radio stations, but one of the raddest.</p>
       <p></p>
+    </section>
     </section>
   </section>

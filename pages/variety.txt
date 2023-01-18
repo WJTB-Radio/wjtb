@@ -1,12 +1,14 @@
     <section class="section-main">
       <h1>Variety Hour</h1>
     </section>
-    <section class="section-two">
-      <h2>Want a show, but can't commit every week?</h2>
-      <p>That's why Variety Hour exists. In order to host a show, you do need to be a member.</p>
-      <p>Once you're a member, you can head over to <a href="https://calendly.com/wjtbradio/variety-hour-host" target="_blank">this link</a> to book a time! If you see it, book it. </p>
-      <p>If you book a show but are not trained - you will be required to be trained first (it takes 10 minutes). Otherwise, your show will be canceled. </p>
-      <h2></h2>
-      <p></p>
-      <p></p>
-    </section>
+    <section class="section-bleed">
+      <section class="section-two">
+        <h2>Want a show, but can't commit every week?</h2>
+        <p>That's why Variety Hour exists. In order to host a show, you do need to be a member.</p>
+        <p>Once you're a member, you can head over to <a href="https://calendly.com/wjtbradio/variety-hour-host" target="_blank">this link</a> to book a time! If you see it, book it. </p>
+        <p>If you book a show but are not trained - you will be required to be trained first (it takes 10 minutes). Otherwise, your show will be canceled. </p>
+        <h2></h2>
+        <p></p>
+        <p></p>
+      </section>
+  </section>

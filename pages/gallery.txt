@@ -1,12 +1,14 @@
     <section class="section-main">
       <h1>Gallery In Progress</h1>
     </section>
-    <section class="section-two">
-      <h2>  </h2>
-      <p>We're going to host our photos here... but just haven't gotten it settled yet. It'll be ready soon :).</p>
-      <p></p>
-      <p></p>
-      <h2></h2>
-      <p></p>
-      <p></p>
+    <section class="section-bleed">
+      <section class="section-two">
+        <h2>  </h2>
+        <p>We're going to host our photos here... but just haven't gotten it settled yet. It'll be ready soon :).</p>
+        <p></p>
+        <p></p>
+        <h2></h2>
+        <p></p>
+        <p></p>
+      </section>
     </section>
