@@ -94,6 +94,7 @@
       </div>
       <p></p>
       <p></p>
+      <div class="history_text">
       <h2>Digital Only</h2>
       <p>Nobody can figure out exactly why WJTB stopped broadcasting on the radio waves. There are, of course, rumors. A
         history of trouble making by members, the natural curiosity that plagues all STEM students, and the
@@ -105,6 +106,7 @@
       <p>The point is -- nobody knows for sure why or how we lost our ability to broadcast over the air. What <i>is</i>
         certain is that around 1997-1998, WJTB started broadcasting online. That makes this radio station not only one
         of the longest internet radio stations, but one of the raddest.</p>
+      </div>
       <p></p>
     </section>
     </section>
