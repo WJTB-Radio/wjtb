@@ -34,7 +34,7 @@ div.playerBox {
     min-height: 100vh;
     background: #0D0D0D;
     padding: 20px 5vh;
-    
+
 }
 
 .section-two h2 {
@@ -64,28 +64,32 @@ ol.body_li {
 }
 
 
-.content{
+.content {
     min-width: 300px;
     max-width: 900px;
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;;
+    align-items: center;
 }
-.section-bleed{
+
+.section-bleed {
     min-width: 300px;
     max-width: 899px;
 }
-.img-icons{
-    max-width:100%;
-}
-.img-icons>img{
+
+.img-icons {
     max-width: 100%;
 }
-.text{
+
+.img-icons>img {
+    max-width: 100%;
+}
+
+.text {
     width: 100%;
-} 
+}
 
 
 
@@ -94,8 +98,9 @@ ol.body_li {
     .section-main h1 {
         font-size: 60px;
     }
-    .section-bleed{
-        width:100%;
+
+    .section-bleed {
+        width: 100%;
         background-color: #0D0D0D;
         justify-content: center;
         align-items: center;
@@ -103,35 +108,38 @@ ol.body_li {
         min-width: 900px;
         max-width: 1399px;
     }
-    .section-two{
+
+    .section-two {
         width: 100%;
         padding: 0;
         margin: 20px 5vh;
     }
 
-    .content{
+    .content {
         min-width: 900px;
         max-width: 1400px;
-        display: flex;     
+        display: flex;
         flex-direction: unset;
         padding: 3%;
     }
 
-    .img-icons{
+    .img-icons {
         width: 33%;
         display: flex;
         justify-content: center;
         padding-bottom: 3%;
         padding-right: 3%;
-        
+
     }
-    .img-icons>img{
-        
+
+    .img-icons>img {
+
         width: 100%;
     }
-    .text{
+
+    .text {
         width: 100%
-    } 
+    }
 
 }
 
@@ -152,7 +160,7 @@ ol.body_li {
         justify-content: center;
         align-items: center;
         display: flex;
-        min-width:1400px;
+        min-width: 1400px;
         max-width: unset;
     }
 
@@ -165,28 +173,31 @@ ol.body_li {
 
     .content {
         display: flex;
-        flex-direction:unset;
+        flex-direction: unset;
         align-items: center;
         min-width: 1200px;
         max-width: 2000px;
     }
+
     /*Main Page polaroid styling */
 
     /*The container the polaroid sits in*/
-    .img-icons{
+    .img-icons {
         width: 33%;
         display: flex;
         align-items: center;
         padding-right: 10px;
         padding-top: 10px;
-        justify-content:space-around;
+        justify-content: space-around;
     }
-    .img-icons>img{
+
+    .img-icons>img {
         max-width: 100%;
         max-height: 100%;
     }
+
     .text {
         padding-left: 10px;
-        width: 100%; 
-    } 
+        width: 100%;
+    }
 }

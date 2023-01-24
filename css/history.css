@@ -16,6 +16,7 @@ div.photo_right {
 /* Text Box */
 .photo_left .history_text,
 .photo_right .history_text {
+    color: #FFF;
     display: flex;
     align-items: center;
     text-align: justify;
@@ -92,6 +93,7 @@ figure {
     }
 
     .history_text p {
+        color: #FFF;
         margin: 0vh 1vh 1vh 0vh;
         padding-right: 1vh;
     }
