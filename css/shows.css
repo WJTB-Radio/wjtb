@@ -1,5 +1,5 @@
 section.shows {
-    background: black url("../img/wall.jpg") repeat center/30%;
+    background: black url("../img/wall.png") repeat center/50%;
     min-height: 100vh;
     padding: 5vh 10vh;
 }

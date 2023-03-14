@@ -1,52 +1,82 @@
 section.staff{
-    background-color: black;
-    padding: 5vh 5vh;
+	background-color: #171717;
+	padding: 5vh 5vh;
 }
 
 div.staffBox {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content:space-around;
-    align-items: center;
-    align-self: center;
-    margin: auto;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content:space-around;
+	align-items: center;
+	align-self: center;
+	margin: auto;
 }
 
-div.staffbox>div.staffCard{
-    background-color: red;
-    margin-bottom: 2vh;
+div.staffCard {
+	position: relative;
+	z-index: 1;
+	overflow: visible;
+	margin-bottom: 0vh;
+	margin-top: 0vh;
+	transform: scale(1.0);
+	transition: transform 0.4s cubic-bezier(0.1, 0.9, 0.9, 0.9); 
 }
 
-
-div.staffCard>div#card_contents{
-    box-shadow: 4px 4px 8px 12px rgba(0, 0, 0, 0.2);
-    background-color: black;
-    text-align: center;
-    color: white;
-    max-width: 300px;
-    margin: 12px;
+div.staffCard:hover {
+	transform: scale(1.05) rotate(1deg) translate(0px, -10px);
+	z-index: 5;
 }
 
-div.staffCard>div#image{
-    filter: grayscale(100%);
+div.staffCard>div.card_contents{
+	box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.3);
+	background-color: #171717;
+	text-align: center;
+	color: #cfcfcf;
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3vh;
+	margin-top: 0vh;
 }
 
-div.staffCard:hover>div#image{
-    /* Takes filter off if staffCard hovered */
-    filter:grayscale(0%);
+div.staffCard>div.image{
+	filter: grayscale(80%);
+	object-fit: cover;
+	transform: scale(1.0);
+	margin-bottom: 0vh;
+	transition: filter 0.4s cubic-bezier(0.1, 0.9, 0.9, 0.9);
 }
 
-#title {
-    color: red;
-    font-family: 'Special Elite', sans-serif;
-    font-weight: 500;
-    letter-spacing: 3px;
+div.staffCard:hover>div.image{
+	/* Takes filter off if staffCard hovered */
+	filter:grayscale(0%);
 }
-div#card_contents>h2{
-    color: #FFD700;
-    font-family: 'Permanent Marker', sans-serif;
-    font-weight: 300;
+
+/* Name Styling */
+div.card_contents>h2 {
+	color: #FFD700;
+	font-family: 'Fortzilla', sans-serif;
+	text-shadow: 2px 2px #847106;
+	font-size: 27px;
+	text-align: center;
+	line-height: 0vh;
+	transform: translate(0px, 1.5vh);
+}
+
+/* Position Styling */
+.title {
+	color: #e0e0e0;
+	font-family: 'Pixel', sans-serif;
+	text-shadow: 2px 2px #696969;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* Flavor Text Styling*/
+.flavor {
+	color: #e0e0e0;
+	font-size: 20px;
 }

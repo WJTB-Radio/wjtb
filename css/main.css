@@ -1,203 +1,295 @@
 /* Main.css contains all styling related to the main pages of the site */
+
+html, body {
+	height: 100%;
+	background: #0d0d0d;
+}
+
 .section-main {
-    position: relative;
-    width: 100%;
-    min-height: 50vh;
-    background: #0D0D0D no-repeat center/50% url(../img/wjtb.png);
-    /* background-size: contain; */
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    padding: 20px 5vh;
+	position: relative;
+	width: 100%;
+	min-height: 20vh;
+	background: #0D0D0D no-repeat center/50% url(../img/wjtb.png);
+	background-size: contain;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	padding: 20px 5vh;
+}
+
+@keyframes splash-animation {
+	from {transform: rotate(-16deg) scale(0.9)}
+	to {transform: rotate(-12deg) scale(1.1)}
 }
 
 .section-main h1 {
-    color: #AC1b20;
-    /* This is to be WJTB's Red! */
-    text-shadow: 5px 4px #1E1E1E;
-    font-family: 'Permanent Marker', sans-serif;
-    font-size: 45px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    line-height: 80px;
-    text-align: center;
+	color: #ce2328;
+	/* This is WJTB's Red! */
+	text-shadow: 2px 2px #AC1B20;
+	font-family: 'Pixel', sans-serif;
+	font-size: 25px;
+	font-weight: 800;
+	line-height: 40px;
+	text-align: center;
+	position: absolute;
+	bottom: 21%;
+	right: 3%;
+	transform: rotate(-12deg) scale(1.1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.section-main h1.splash-animation {
+		animation-name: splash-animation;
+		animation-duration: 1.3s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;	
+	}
 }
 
 div.playerBox {
-    position: sticky;
-    right: 50%;
+	position: sticky;
+	right: 50%;
 }
 
 .section-two {
-    min-height: 100vh;
-    background: #0D0D0D;
-    padding: 20px 5vh;
-
+	height: 100%;
+	flex: 1 0 auto;
+	background: #181818;
+	border-radius: 50px 50px 0px 0px;
+	border: 5px #b00000;
+	border-top-style: inset;
+	border-right-style: inset;
+	border-left-style: inset;
+	border-bottom-style: none;
+	padding-top: 0px;
+	padding-bottom: 150px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 40px;
+	margin-bottom: 0px;
 }
 
-.section-two h2 {
-    color: #FFD700;
-    font-family: 'Permanent Marker', sans-serif;
-    font-size: 50px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin: 30px 0;
-    text-align: left;
+h2 {
+	color: #FFD700;
+	font-family: 'Fortzilla', sans-serif;
+	font-size: 35px;
+	font-weight: 400;
+	text-shadow: 3px 3px #af9500;
+	/* text-transform: uppercase; */
+	margin: 30px 0;
+	text-align: left;
 }
 
 .section-two p {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 18px;
-    margin: 30px 0;
+	color: #cfcfcf;
+	font-size: 24px;
+	margin: 30px 0;
 }
 
 
-ol.body_li li {
-    color: #F2274C;
-    line-height: 3vh;
+ol li {
+	color: #cfcfcf;
+	font-size: 28px;
+	line-height: 34px;
 }
 
-ol.body_li {
-    padding: 5vh 10vh;
+ol {
+	padding: 4px 40px;
 }
 
 
 .content {
-    min-width: 300px;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+	max-width: 900px;
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .section-bleed {
-    min-width: 300px;
-    max-width: 899px;
+	max-width: 899px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .img-icons {
-    max-width: 100%;
+	max-width: 50%;
 }
 
 .img-icons>img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 .text {
-    width: 100%;
+	width: 100%;
 }
 
+.section-two .nopadding {
+	padding-top: 0%;
+}
 
+iframe {
+	width: 80%;
+	/* its not possible to know how tall the content in the iframe is */
+	/* because it would require cross site scripting*/
+	/* the best we can do is to set it to 4000px and hope it isnt longer than that*/
+	height: 4000px;
+	border: none;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0%;
+	background: white;
+}
 
 /* Begin tablet sizing */
 @media only screen and (min-width: 900px) {
-    .section-main h1 {
-        font-size: 60px;
-    }
+	.section-main {
+		background-size: 75vh;
+		min-height: 30vh;
+	}
+	.section-main h1 {
+		font-size: 35px;
+		text-shadow: 4px 4px #721114;
+		bottom: 21%;
+		right: 6%;
+	}
 
-    .section-bleed {
-        width: 100%;
-        background-color: #0D0D0D;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        min-width: 900px;
-        max-width: 1399px;
-    }
+	.section-bleed {
+		width: 100%;
+		background-color: #0D0D0D;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		min-width: 900px;
+		max-width: 1399px;
+		height: 100%;
+	}
 
-    .section-two {
-        width: 100%;
-        padding: 0;
-        margin: 20px 5vh;
-    }
+	.section-two {
+		width: 100%;
+		height: 100%;
+		border-radius: 50px 50px 0px 0px;
+		padding-top: 0px;
+		padding-bottom: 150px;
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+		margin-bottom: 0px;
+	}
 
-    .content {
-        min-width: 900px;
-        max-width: 1400px;
-        display: flex;
-        flex-direction: unset;
-        padding: 3%;
-    }
+	h2 {
+		font-size: 40px;
+	}
 
-    .img-icons {
-        width: 33%;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 3%;
-        padding-right: 3%;
+	.content {
+		min-width: 900px;
+		max-width: 1400px;
+		display: flex;
+		flex-direction: unset;
+		padding: 3%;
+	}
 
-    }
+	.img-icons {
+		width: 33%;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 3%;
+		padding-right: 3%;
 
-    .img-icons>img {
+	}
 
-        width: 100%;
-    }
+	.img-icons>img {
 
-    .text {
-        width: 100%
-    }
+		width: 100%;
+	}
+
+	.text {
+		width: 100%
+	}
+	
+	iframe {
+		border-radius: 20px;
+	}
 
 }
 
 /* Begind desktop sizing */
 @media only screen and (min-width: 1400px) {
-    .section-main {
-        align-items: end;
+	.section-main {
+		align-items: end;
+		background-size: 100vh;
+		min-height: 50vh
+	}
 
-    }
+	.section-main h1 {
+		font-size: 45px;
+		text-shadow: 4px 4px #721114;
+		bottom: 21%;
+		right: 13%;
+	}
 
-    .section-main h1 {
-        font-size: 70px;
-    }
+	.section-bleed {
+		width: 100%;
+		background-color: #0D0D0D;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		min-width: 1400px;
+		max-width: unset;
+		height: 100%;
+	}
 
-    .section-bleed {
-        width: 100%;
-        background-color: #0D0D0D;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        min-width: 1400px;
-        max-width: unset;
-    }
+	.section-two {
+		position: relative;
+		width: 1440px;
+		height: 100%;
+		padding-top: 0px;
+		padding-bottom: 150px;
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+		margin-bottom: 0px;
+	}
+	
+	h2 {
+		font-size: 55px;
+	}
 
-    .section-two {
-        position: relative;
-        width: 1440px;
-        height: 1987px;
-    }
+	.content {
+		display: flex;
+		flex-direction: unset;
+		align-items: center;
+		min-width: 1200px;
+		max-width: 2000px;
+	}
 
+	/*Main Page polaroid styling */
 
-    .content {
-        display: flex;
-        flex-direction: unset;
-        align-items: center;
-        min-width: 1200px;
-        max-width: 2000px;
-    }
+	/*The container the polaroid sits in*/
+	.img-icons {
+		width: 33%;
+		display: flex;
+		align-items: center;
+		padding-right: 10px;
+		padding-top: 10px;
+		justify-content: space-around;
+	}
 
-    /*Main Page polaroid styling */
+	.img-icons>img {
+		max-width: 100%;
+		max-height: 100%;
+	}
 
-    /*The container the polaroid sits in*/
-    .img-icons {
-        width: 33%;
-        display: flex;
-        align-items: center;
-        padding-right: 10px;
-        padding-top: 10px;
-        justify-content: space-around;
-    }
-
-    .img-icons>img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .text {
-        padding-left: 10px;
-        width: 100%;
-    }
+	.text {
+		padding-left: 10px;
+		width: 100%;
+	}
 }

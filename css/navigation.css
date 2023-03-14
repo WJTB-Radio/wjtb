@@ -12,15 +12,63 @@ body {
     font-size: 16px;
 }
 
+header {
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	z-index: 10;
+}
+
+#output {
+	margin-top: 70px;
+}
+
 nav {
     background: #222;
     padding: 0 15px;
+}
 
+.menu a {
+	color: white;
+   	/* make the text not selectable */
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+          -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+	font-size: 16px;
+	transform: scale(1.0);
+	transition: transform 0.1s ease-in-out;
+}
+
+.menu a:hover, li.item:hover>a {
+	transform: scale(1.1);
+}
+
+.menu a:active, li.item:active>a {
+	transform: scale(1.0);
 }
 
 a {
-    color: white;
-    text-decoration: none;
+	color: #eded50;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.section-bleed a {
+	display: inline-block;
+	transform: scale(1.0);
+	transition: transform 0.1s ease-in-out;
+}
+
+.section-bleed a:hover {
+	transform: scale(1.05);
+}
+
+.section-bleed a:active {
+	transform: scale(1.0);
 }
 
 .menu,
@@ -37,10 +85,17 @@ a {
 
 .item {
     padding: 10px;
+    margin: 0px;
+    transition: background-color 0.1s ease-in-out;
 }
 
 .item.button {
     padding: 9px 5px;
+}
+
+.item:hover {
+    background-color: #111;
+    cursor: pointer;
 }
 
 .item:not(.button) a:hover,
@@ -123,6 +178,7 @@ a {
 
 .submenu-active {
     background-color: #111;
+    cursor: pointer;
     border-radius: 3px;
     z-index: 10;
 }
@@ -196,6 +252,7 @@ a {
 
     .item {
         order: 1;
+        flex-basis: 8vw;
         position: relative;
         display: block;
         width: auto;
@@ -205,12 +262,17 @@ a {
         order: 2;
     }
 
+	.submenu {
+		width: 100%;
+	}
+
     .submenu-active .submenu {
         display: block;
         position: absolute;
         left: 0;
         top: 68px;
         background: #111;
+        cursor: pointer;
         z-index: 10;
     }
 
