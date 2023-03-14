@@ -1,6 +1,6 @@
 
 .name {
-    font-size: 18px;
+    width: 60%;
   }
   .audio-player {
     height: 50px;
@@ -13,6 +13,16 @@
     display: grid;
     grid-template-rows: 6px auto;
     
+    /* make the WJTB text not selectable */
+
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+          -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox *
+
   }
   .audio-player .timeline {
     background: #e92705d0;
@@ -39,23 +49,31 @@
     align-items: center;
   }
   .audio-player .controls .toggle-play.play {
-    cursor: pointer;
-    position: relative;
     left: 0;
     height: 0;
     width: 0;
     border: 7px solid #0000;
     border-left: 13px solid white;
   }
-  .audio-player .controls .toggle-play.play:hover {
-    transform: scale(1.1);
-  }
   .audio-player .controls .toggle-play.pause {
     height: 15px;
     width: 20px;
-    cursor: pointer;
-    position: relative;
+  } 
+  
+  .toggle-play {
+     cursor: pointer;
+     position: relative;
+     transition: transform 0.1s ease-in-out;
   }
+
+  .toggle-play:hover {
+    transform: scale(1.1);
+  }
+
+  .toggle-play:active {
+    transform: scale(0.9);
+  }
+
   .audio-player .controls .toggle-play.pause:before {
     position: absolute;
     top: 0;
@@ -95,28 +113,47 @@
     align-items: center;
     color: white;
   }
+  
+  .volume-button {
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .volume-button:hover {
+	transform: scale(1.1);
+  }
+
+  .volume-button:active {
+	transform: scale(0.9);
+  }
+
   .audio-player .controls .volume-container .volume-button .volume {
     transform: scale(0.7);
     color: white;
   }
   .audio-player .controls .volume-container .volume-slider {
+  	/* The volume slider background */
     position: absolute;
-    left: -3px;
-    top: 15px;
+    left: 0%;
+    top: 25%;
     z-index: -1;
     width: 0;
-    height: 15px;
-    background: gold;
+    height: 20px;
+    background: #333333;
     box-shadow: 0 0 20px #000a;
-    transition: 0.25s;
+    transition: 0.1s ease-in-out;
   }
   .audio-player .controls .volume-container .volume-slider .volume-percentage {
-    background: white;
+	/* The volume slider progress bar */
+    background: #FFFFFF;
     height: 100%;
     width: 75%;
     box-shadow: 1x 1px 2px 0 white;
   }
-  .audio-player .controls .volume-container:hover .volume-slider {
+  .audio-player .controls .volume-container:hover .volume-slider:not(.muted) {
     left: -100px;
     width: 100px;
+  }
+  .audio-player .controls .volume-container .volume-slider.opened:not(.muted) {
+	left: -100px;
+	width: 100px;
   }

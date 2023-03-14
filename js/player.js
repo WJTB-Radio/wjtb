@@ -5,98 +5,129 @@
 
 const audioPlayer = document.querySelector(".audio-player");
 const audio = new Audio(
-  "https://stream.njit.edu:8000/stream1.mp3"
+	"https://stream.njit.edu:8000/stream1.mp3"
 );
-//credit for song: Adrian kreativaweb@gmail.com
-
-console.dir(audio);
 
 audio.addEventListener(
-  "loadeddata",
-  () => {
-    // audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
-    //   audio.duration
-    // );
-    audio.volume = 0.75;
-  },
-  false
+	"loadeddata",
+	() => {
+		// audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
+		//	 audio.duration
+		// );
+		audio.volume = 0.75;
+	},
+	false
 );
 
-//click on timeline to skip around
-// const timeline = audioPlayer.querySelector(".timeline");
-// timeline.addEventListener(
-//   "click",
-//   (e) => {
-//     const timelineWidth = window.getComputedStyle(timeline).width;
-//     const timeToSeek = (e.offsetX / parseInt(timelineWidth)) * audio.duration;
-//     audio.currentTime = timeToSeek;
-//   },
-//   false
-// );
+function clamp(val, min, max){
+	return Math.min(max, Math.max(min, val));
+}
+
+function setVolume(x) {
+	x -= volumeSlider.getBoundingClientRect().x;
+	const sliderWidth = parseInt(window.getComputedStyle(volumeSlider).width);
+	if(sliderWidth == 0) {
+		return;
+	}
+	const newVolume = clamp(x / sliderWidth, 0.0, 1.0);
+	audio.volume = newVolume;
+	audioPlayer.querySelector(".controls .volume-percentage").style.width = newVolume * 100 + "%";
+}
+
+const volumeSlider = audioPlayer.querySelector(".controls .volume-slider");
 
 //click volume slider to change volume
-const volumeSlider = audioPlayer.querySelector(".controls .volume-slider");
 volumeSlider.addEventListener(
-  "click",
-  (e) => {
-    const sliderWidth = window.getComputedStyle(volumeSlider).width;
-    const newVolume = e.offsetX / parseInt(sliderWidth);
-    audio.volume = newVolume;
-    audioPlayer.querySelector(".controls .volume-percentage").style.width =
-      newVolume * 100 + "%";
-  },
-  false
+	"mousedown",
+	(e) => {
+		dragging_volume = true;
+		volumeSlider.classList.add("opened");
+		setVolume(e.clientX);
+	},
+	false
 );
 
-//check audio percentage and update time accordingly
-// setInterval(() => {
-//   const progressBar = audioPlayer.querySelector(".progress");
-//   progressBar.style.width = (audio.currentTime / audio.duration) * 100 + "%";
-//   audioPlayer.querySelector(".time .current").textContent = getTimeCodeFromNum(
-//     audio.currentTime
-//   );
-// }, 500);
+let dragging_volume = false;
 
-//toggle between playing and pausing on button click
+document.body.addEventListener(
+	"mousemove", (e) => {
+		if(dragging_volume && (1 & e.buttons) != 0) {
+			setVolume(e.clientX);
+		}
+	}
+);
+
+document.body.addEventListener(
+	"mouseup",
+	(e) => {
+		if(dragging_volume) {
+			dragging_volume = false;
+			setVolume(e.clientX);
+			volumeSlider.classList.remove("opened");
+		}
+	}
+);
+
+document.body.addEventListener(
+	"mouseleave", (e) => {
+		dragging_volume = false;
+		volumeSlider.classList.remove("opened");
+	}
+);
+
+
+// toggle between playing and pausing on button click
 const playBtn = audioPlayer.querySelector(".controls .toggle-play");
 playBtn.addEventListener(
-  "click",
-  () => {
-    if (audio.paused) {
-      playBtn.classList.remove("play");
-      playBtn.classList.add("pause");
-      audio.play();
-    } else {
-      playBtn.classList.remove("pause");
-      playBtn.classList.add("play");
-      audio.pause();
-    }
-  },
-  false
+	"click", () => {
+		if (audio.paused) {
+			playBtn.classList.remove("play");
+			playBtn.classList.add("pause");
+			audio.play();
+		} else {
+			playBtn.classList.remove("pause");
+			playBtn.classList.add("play");
+			audio.pause();
+		}
+	},
+	false
 );
 
 audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
-  const volumeEl = audioPlayer.querySelector(".volume-container .volume");
-  audio.muted = !audio.muted;
-  if (audio.muted) {
-    volumeEl.classList.remove("icono-volumeMedium");
-    volumeEl.classList.add("icono-volumeMute");
-  } else {
-    volumeEl.classList.add("icono-volumeMedium");
-    volumeEl.classList.remove("icono-volumeMute");
-  }
+	const volumeEl = audioPlayer.querySelector(".volume-container .volume");
+	audio.muted = !audio.muted;
+	if (audio.muted) {
+		volumeEl.classList.remove("icono-volumeMedium");
+		volumeEl.classList.add("icono-volumeMute");
+		volumeSlider.classList.add("muted");
+	} else {
+		volumeEl.classList.add("icono-volumeMedium");
+		volumeEl.classList.remove("icono-volumeMute");
+		volumeSlider.classList.remove("muted");
+	}
 });
 
-//turn 128 seconds into 2:08
-// function getTimeCodeFromNum(num) {
-//   let seconds = parseInt(num);
-//   let minutes = parseInt(seconds / 60);
-//   seconds -= minutes * 60;
-//   const hours = parseInt(minutes / 60);
-//   minutes -= hours * 60;
+//click on timeline to skip around
+/*
+const timeline = audioPlayer.querySelector(".timeline");
+timeline.addEventListener(
+	"click",
+	(e) => {
+		const timelineWidth = window.getComputedStyle(timeline).width;
+		const timeToSeek = (e.offsetX / parseInt(timelineWidth)) * audio.duration;
+		audio.currentTime = timeToSeek;
+	},
+	false
+);
 
-//   if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
-//   return `${String(hours).padStart(2, 0)}:${minutes}:${String(
-//     seconds % 60
-//   ).padStart(2, 0)}`;
-// }
+// check audio percentage and update time accordingly
+setInterval(() => {
+	const progressBar = audioPlayer.querySelector(".progress");
+	if(audio.paused){
+		progressBar.style.width = "100%";
+	} else {
+		progressBar.style.width = (audio.currentTime / audio.duration) * 100 + "%";
+	}
+}, 500);
+*/
+
