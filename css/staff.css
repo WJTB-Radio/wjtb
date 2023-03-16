@@ -57,9 +57,9 @@ div.staffCard:hover>div.image{
 
 /* Name Styling */
 div.card_contents>h2 {
-	color: #FFD700;
+	color: #ce2328;
 	font-family: 'Fortzilla', sans-serif;
-	text-shadow: 2px 2px #847106;
+	text-shadow: 2px 2px #721114;
 	font-size: 27px;
 	text-align: center;
 	line-height: 0vh;
