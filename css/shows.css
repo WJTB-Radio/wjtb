@@ -1,96 +1,113 @@
 section.shows {
-    background: black url("../img/wall.png") repeat center/50%;
-    min-height: 100vh;
-    padding: 5vh 10vh;
+	background: black url("../img/wall.png") repeat center/50%;
+	min-height: 100vh;
+	padding: 5vh 10vh;
 }
 section.posterBox{
-    width: 80vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 2vh;
+	width: 80vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2vh;
 }
 div.card {
-    background-color: transparent;
-    width: 40vh;
-    height: 60vh;
-    perspective: 1000px;
+	background-color: transparent;
+	width: 40vh;
+	height: 60vh;
+	perspective: 1000px;
 }
 
 div.posterFrame {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
 }
 
 div.card:hover .posterFrame{
-    transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 div#poster_front>img{
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 
 #poster_front, #poster_back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
 }
 
 #poster_front{
-    background-color: #0D0D0D;
+	background-color: #0D0D0D;
 }
 
 #poster_back {
-    background-color: #0d0d0d;
-    color: #FFD700;
-    transform: rotateY(180deg);
+	background-color: #0d0d0d;
+	color: #FFD700;
+	transform: rotateY(180deg);
   } 
 
 .card:nth-child(odd){
-    transform: rotate(7deg);
+	transform: rotate(7deg);
 }
 .card:nth-child(even){
-    transform: rotate(-2deg);
+	transform: rotate(-2deg);
 }
 .card:nth-child(-n*3) {
-    transform: rotate(0);
+	transform: rotate(0);
 }
 
 #showButtons {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #0D0D0D;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #0D0D0D;
 }
 
 .showBtn {
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0px;
-    font-family: Georgia;
-    color: #FFD700;
-    font-size: 27px;
-    padding: 6px 18px 10px 20px;
-    border: solid #ffd700 2px;
-    text-decoration: none;
-    cursor:pointer;
-  }
-  
-  .showBtn:hover {
-    background: #666666;
-    text-decoration: none;
-  }
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0px;
+	font-size: 27px;
+	padding: 6px 18px 10px 20px;
+	text-decoration: none;
+	cursor:pointer;
+	font-family: Fortzilla;
+	color: #ce2328;
+	border: solid #dddddd 2px;
+	text-shadow: #722114 3px 3px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin: 20px 5px;
+	transition: all 0.1s ease-in-out;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.showBtn:hover {
+	transform: scale(1.05) translateY(-0.25em);
+	background-color: #222222;
+	box-shadow: 0 0.5em 0.5em -0.4em #ffffff;
+}
+.showBtn:active {
+	box-shadow: 0 0em 0em 0em #ffffff;
+	transform: scale(1) translateY(0em);
+}
 /* I still want to make the poster larger and then put the info to the right as an option, when clicked. */
