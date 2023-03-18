@@ -48,7 +48,7 @@ function loadPage(page, pushHistory=true) {
 }
 
 function postLoad(page) {
-	if(page == "home") {
+	if(page == "home" || page == "") {
 		randomizeSplash();
 	}
 	document.dispatchEvent(pageContentLoadedEvent);
