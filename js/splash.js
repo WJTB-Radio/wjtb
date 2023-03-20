@@ -20,6 +20,8 @@ const splashes = [
 	"Wjesse! James! Team Brocket",
 	"Wonky, Jungle, Trap, Breakcore",
 	"Wow, Jello Tastes Bad",
+	"We Just Taste Burgers",
+	"We Just Tread Beaches",
 ]
 
 function getRandomInt(max) {
