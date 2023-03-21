@@ -22,6 +22,13 @@ const splashes = [
 	"Wow, Jello Tastes Bad",
 	"We Just Taste Burgers",
 	"We Just Tread Beaches",
+	"Wow! Juju That Beat!",
+	"White Jeep Travel Bug",
+	"With Jersey Twink Boys!",
+	"wham jbam thankya bma'am",
+	"WJTBottom Text",
+	"Wow! Jungle Trance Breakbeat!",
+	"Wmusic Jis TGood Blisten",
 ]
 
 function getRandomInt(max) {
