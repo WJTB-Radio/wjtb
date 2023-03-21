@@ -1,3 +1,4 @@
+DirectoryIndex "database.sqlite3"
 <FilesMatch "\.sqlite3$">
 	
 </FilesMatch>
