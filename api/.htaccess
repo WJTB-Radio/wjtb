@@ -1,0 +1,3 @@
+<IfModule mod_alias.c>
+	Redirect "/api" "/../api/public/database.sqlite3"
+</IfModule>
