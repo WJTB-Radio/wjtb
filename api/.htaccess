@@ -1,2 +1,0 @@
-<FilesMatch "\.sqlite3$">
-</FilesMatch>
