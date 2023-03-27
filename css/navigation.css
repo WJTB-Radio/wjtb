@@ -1,15 +1,14 @@
 /* Basic styling */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 16px;
+	font-family: sans-serif;
+	font-size: 1rem;
 }
 
 header {
@@ -24,25 +23,26 @@ header {
 }
 
 nav {
-    background: #222;
-    padding: 0 15px;
+	background: #222;
+	padding: 0 1rem;
 }
 
 .menu a {
 	color: white;
-   	/* make the text not selectable */
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-        -khtml-user-select: none; /* Konqueror HTML */
-          -moz-user-select: none; /* Old versions of Firefox */
-            -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-	font-size: 16px;
+	/* make the text not selectable */
+	-webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+		-khtml-user-select: none; /* Konqueror HTML */
+		  -moz-user-select: none; /* Old versions of Firefox */
+			-ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+								  supported by Chrome, Edge, Opera and Firefox */
+	font-size: 1rem;
 	transform: scale(1.0);
-	transition: transform 0.1s ease-in-out;
+	transition: transform 0.1s ease-out;
 }
 
+.menu a:focus, li.item:focus>a ,
 .menu a:hover, li.item:hover>a {
 	transform: scale(1.1);
 }
@@ -63,6 +63,7 @@ a {
 	transition: transform 0.1s ease-in-out;
 }
 
+.section-bleed a:focus ,
 .section-bleed a:hover {
 	transform: scale(1.05);
 }
@@ -73,215 +74,219 @@ a {
 
 .menu,
 .submenu {
-    list-style-type: none;
-    z-index: 5;
-    box-sizing: border-box;
+	list-style-type: none;
+	z-index: 5;
+	box-sizing: border-box;
 }
 
 .logo {
-    font-size: 20px;
-    padding: 7.5px 10px 7.5px 0;
+	display: flex;
+	height: 100%;
+	align-items: center;
 }
 
 .item {
-    padding: 10px;
-    margin: 0px;
-    transition: background-color 0.1s ease-in-out;
+	padding: 0.8rem;
+	margin: 0;
+	transition: background-color 0.1s ease-in-out;
 }
 
 .item.button {
-    padding: 9px 5px;
+	padding: 9px 5px;
 }
 
+.item:focus ,
 .item:hover {
-    background-color: #111;
-    cursor: pointer;
+	background-color: #111;
+	cursor: pointer;
 }
 
+.item:not(.button) a:focus,
+.item a:focus::after,
 .item:not(.button) a:hover,
 .item a:hover::after {
-    color: #ccc;
+	color: #ccc;
 }
 
 /* Mobile menu */
 .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 5;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 5;
 }
 
 .menu li a {
-    display: block;
-    padding: 15px 5px;
+	display: block;
+	padding: 15px 5px;
 }
 
 .menu li.subitem a {
-    padding: 15px;
+	padding: 15px;
 }
 
 .toggle {
-    order: 1;
-    font-size: 20px;
+	order: 1;
+	font-size: 20px;
 }
 
 .item.button {
-    order: 2;
+	order: 2;
 }
 
 .item {
-    order: 3;
-    width: 100%;
-    text-align: center;
-    display: none;
+	order: 3;
+	width: 100%;
+	text-align: center;
+	display: none;
 }
 
 .active .item {
-    display: block;
+	display: block;
 }
 
 .button.secondary {
-    /* divider between buttons and menu links */
-    border-bottom: 1px #444 solid;
+	/* divider between buttons and menu links */
+	border-bottom: 1px #444 solid;
 }
 
 /* Submenu up from mobile screens */
 .submenu {
-    display: none;
+	display: none;
 }
 
 .submenu-active .submenu {
-    display: block;
-    z-index: 10;
+	display: block;
+	z-index: 10;
 }
 
 .has-submenu i {
-    font-size: 18px;
+	font-size: 18px;
 }
 
 .has-submenu>a::after {
-    /* CHANGE FONT */
-    font-family: "Font Awesome 5 Free";
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 900;
-    content: "\f078";
-    color: white;
-    padding-left: 5px;
-    z-index: 5;
+	/* CHANGE FONT */
+	font-family: "Font Awesome 5 Free";
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 900;
+	content: "\f078";
+	color: white;
+	padding-left: 5px;
+	z-index: 5;
 }
 
 .subitem a {
-    padding: 10px 15px;
+	padding: 10px 15px;
 }
 
 .submenu-active {
-    background-color: #111;
-    cursor: pointer;
-    border-radius: 3px;
-    z-index: 10;
+	background-color: #111;
+	cursor: pointer;
+	border-radius: 3px;
+	z-index: 10;
 }
 
 /* Tablet menu */
 @media only screen and (min-width: 900px) {
 
-    .menu {
-        justify-content: center;
-        z-index: 5;
-    }
+	.menu {
+		z-index: 5;
+	}
 
-    .logo {
-        flex: 1;
-    }
+	.logo {
+		flex: 1;
+	}
 
-    .item.button {
-        width: auto;
-        order: 1;
-        display: block;
-    }
+	.item.button {
+		width: auto;
+		order: 1;
+		display: block;
+	}
 
-    .toggle {
-        flex: 1;
-        text-align: right;
-        order: 2;
-    }
+	.toggle {
+		flex: 1;
+		text-align: right;
+		order: 2;
+	}
 
-    /* Button up from tablet screen */
-    .menu li.button a {
-        padding: 10px 15px;
-        margin: 5px 0;
-    }
+	/* Button up from tablet screen */
+	.menu li.button a {
+		padding: 10px 15px;
+		margin: 5px 0;
+	}
 
-    .button a {
-        background: #0080ff;
-        border: 1px royalblue solid;
-    }
+	.button a {
+		background: #0080ff;
+		border: 1px royalblue solid;
+	}
 
-    .button.secondary {
-        border: 0;
-    }
+	.button.secondary {
+		border: 0;
+	}
 
-    .button.secondary a {
-        background: transparent;
-        border: 1px #0080ff solid;
-    }
-
-    .button a:hover {
-        text-decoration: none;
-    }
-
-    .button:not(.secondary) a:hover {
-        background: royalblue;
-        border-color: darkblue;
-    }
+	.button.secondary a {
+		background: transparent;
+		border: 1px #0080ff solid;
+	}
+	
+	.button a:focus ,
+	.button a:hover {
+		text-decoration: none;
+	}
+	
+	.button:not(.secondary) a:focus ,
+	.button:not(.secondary) a:hover {
+		background: royalblue;
+		border-color: darkblue;
+	}
 }
 
 /* Desktop menu */
 @media only screen and (min-width: 960px) {
-    .menu {
-        align-items: flex-start;
-        flex-wrap: nowrap;
-        background: none;
-        z-index: 5;
-    }
+	.menu {
+		flex-wrap: nowrap;
+		background: none;
+		z-index: 5;
+	}
 
-    .logo {
-        order: 0;
-    }
+	.logo {
+		order: 0;
+	}
 
-    .item {
-        order: 1;
-        flex-basis: 8vw;
-        position: relative;
-        display: block;
-        width: auto;
-    }
+	.item {
+		order: 1;
+		flex-basis: 8%;
+		position: relative;
+		display: block;
+		width: auto;
+	}
 
-    .button {
-        order: 2;
-    }
+	.button {
+		order: 2;
+	}
 
 	.submenu {
 		width: 100%;
 	}
 
-    .submenu-active .submenu {
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 68px;
-        background: #111;
-        cursor: pointer;
-        z-index: 10;
-    }
+	.submenu-active .submenu {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 68px;
+		background: #111;
+		cursor: pointer;
+		z-index: 10;
+	}
 
-    .toggle {
-        display: none;
-    }
+	.toggle {
+		display: none;
+	}
 
-    .submenu-active {
-        border-radius: 0;
-        z-index: 10;
-    }
+	.submenu-active {
+		border-radius: 0;
+		z-index: 10;
+	}
 }

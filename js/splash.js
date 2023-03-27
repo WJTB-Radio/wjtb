@@ -23,7 +23,6 @@ const splashes = [
 	"We Just Taste Burgers",
 	"We Just Tread Beaches",
 	"White Jeep Travel Bug",
-	"With Jersey Twink Boys!",
 	"wham jbam thankya bma'am",
 	"WJTBottom Text",
 	"Wow! Jungle Trance Breakbeat!",

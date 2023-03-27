@@ -1,6 +1,6 @@
 section.shows {
 	background: black url("../img/wall.png") repeat center/50%;
-	padding: 5vh 10vh;
+	padding: 3rem 10rem;
 }
 section.posterBox{
 	display: flex;
@@ -23,7 +23,7 @@ div.posterFrame {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	transition: transform 0.8s;
+	transition: transform 0.5s ease-out;
 	transform-style: preserve-3d;
 }
 
@@ -71,41 +71,47 @@ div#poster_front>img{
 	align-content: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	background-color: #0D0D0D;
 }
 
 .showBtn {
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0px;
-	font-size: 27px;
-	padding: 6px 18px 10px 20px;
+	background-color: #0d0d0d;
+	border-radius: 1.0em;
+	font-size: 2rem;
+	padding: 0.3em 1em 0.3em 1em;
 	text-decoration: none;
 	cursor:pointer;
 	font-family: Fortzilla;
 	color: #ce2328;
-	border: solid #dddddd 2px;
-	text-shadow: #722114 3px 3px;
+	border: solid #dddddd 0.1em;
+	text-shadow: #722114 0.07em 0.07em;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	margin: 20px 5px;
-	transition: all 0.1s ease-in-out;
+	box-shadow: 0 0em 0em 0em #dddddd;
+	transition: all 0.1s ease-out;
 
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
+	--rotation-angle: 20deg;
+	--perspective-dist: 10em;
+	transform: perspective(var(--perspective-dist)) rotateX(var(--rotation-angle));
 	user-select: none;
 }
 
-.showBtn:hover {
-	transform: scale(1.05) translateY(-0.25em);
-	background-color: #222222;
-	box-shadow: 0 0.5em 0.5em -0.4em #ffffff;
+.showBtn:hover,
+.showBtn:focus {
+	transform: perspective(var(--perspective-dist)) rotateX(var(--rotation-angle)) translateY(-0.25em);
+	background-color: #ce2328;
+	color: #222222;
+	box-shadow: 0 0.25em 0.0em 0.0em #dddddd;
 }
 .showBtn:active {
-	box-shadow: 0 0em 0em 0em #ffffff;
-	transform: scale(1) translateY(0em);
+	box-shadow: 0 0em 0em 0em #dddddd;
+	background-color: #ce2328;
+	color: #222222;
+	transform: perspective(var(--perspective-dist)) rotateX(var(--rotation-angle));
 }
 /* I still want to make the poster larger and then put the info to the right as an option, when clicked. */

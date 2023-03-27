@@ -3,7 +3,8 @@ function supports_history_api() {
 }
 
 // when the website is refreshed/loaded for the first time
-window.addEventListener("load", function() {
+window.addEventListener("DOMContentLoaded", function() {
+	console.log("loaded for first time");
 	split = window.location.pathname.split("/");
 	page = "";
 	for(i = 0; i < split.length; i++) {
@@ -25,8 +26,10 @@ const pageContentLoadedEvent = new Event("page-content-loaded", {
 });
 
 var isFirstPageLoad = true;
+var isPageLoading = false;
 // replace the contents of the page using ajax
 function loadPage(page, pushHistory=true) {
+	isPageLoading = true;
 	if(page == "") {
 		page = "home"
 	}
@@ -38,7 +41,6 @@ function loadPage(page, pushHistory=true) {
 	}
 	xhttp.open("GET", "/pages/"+page+".html");
 	xhttp.send();
-	window.scrollTo(0, 0);
 	if(supports_history_api()) {
 		// set the url bar to a different url
 		if(pushHistory) {
@@ -48,8 +50,12 @@ function loadPage(page, pushHistory=true) {
 }
 
 function postLoad(page) {
+	isPageLoading = false;
 	if(page == "home" || page == "") {
 		randomizeSplash();
+	}
+	if(page != "monday" && page != "tuesday" && page != "wednesday" && page != "thursday" && page != "friday") {
+		window.scrollTo(0, 0);
 	}
 	document.dispatchEvent(pageContentLoadedEvent);
 }

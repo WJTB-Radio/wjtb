@@ -83,9 +83,13 @@ playBtn.addEventListener(
 		if (audio.paused) {
 			playBtn.classList.remove("play");
 			playBtn.classList.add("pause");
+			playBtn.setAttribute("title", "Stop listening to WJTB");
+			playBtn.setAttribute("aria-label", "Stop listening to WJTB");
 			audio.play();
 		} else {
 			playBtn.classList.remove("pause");
+			playBtn.setAttribute("title", "Listen to WJTB");
+			playBtn.setAttribute("aria-label", "Listen to WJTB");
 			playBtn.classList.add("play");
 			audio.pause();
 		}
@@ -99,10 +103,14 @@ audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
 	if (audio.muted) {
 		volumeEl.classList.remove("icono-volumeMedium");
 		volumeEl.classList.add("icono-volumeMute");
+		volumeEl.setAttribute("title", "Unmute");
+		volumeEl.setAttribute("aria-label", "Unmute");
 		volumeSlider.classList.add("muted");
 	} else {
 		volumeEl.classList.add("icono-volumeMedium");
 		volumeEl.classList.remove("icono-volumeMute");
+		volumeEl.setAttribute("title", "Mute");
+		volumeEl.setAttribute("aria-label", "Mute");
 		volumeSlider.classList.remove("muted");
 	}
 });

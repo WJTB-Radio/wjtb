@@ -1,4 +1,15 @@
 
+.nowplaying {
+	color: #cfcfcf;
+	margin: 1rem;
+	font-size: 1.2rem;
+}
+
+.playerBox {
+	box-shadow: 0 0 0.5rem 0.0rem rgba(0, 0, 0, 0.4);
+	margin: 0.5rem 0;
+}
+
 .name {
     width: 60%;
   }
@@ -66,7 +77,8 @@
      transition: transform 0.1s ease-in-out;
   }
 
-  .toggle-play:hover {
+  .toggle-play:hover,
+  .toggle-play:focus {
     transform: scale(1.1);
   }
 
@@ -92,7 +104,8 @@
     height: 15px;
     width: 3px;
   }
-  .audio-player .controls .toggle-play.pause:hover {
+  .audio-player .controls .toggle-play.pause:hover ,
+  .audio-player .controls .toggle-play.pause:focus {
     transform: scale(1.1);
   }
   .audio-player .controls .time {
@@ -118,7 +131,8 @@
     transition: transform 0.1s ease-in-out;
   }
 
-  .volume-button:hover {
+  .volume-button:hover ,
+  .volume-button:focus {
 	transform: scale(1.1);
   }
 
@@ -149,11 +163,10 @@
     width: 75%;
     box-shadow: 1x 1px 2px 0 white;
   }
-  .audio-player .controls .volume-container:hover .volume-slider:not(.muted) {
-    left: -100px;
-    width: 100px;
-  }
-  .audio-player .controls .volume-container .volume-slider.opened:not(.muted) {
+  
+  .audio-player .controls .volume-container .volume-slider.opened:not(.muted),
+  .audio-player .controls .volume-container:hover .volume-slider:not(.muted),
+  .audio-player .controls .volume-container:focus .volume-slider:not(.muted) {
 	left: -100px;
 	width: 100px;
   }
