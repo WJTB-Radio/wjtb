@@ -64,7 +64,8 @@ function format_time(time) {
 function format_times(start_time, end_time, day) {
 	let start_time_formatted = format_time(start_time);
 	let end_time_formatted = format_time(end_time);
-	return `${start_time_formatted} - ${end_time_formatted} every ${day}`
+	day = day.charAt(0).toUpperCase() + day.slice(1);
+	return `${start_time_formatted} - ${end_time_formatted} Every ${day}`
 }
 
 function create_show_content(show, day) {
