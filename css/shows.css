@@ -1,70 +1,103 @@
+img {
+	color: #cfcfcf;
+	text-align: center;
+}
+
 section.shows {
 	background: black url("../img/wall.png") repeat center/50%;
-	padding: 3rem 10rem;
+	padding: 0;
 }
-section.posterBox{
+
+div.showbox {
+	box-shadow: 0 0 1.0rem 0rem rgba(0, 0, 0, 0.5);
+}
+
+div.postercontainer {
+	flex-grow: 0;
+	flex-shrink: 0;
+	margin: 1rem;
+	height: 30rem;
+	width: 100%;
+}
+
+.showposter {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+div.show {
+	background: #181818;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	margin-left: auto;
-	margin-right: auto;
-}
-div.card {
-	--poster-size: 350px;
-	background-color: transparent;
-	width: var(--poster-size);
-	height: calc(var(--poster-size)*(3/2));
-	perspective: 1000px;
+	flex-direction: column;
 }
 
-div.posterFrame {
-	position: relative;
+div.show:nth-child(2n) {
+	background: #242424;
+}
+
+div.showinfo {
+	flex-grow: 1;
+	border-left: solid 2px #909090;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+}
+
+p.show {
+	color: #cfcfcf;
+	font-size: 1.5rem;
+	margin-left: 1rem;
 	width: 100%;
-	height: 100%;
-	transition: transform 0.5s ease-out;
-	transform-style: preserve-3d;
 }
 
-div.card:hover .posterFrame{
-	transform: rotateY(180deg);
+h2.showname {
+	margin-left: 1rem;
 }
 
-div#poster_front>img{
-	width: 100%;
-	height: 100%;
+p.show.hosts {
+	margin-bottom: 3rem;
+	font-family: "Pixel";
+	text-shadow: 0.07em 0.07em #696969;
+	font-size: 2rem;
+	color: #e0e0e0;
+	display:inline;
+	margin-right: 3rem;
 }
 
-
-#poster_front, #poster_back{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	-webkit-backface-visibility: hidden; /* Safari */
-	backface-visibility: hidden;
+p.showtimes {
+	color: #a0a0a0;
 }
 
-#poster_front{
-	background-color: #0D0D0D;
+p.showdesc {
+	margin-top: 2rem;
+	margin-right: 1rem;
 }
 
-#poster_back {
-	background-color: #0d0d0d;
-	color: #FFD700;
-	padding: 20px;
-	transform: rotateY(180deg);
-} 
+@media only screen and (min-width: 1400px) {
+	section.shows {
+		padding: 3rem 10rem;
+	}
 
-.card:nth-child(odd){
-	transform: rotate(7deg);
 }
-.card:nth-child(even){
-	transform: rotate(-2deg);
+
+@media only screen and (min-width: 1000px) {
+	div.show {
+		flex-direction: row;
+	}
+	p.showname {
+		margin-top: 2.5rem;
+	}
+	div.postercontainer {
+		width: 30rem;
+	}
+	p.showtimes {
+		display: inline;
+		position: relative;
+		top: -0.05rem;
+	}
 }
-.card:nth-child(-n*3) {
-	transform: rotate(0);
-}
+
 
 #showButtons {
 	display: flex;

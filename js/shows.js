@@ -44,8 +44,57 @@ function got_playing() {
 	setTimeout(get_playing, 1000*Math.max((data["end_time"]-get_nyc_time()) + (Math.random()*30.0+30.0), 30));
 }
 
+function format_time(time) {
+	let hours = Math.floor(time / (60*60));
+	let minutes = String((time/60)%60).padStart(2, '0');
+	let suffix = "am";
+	if(hours > 12) {
+		hours -= 12;
+		suffix = "pm";
+	} else if(hours == 12) {
+		suffix = "pm";
+	}
+	if(hours == 0) {
+		hours = 12;
+		suffix = "am";
+	}
+	return `${hours}:${minutes}${suffix}`
+}
+
+function format_times(start_time, end_time, day) {
+	let start_time_formatted = format_time(start_time);
+	let end_time_formatted = format_time(end_time);
+	return `${start_time_formatted} - ${end_time_formatted} every ${day}`
+}
+
+function create_show_content(show, day) {
+	return `<div class="show">
+		<div class="postercontainer">
+		<img src="${show["poster"]}" alt="poster for ${show["name"]}" class="showposter"></img>
+		</div>
+		<div class="showinfo">
+		<h2 class="showname show">${show["name"]}</h2>
+		<p class="hosts show">Hosted by ${show["hosts"]}</p>
+		<p class="showtimes show">${format_times(show["start_time"], show["end_time"], day)}</p>
+		<p class="showdesc show">${show["desc"]}</p>
+		</div>
+		</div>`;
+}
+
 function got_shows() {
 	let data = JSON.parse(this.responseText);
+	let shows = data["shows"];
+	let day = data["day"]
+	let total_contents = `<div class="showbox">`;
+	for(let i = 0; i < shows.length; i++) {
+		let content = create_show_content(shows[i], day);
+		total_contents += content;
+	}
+	total_contents += "</div>"
+	let show_element = document.getElementById("shows");
+	if(show_element) {
+		show_element.innerHTML = total_contents;
+	}
 }
 
 function get_playing() {
@@ -68,3 +117,4 @@ function make_request_nocache(url, callback) {
 window.addEventListener("DOMContentLoaded", (e) => {
 	get_playing()
 });
+

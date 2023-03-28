@@ -10,6 +10,7 @@ html, body {
 
 p {
 	line-height: 1.8;
+	max-width: 70ch;
 }
 
 .section-main {

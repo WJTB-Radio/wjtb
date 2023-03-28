@@ -54,7 +54,9 @@ function postLoad(page) {
 	if(page == "home" || page == "") {
 		randomizeSplash();
 	}
-	if(page != "monday" && page != "tuesday" && page != "wednesday" && page != "thursday" && page != "friday") {
+	if(page == "monday" || page == "tuesday" || page == "wednesday" || page == "thursday" || page == "friday") {
+		get_shows(page);
+	} else {
 		window.scrollTo(0, 0);
 	}
 	document.dispatchEvent(pageContentLoadedEvent);
