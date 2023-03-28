@@ -13,6 +13,10 @@ p {
 	max-width: 70ch;
 }
 
+section {
+	overflow: hidden;
+}
+
 .section-main {
 	position: relative;
 	width: 100%;
