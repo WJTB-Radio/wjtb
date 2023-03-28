@@ -4,7 +4,6 @@
 	width: auto;
 	height: 3rem;
 	background: #181818;
-	box-shadow: inset 0 0 1rem 0 rgba(0, 0, 0, 0.5);
 	padding: 1rem;
 	margin: 1rem;
 	flex-grow: 1;
@@ -28,6 +27,8 @@
 	transform: translateX(100%) translateY(-50%);
 	animation: playingscroll 15s linear infinite;
 	color: #cfcfcf;
+	font-family: "Pixel";
+	text-shadow: 0.07em 0.07em #696969;
 	font-size: 1.2rem;
 	white-space: nowrap;
 }
