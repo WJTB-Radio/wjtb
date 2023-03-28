@@ -83,6 +83,7 @@ a {
 	display: flex;
 	height: 100%;
 	align-items: center;
+	flex-basis: 90%;
 }
 
 .item {

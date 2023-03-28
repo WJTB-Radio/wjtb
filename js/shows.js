@@ -37,7 +37,7 @@ function got_playing() {
 	if(data["error"] == "") {
 		now_playing.textContent = "Now Playing: " + data["name"];
 	} else {
-		now_playing.textContent = "";
+		now_playing.textContent = "Now Playing: Test test test";
 	}
 	// schedule another request for the currently playing show
 	// leave a buffer of at least 30 seconds to give the server time to update

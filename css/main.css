@@ -17,6 +17,7 @@ p {
 	position: relative;
 	width: 100%;
 	min-height: 10rem;
+	margin-top: 10rem;
 	background: #0D0D0D no-repeat center/50% url(../img/wjtb.png);
 	background-size: contain;
 	background-position: center;
@@ -145,6 +146,7 @@ iframe {
 /* Begin tablet sizing */
 @media only screen and (min-width: 900px) {
 	.section-main {
+		margin-top: 0rem;
 		min-height: 15rem;
 	}
 	.section-main h1 {

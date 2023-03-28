@@ -1,13 +1,46 @@
+.nowplayingbox {
+	position: relative;
+	overflow: hidden;
+	width: auto;
+	height: 3rem;
+	background: #181818;
+	box-shadow: inset 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+	padding: 1rem;
+	margin: 1rem;
+	flex-grow: 1;
+}
+
+@keyframes playingscroll {
+	0% {
+		transform: translateX(100%) translateY(-50%);
+	}
+	100% {
+		transform: translateX(-100%) translateY(-50%);
+	}
+}
 
 .nowplaying {
+	position: absolute;
+	margin-bottom: 0.5rem;
+	top: 50%;
+	width: 100%;
+	height: auto;
+	transform: translateX(100%) translateY(-50%);
+	animation: playingscroll 15s linear infinite;
 	color: #cfcfcf;
-	margin: 1rem;
 	font-size: 1.2rem;
+	white-space: nowrap;
 }
 
 .playerBox {
 	box-shadow: 0 0 0.5rem 0.0rem rgba(0, 0, 0, 0.4);
 	margin: 0.5rem 0;
+}
+
+@media only screen and (max-width: 900px) {
+	.nowplayingbox {
+		order: 50;
+	}
 }
 
 .name {
