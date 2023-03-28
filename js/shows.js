@@ -34,10 +34,13 @@ function get_nyc_time() {
 function got_playing() {
 	let data = JSON.parse(this.responseText);
 	const now_playing = document.getElementById("nowplaying");
+	const now_playing_box = document.getElementById("nowplayingbox");
 	if(data["error"] == "") {
 		now_playing.textContent = "Now Playing: " + data["name"];
+		now_playing_box.style.display = "block";
 	} else {
-		now_playing.textContent = "Now Playing: Test test test";
+		now_playing.textContent = "";
+		now_playing_box.style.display = "none";
 	}
 	// schedule another request for the currently playing show
 	// leave a buffer of at least 30 seconds to give the server time to update
