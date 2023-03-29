@@ -174,9 +174,9 @@ iframe {
 		height: 100%;
 		border-radius: 2rem 2rem 0rem 0rem;
 		border: 0.35rem #ce2328;
-		border-top-style: inset;
-		border-right-style: inset;
-		border-left-style: inset;
+		border-top-style: solid;
+		border-right-style: solid;
+		border-left-style: solid;
 		border-bottom-style: none;
 		padding-top: 0px;
 		padding-bottom: 3rem;
