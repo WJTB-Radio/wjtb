@@ -27,6 +27,7 @@ const splashes = [
 	"WJTBottom Text",
 	"Wow! Jungle Trance Breakbeat!",
 	"Wmusic Jis TGood Blisten",
+	"We Just <span class=\"magictext\">tword</span> <span class=\"magictext\">bword </span>.",
 ]
 
 function getRandomInt(max) {
@@ -34,10 +35,9 @@ function getRandomInt(max) {
 	return Math.floor(Math.random() * (max)); // The maximum is exclusive
 }
 
-
 function randomizeSplash() {
 	let splash = document.getElementById("splash");
-	splash.textContent = splashes[getRandomInt(splashes.length)];
+	splash.innerHTML = splashes[getRandomInt(splashes.length)];
 }
 
 function setCookie(cname, cvalue) {

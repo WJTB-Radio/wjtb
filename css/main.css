@@ -33,17 +33,26 @@ section {
 }
 
 .section-main h1 {
+	font-size: 1.5rem;
+	line-height: 0.9;
+	text-align: left;
+	position: absolute;
+	top: 36%;
+	right: 3%;
+	transform: rotate(-12deg) scale(1.1);
+}
+
+.magictext {
+	font-family: inherit;
+	font-variant-numeric: tabular-nums;
+}
+
+.section-main h1 {
+/*.section-main h1 * {*/
 	color: #ce2328;
 	/* This is WJTB's Red! */
 	text-shadow: 0.07em 0.07em #721114;
 	font-family: 'Pixel', sans-serif;
-	font-size: 1.5rem;
-	line-height: 2.0rem;
-	text-align: center;
-	position: absolute;
-	bottom: 21%;
-	right: 3%;
-	transform: rotate(-12deg) scale(1.1);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -155,7 +164,7 @@ iframe {
 	}
 	.section-main h1 {
 		font-size: 2rem;
-		bottom: 21%;
+		top: 48%;
 		right: 6%;
 	}
 
@@ -232,7 +241,7 @@ iframe {
 
 	.section-main h1 {
 		font-size: 2.5rem;
-		bottom: 21%;
+		top: 61%;
 		right: 13%;
 	}
 
