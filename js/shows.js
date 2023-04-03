@@ -1,7 +1,7 @@
 // all of the libraries to do this are very general purpose, and so have a lot of bloat for our purposes
 // please keep this updated if we ever change our dst rules
 // here be dragons
-function get_nyc_time() {
+function get_nyc_date() {
 	let d = new Date();
 	let secondSundayOfMarch = new Date(d.getFullYear(), 2, 1);
 	// advance by two sundays, one day at a time
@@ -27,8 +27,18 @@ function get_nyc_time() {
 		offset = -4;
 	}
 	var nyc = new Date(utc + (3600000*offset));
+	return nyc;
+}
+
+function get_nyc_time() {
+	var nyc = get_nyc_date();
 	var nyc_seconds = nyc.getHours()*60*60+nyc.getMinutes()*60+nyc.getSeconds();
 	return nyc_seconds;
+}
+
+function get_nyc_weekday() {
+	var nyc = get_nyc_date();
+	return nyc.getDay()-1;
 }
 
 function got_playing() {
@@ -71,16 +81,34 @@ function format_times(start_time, end_time, day) {
 	return `${start_time_formatted} - ${end_time_formatted} Every ${day}`
 }
 
+const days_of_week = ["monday", "tuesday", "wednesday", "thursday", "friday"];
 function create_show_content(show, day) {
-	return `<div class="show">
+	let cancelled = "";
+	let playing = "";
+	let cancelled_msg = "";
+	if(show["is_running"] != 1) {
+		cancelled = " cancelled";
+		cancelled_msg = "<p class=\"cancelled_msg\">This show is cancelled.</p>";
+	} else {
+		let cur_day = get_nyc_weekday();
+		if(cur_day < days_of_week.length && cur_day >= 0 && day == days_of_week[cur_day]) {
+			let cur_time = get_nyc_time();
+			if(cur_time >= show["start_time"] && cur_time <= show["end_time"]) {
+				playing = " playing";
+			}
+		}
+	}
+	return `<div class="show${cancelled}${playing}">
+		<div class="showbg"></div>
 		<div class="postercontainer">
 		<img src="${show["poster"]}" alt="poster for ${show["name"]}" class="showposter"></img>
 		</div>
 		<div class="showinfo">
-		<h2 class="showname show">${show["name"]}</h2>
+		<h2 class="showname">${show["name"]}</h2>
 		<p class="hosts show">Hosted by ${show["hosts"]}</p>
-		<p class="showtimes show">${format_times(show["start_time"], show["end_time"], day)}</p>
-		<p class="showdesc show">${show["desc"]}</p>
+		<p class="showtimes">${format_times(show["start_time"], show["end_time"], day)}</p>
+		${cancelled_msg}
+		<p class="showdesc">${show["desc"]}</p>
 		</div>
 		</div>`;
 }

@@ -26,14 +26,61 @@ div.postercontainer {
 	object-fit: contain;
 }
 
+.cancelled .showposter {
+	filter: grayscale(100%);
+}
+
 div.show {
-	background: #181818;
+	position: relative;
+	z-index: 1;
 	display: flex;
 	flex-direction: column;
 }
 
-div.show:nth-child(2n) {
+.showbg {
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #181818;
+}
+
+div.show:nth-child(2n)>.showbg {
 	background: #242424;
+}
+
+.show.playing {
+	z-index: 5;
+}
+
+.show.playing::before{
+	--margin-size: 20px;
+	content: '';
+	position: absolute;
+	background: linear-gradient(45deg ,#e50000 ,#ff8d00 ,#ffee00 ,#028121,
+	#004cff ,#770088);
+	background-size: 400%;
+	filter: blur(40px);
+	opacity: 0.7;
+	height: calc(100% - var(--margin-size)*2);
+	top: var(--margin-size);
+	width: calc(100% - var(--margin-size)*2);
+	left: var(--margin-size);
+	margin: 10px;
+	z-index: -1;
+	animation: playing-glow-animation 60s linear infinite;
+}
+
+@keyframes playing-glow-animation{
+	0%{
+		background-position: 0 0;
+	}
+	50%{
+		background-position: 400% 0;
+	}
+	100%{
+		background-position: 0 0;
+	}
 }
 
 div.showinfo {
@@ -44,7 +91,7 @@ div.showinfo {
 	padding-bottom: 1rem;
 }
 
-p.show {
+.show p {
 	color: #cfcfcf;
 	font-size: 1.5rem;
 	margin-left: 1rem;
@@ -52,6 +99,7 @@ p.show {
 }
 
 h2.showname {
+	position: relative;
 	margin-left: 1rem;
 }
 
@@ -67,6 +115,15 @@ p.show.hosts {
 
 p.showtimes {
 	color: #a0a0a0;
+}
+
+.cancelled .showtimes {
+	text-decoration-line: line-through;
+	text-decoration-thickness: 0.1em;
+}
+
+.cancelled_msg {
+	margin-top: 0.1rem;
 }
 
 p.showdesc {
