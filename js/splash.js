@@ -28,6 +28,7 @@ const splashes = [
 	"Wow! Jungle Trance Breakbeat!",
 	"Wmusic Jis TGood Blisten",
 	"We Just <span class=\"magictext\">tword</span> <span class=\"magictext\">bword </span>.",
+	"We're Just The Beverage",
 ]
 
 function getRandomInt(max) {
