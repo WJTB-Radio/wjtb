@@ -88,7 +88,7 @@ function create_show_content(show, day) {
 	let cancelled_msg = "";
 	if(show["is_running"] != 1) {
 		cancelled = " cancelled";
-		cancelled_msg = "<p class=\"cancelled_msg\">This show is cancelled.</p>";
+		cancelled_msg = "<p class=\"cancelled_msg\">This week's show has been cancelled.</p>";
 	} else {
 		let cur_day = get_nyc_weekday();
 		if(cur_day < days_of_week.length && cur_day >= 0 && day == days_of_week[cur_day]) {
