@@ -99,7 +99,7 @@ function loadPast() {
 }
 
 function loadSoundRequest() {
-	loadPage("sound-request");
+	loadPage("request");
 }
 
 function loadGallery() {
