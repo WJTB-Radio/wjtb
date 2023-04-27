@@ -1,5 +1,4 @@
 const splashes = [
-	/*	
 	"Watching Jerma Twitch Broadcasts",
 	"worms jorms torms borms",
 	"We've Juiced The Boys",
@@ -30,8 +29,11 @@ const splashes = [
 	"Wmusic Jis TGood Blisten",
 	"We Just <span class=\"magictext\">tword</span> <span class=\"magictext\">bword </span>.",
 	"We're Just The Beverage",
-	*/
 	"umru said i'm <span class=\"magictext\">cuteee</span>.",
+	"We Just Trip Breakers",
+	"Watermelon Jam Topping Bread",
+	"Wolken Jolken Tolken Bolken",
+	"Widgets Jitter To Bass",
 ]
 
 function getRandomInt(max) {
