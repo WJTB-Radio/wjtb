@@ -8,7 +8,6 @@ const audio = new Audio(
 	"https://stream.njit.edu:8000/stream1.mp3"
 );
 
-
 let using_analyser = false;
 let analyser;
 let audioCtx;
@@ -24,7 +23,7 @@ function startAnalyser() {
 		return;
 	}
 	// setup the audio stuff
-	audio.setAttribute("crossorigin", "anonymous");
+	audio.setAttribute("crossorigin", "wjtb.njit.edu");
 	audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 	analyser = audioCtx.createAnalyser();
 	analyser.fftSize = 512;
