@@ -4,7 +4,6 @@ function supports_history_api() {
 
 // when the website is refreshed/loaded for the first time
 window.addEventListener("DOMContentLoaded", function() {
-	console.log("loaded for first time");
 	split = window.location.pathname.split("/");
 	page = "";
 	for(i = 0; i < split.length; i++) {

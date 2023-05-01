@@ -1,19 +1,88 @@
 // Possible improvements:ut sliders, reskinned
 // - Change into Vue or React component
-// - Be able to grab a custom title instead of "Music Song"
 // - Hover over sliders to see preview of timestamp/volume change
 
 const audioPlayer = document.querySelector(".audio-player");
+
 const audio = new Audio(
 	"https://stream.njit.edu:8000/stream1.mp3"
 );
 
+
+let using_analyser = false;
+let analyser;
+let audioCtx;
+let analyserBars = [];
+let analyser_iid = 0;
+let analyserSource;
+function startAnalyser() {
+	if(audioCtx) {
+		if(audioCtx.state === "suspended") {
+			audioCtx.resume();
+		}
+		start_analysing();
+		return;
+	}
+	// setup the audio stuff
+	audio.setAttribute("crossorigin", "anonymous");
+	audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+	analyser = audioCtx.createAnalyser();
+	analyser.fftSize = 512;
+	analyserSource = audioCtx.createMediaElementSource(audio);
+	analyserSource.connect(analyser);
+	analyserSource.connect(audioCtx.destination);
+	
+	// create the analyser bars
+	const analyserContainer = document.getElementById("analyser-container");
+	// the upper third is very high frequency info, we dont want to use it
+	let num_bars = analyser.frequencyBinCount*(2/3);
+	for(let i = 0; i < num_bars; i++) {
+		let bar = document.createElement("div");
+		bar.setAttribute("class", "analyser-bar");
+		analyserContainer.appendChild(bar);
+		analyserBars.push(bar);
+	}
+	start_analysing();
+}
+
+function start_analysing(){
+	if(analyser_iid != 0) {
+		clearInterval(analyser_iid);
+	}
+	// do the analysis at a regular interval
+	analyser_iid = setInterval(() => {
+		const bufferLength = analyser.frequencyBinCount;
+		const dataArray = new Uint8Array(bufferLength);
+		analyser.getByteFrequencyData(dataArray);
+		for(let i = 0; i < analyserBars.length; i++) {
+			let amplitude = dataArray[i];
+			let height = (amplitude*0.2) + 'px';
+			let bar = analyserBars[i];
+			bar.setAttribute("style","height:"+height);
+			bar.style.height = height;
+		}
+	}, 1000/24); //24 fps
+}
+
+function stopAnalyser() {
+	if(audioCtx) {
+		audioCtx.suspend();
+	}
+	if(analyser_iid != 0){
+		clearInterval(analyser_iid);
+		analyser_iid = 0;
+	}
+	for(let i = 0; i < analyserBars.length; i++) {
+		let height = '0px';
+		let bar = analyserBars[i];
+		bar.setAttribute("style","height:"+height);
+		bar.style.height = height;
+	}	
+}
+
 audio.addEventListener(
 	"loadeddata",
 	() => {
-		// audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
-		//	 audio.duration
-		// );
 		audio.volume = 0.75;
 	},
 	false
@@ -81,17 +150,23 @@ const playBtn = audioPlayer.querySelector(".controls .toggle-play");
 playBtn.addEventListener(
 	"click", () => {
 		if (audio.paused) {
+			if(using_analyser) {
+				startAnalyser();
+			}
+			audio.play();
 			playBtn.classList.remove("play");
 			playBtn.classList.add("pause");
 			playBtn.setAttribute("title", "Stop listening to WJTB");
 			playBtn.setAttribute("aria-label", "Stop listening to WJTB");
-			audio.play();
 		} else {
+			if(using_analyser) {
+				stopAnalyser();
+			}
+			audio.pause();
 			playBtn.classList.remove("pause");
 			playBtn.setAttribute("title", "Listen to WJTB");
 			playBtn.setAttribute("aria-label", "Listen to WJTB");
 			playBtn.classList.add("play");
-			audio.pause();
 		}
 	},
 	false
