@@ -11,11 +11,13 @@ audio.setAttribute("crossorigin", "anonymous");
 
 let using_analyser = false;
 let analyser;
+let analyser_type = false;
 let audioCtx;
 let analyserBars = [];
 let analyser_iid = 0;
 let analyserSource;
 function startAnalyser() {
+	analyser_type = !analyser_type;
 	if(audioCtx) {
 		if(audioCtx.state === "suspended") {
 			audioCtx.resume();
@@ -26,7 +28,7 @@ function startAnalyser() {
 	// setup the audio stuff
 	audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 	analyser = audioCtx.createAnalyser();
-	analyser.fftSize = 512;
+	analyser.fftSize = 1024;
 	analyserSource = audioCtx.createMediaElementSource(audio);
 	analyserSource.connect(analyser);
 	analyserSource.connect(audioCtx.destination);
@@ -52,10 +54,24 @@ function start_analysing(){
 	analyser_iid = setInterval(() => {
 		const bufferLength = analyser.frequencyBinCount;
 		const dataArray = new Uint8Array(bufferLength);
-		analyser.getByteFrequencyData(dataArray);
+		if(analyser_type){
+			analyser.getByteFrequencyData(dataArray);
+		} else {
+			analyser.getByteTimeDomainData(dataArray);
+		}
 		for(let i = 0; i < analyserBars.length; i++) {
 			let amplitude = dataArray[i];
-			let height = (amplitude*0.2) + 'px';
+			if(!analyser_type) {
+				// scale to 75% amplitude
+				amplitude = (amplitude-128)*0.75+128;
+				// center at 25 pixels
+				amplitude -= 103;
+				// clamp to 51 pixels
+				amplitude = Math.min(Math.max(0, amplitude), 51);
+			} else {
+				amplitude *= 0.2;
+			}
+			let height = (amplitude) + 'px';
 			let bar = analyserBars[i];
 			bar.setAttribute("style","height:"+height);
 			bar.style.height = height;
