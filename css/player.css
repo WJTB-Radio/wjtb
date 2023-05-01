@@ -7,9 +7,12 @@
 	flex-grow: 1;
 	height: 0px;
 	background: #222;
+	/* bar spacing
 	margin: 0px 2px;
+	*/
 }
 
+/* bar spacing
 @media only screen and (max-width: 1400px) {
 	.analyser-bar {
 		margin: 0px 1px;
@@ -21,6 +24,7 @@
 		margin: 0px 0px;
 	}
 }
+*/
 
 .nowplayingbox {
 	display: none;
