@@ -23,7 +23,7 @@ function startAnalyser() {
 		return;
 	}
 	// setup the audio stuff
-	audio.setAttribute("crossorigin", "wjtb.njit.edu");
+	audio.setAttribute("crossorigin", "anonymous");
 	audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 	analyser = audioCtx.createAnalyser();
 	analyser.fftSize = 512;
