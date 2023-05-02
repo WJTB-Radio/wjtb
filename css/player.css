@@ -1,6 +1,6 @@
 #analyser-container {
 	display: flex;
-	overflow: visible;
+	overflow: hidden;
 }
 
 .analyser-bar {

@@ -11,16 +11,25 @@ audio.setAttribute("crossorigin", "anonymous");
 
 let using_analyser = false;
 let analyser;
+let analyserFilter;
 let analyser_type = false;
 let audioCtx;
 let analyserBars = [];
 let analyser_iid = 0;
-let analyserSource;
 function startAnalyser() {
 	analyser_type = !analyser_type;
 	if(audioCtx) {
 		if(audioCtx.state === "suspended") {
 			audioCtx.resume();
+		}
+		if(analyser_type) {
+			// we want to analyse low frequencies for the frequency visualiser
+			analyserFilter.frequency.setValueAtTime(0, audioCtx.currentTime+0.5);
+		} else {
+			// low frequencies make the waveform flicker, we want to filter them out
+			// theres a tradeoff happening here
+			// the more you filter off, the better it looks, the worse it feels
+			analyserFilter.frequency.setValueAtTime(150, audioCtx.currentTime+0.5);
 		}
 		start_analysing();
 		return;
@@ -29,8 +38,12 @@ function startAnalyser() {
 	audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 	analyser = audioCtx.createAnalyser();
 	analyser.fftSize = 1024;
-	analyserSource = audioCtx.createMediaElementSource(audio);
-	analyserSource.connect(analyser);
+	const analyserSource = audioCtx.createMediaElementSource(audio);
+	analyserFilter = new BiquadFilterNode(audioCtx, {"type":"highpass", "frequency":0});
+	// the audio that gets analysed is filtered, but the audio that gets heard is not
+	analyserSource.connect(analyserFilter);
+	analyserFilter.connect(analyser)
+
 	analyserSource.connect(audioCtx.destination);
 	
 	// create the analyser bars
