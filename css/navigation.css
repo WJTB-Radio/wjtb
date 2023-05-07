@@ -23,12 +23,12 @@ header {
 }
 
 nav {
-	background: #222;
+	background: var(--bg3-color);
 	padding: 0 1rem;
 }
 
 .menu a {
-	color: white;
+	color: var(--text-color);
 	/* make the text not selectable */
 	-webkit-touch-callout: none; /* iOS Safari */
 	  -webkit-user-select: none; /* Safari */
@@ -52,7 +52,7 @@ nav {
 }
 
 a {
-	color: #eded50;
+	color: var(--accent2-color);
 	cursor: pointer;
 	text-decoration: none;
 }
@@ -98,7 +98,7 @@ a {
 
 .item:focus ,
 .item:hover {
-	background-color: #111;
+	background-color: var(--bg-color);
 	cursor: pointer;
 }
 
@@ -106,7 +106,7 @@ a {
 .item a:focus::after,
 .item:not(.button) a:hover,
 .item a:hover::after {
-	color: #ccc;
+	color: var(--text-color);
 }
 
 /* Mobile menu */
@@ -147,11 +147,6 @@ a {
 	display: block;
 }
 
-.button.secondary {
-	/* divider between buttons and menu links */
-	border-bottom: 1px #444 solid;
-}
-
 /* Submenu up from mobile screens */
 .submenu {
 	display: none;
@@ -173,7 +168,7 @@ a {
 	line-height: 18px;
 	font-weight: 900;
 	content: "\f078";
-	color: white;
+	color: var(--text-color);
 	padding-left: 5px;
 	z-index: 5;
 }
@@ -183,7 +178,7 @@ a {
 }
 
 .submenu-active {
-	background-color: #111;
+	background-color: var(--bg-color);
 	cursor: pointer;
 	border-radius: 3px;
 	z-index: 10;
@@ -216,31 +211,6 @@ a {
 	.menu li.button a {
 		padding: 10px 15px;
 		margin: 5px 0;
-	}
-
-	.button a {
-		background: #0080ff;
-		border: 1px royalblue solid;
-	}
-
-	.button.secondary {
-		border: 0;
-	}
-
-	.button.secondary a {
-		background: transparent;
-		border: 1px #0080ff solid;
-	}
-	
-	.button a:focus ,
-	.button a:hover {
-		text-decoration: none;
-	}
-	
-	.button:not(.secondary) a:focus ,
-	.button:not(.secondary) a:hover {
-		background: royalblue;
-		border-color: darkblue;
 	}
 }
 
@@ -277,7 +247,7 @@ a {
 		position: absolute;
 		left: 0;
 		top: 68px;
-		background: #111;
+		background: var(--bg-color);
 		cursor: pointer;
 		z-index: 10;
 	}

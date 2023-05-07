@@ -1,11 +1,26 @@
 /* Main.css contains all styling related to the main pages of the site */
 
+
+body {
+	--bg-color: #0d0d0d;
+	--bg2-color: #181818;
+	--bg3-color: #242424;
+	--text-color: #cfcfcf;
+	--text-shadow-color: #696969;
+	--text-light-color: #888888;
+	--accent-color: #ce2328;
+	--accent-shadow-color: #721114;
+	--accent2-color: #eded50;
+	/* this should always be a light color */
+	--iframe-bg-color: #eeeeee;
+}
+
 * {
 	box-sizing: border-box;
 }
 
 html, body {
-	background: #0d0d0d;
+	background: var(--bg-color);
 }
 
 p {
@@ -21,10 +36,25 @@ section {
 	position: relative;
 	width: 100%;
 	min-height: 10rem;
-	margin-top: 10rem;
-	background: #0D0D0D no-repeat center/50% url(../img/wjtb.png);
-	background-size: contain;
-	background-position: center;
+	margin-top: 7rem;
+	margin-bottom: 1rem;
+	background: var(--bg-color);
+}
+
+.section-main::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: var(--text-color);
+	-webkit-mask-image: url(../img/wjtb.svg);
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-size: 50%;
+	-webkit-mask-position: center;
+	mask-image: url(../img/wjtb.svg);
+	mask-repeat: no-repeat;
+	mask-size: 50%;
+	mask-position: center;
 }
 
 @keyframes splash-animation {
@@ -48,10 +78,8 @@ section {
 }
 
 .section-main h1 {
-/*.section-main h1 * {*/
-	color: #ce2328;
-	/* This is WJTB's Red! */
-	text-shadow: 0.07em 0.07em #721114;
+	color: var(--accent-color);
+	text-shadow: 0.07em 0.07em var(--accent-shadow-color);
 	font-family: 'Pixel', sans-serif;
 }
 
@@ -68,32 +96,45 @@ section {
 	height: 100%;
 	max-width: 170ch;
 	flex: 1 0 auto;
-	background: #181818;
+	background: var(--bg2-color);
 	padding-top: 0rem;
-	padding-bottom: 4rem;
+	padding-bottom: 16rem;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 	margin-top: 2rem;
 	margin-bottom: 0rem;
 }
 
+body.lightmode .section-two {
+	box-shadow: 0 0 0.5rem -0.1rem rgba(0, 0, 0, 0.3);
+}
+
+.page {
+	position: relative;
+}
+
+.theme-button {
+	position: absolute;
+	bottom: 0%;
+}
+
 h2 {
-	color: #ce2328;
+	color: var(--accent-color);
 	font-family: 'Fortzilla', sans-serif;
 	font-size: 3rem;
-	text-shadow: 0.07em 0.07em #721114;
+	text-shadow: 0.07em 0.07em var(--accent-shadow-color);
 	/* text-transform: uppercase; */
 	margin: 2rem 0rem;
 }
 
 .section-two p {
-	color: #cfcfcf;
+	color: var(--text-color);
 	font-size: 1.5rem;
 	margin: 2rem 0;
 }
 
 ol li {
-	color: #cfcfcf;
+	color: var(--text-color);
 	font-size: 1.5rem;
 	list-style-type: none;
 }
@@ -107,7 +148,7 @@ ol li:before {
 	content: counter(li)".";
 	margin-right: 0.8rem;
 	counter-increment: li;
-	color: #888888;
+	color: var(--text-light-color);
 }
 
 .content {
@@ -153,13 +194,13 @@ iframe {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0%;
-	background: #eeeeee;
+	background: var(--iframe-bg-color);
 }
 
 /* Begin tablet sizing */
 @media only screen and (min-width: 900px) {
 	.section-main {
-		margin-top: 0rem;
+		margin-top: 1rem;
 		min-height: 15rem;
 	}
 	.section-main h1 {
@@ -170,7 +211,7 @@ iframe {
 
 	.section-bleed {
 		width: 100%;
-		background-color: #0D0D0D;
+		background-color: var(--bg-color);
 		justify-content: center;
 		align-items: center;
 		display: flex;
@@ -181,12 +222,6 @@ iframe {
 	.section-two {
 		width: 100%;
 		height: 100%;
-		border-radius: 2rem 2rem 0rem 0rem;
-		border: 0.35rem #ce2328;
-		border-top-style: solid;
-		border-right-style: solid;
-		border-left-style: solid;
-		border-bottom-style: none;
 		padding-top: 0px;
 		padding-bottom: 3rem;
 		padding-left: 2rem;
@@ -195,6 +230,15 @@ iframe {
 		margin-right: auto;
 		margin-top: 2rem;
 		margin-bottom: 0rem;
+	}
+
+	body:not(.lightmode) .section-two {
+		border-radius: 2rem 2rem 0rem 0rem;
+		border: 0.35rem var(--accent-color);
+		border-top-style: solid;
+		border-right-style: solid;
+		border-left-style: solid;
+		border-bottom-style: none;
 	}
 
 	h2 {
@@ -235,7 +279,6 @@ iframe {
 @media only screen and (min-width: 1400px) {
 	.section-main {
 		align-items: end;
-		background-size: 60rem;
 		min-height: 30rem;
 	}
 
@@ -247,7 +290,7 @@ iframe {
 
 	.section-bleed {
 		width: 100%;
-		background-color: #0D0D0D;
+		background-color: var(--bg-color);
 		justify-content: center;
 		align-items: center;
 		display: flex;
@@ -265,6 +308,10 @@ iframe {
 		margin-right: auto;
 		margin-top: 40px;
 		margin-bottom: 0px;
+	}
+
+	body.lightmode .section-two {
+		border-radius: 1rem 1rem 0rem 0rem;
 	}
 	
 	h2 {

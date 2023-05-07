@@ -29,7 +29,7 @@ function startAnalyser() {
 			// low frequencies make the waveform flicker, we want to filter them out
 			// theres a tradeoff happening here
 			// the more you filter off, the better it looks, the worse it feels
-			analyserFilter.frequency.setValueAtTime(150, audioCtx.currentTime+0.5);
+			analyserFilter.frequency.setValueAtTime(100, audioCtx.currentTime+0.1);
 		}
 		start_analysing();
 		return;

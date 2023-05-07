@@ -42,7 +42,7 @@
                   <btn class="toggle-play play" tabindex="0" aria-label="Listen to WJTB" title="Listen to WJTB"></btn>
                 </div>
                 <btn class="name" alt="Enable audio visualiser" onclick="startAnalyser()">
-                  <img class="name" alt="WJTB" src="/img/wjtb.png"> </img>
+                  <div class="player-logo"> </div>
                 </btn>
                 <div class="volume-container">
                   <btn class="volume-button" tabindex="0" aria-label="Mute" title="Mute">
@@ -94,7 +94,8 @@
 		
     </div>
   </header>
-  <section id="output">
+  <div class="page">
+  <div id="output">
 <!-- Site content gets automatically inserted after this line. -->
 <!-- Things will break if this gets moved, changed, or duplicated anywhere else in this file. -->
 
@@ -104,13 +105,15 @@
 <!-- INSERT-CONTENTS-HERE-578395676396 -->
 
 <!-- Site content should all be above this line. -->
-  </section>
-
+  </div>
+  <btn class="theme-button showBtn" onclick="nextTheme()">Theme!</btn>
+  </div>
 <script src="./js/nav.js"></script>
 <script src="./js/pgloader.js"></script>
 <script src="./js/player.js"></script>
 <script src="./js/splash.js"></script>
 <script src="./js/shows.js"></script>
+<script src="./js/theme.js"></script>
 <script src="./js/magic.js"></script>
 
 </body>

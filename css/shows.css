@@ -1,10 +1,10 @@
 img {
-	color: #cfcfcf;
+	color: var(--text-color);
 	text-align: center;
 }
 
 section.shows {
-	background: black url("../img/wall.png") repeat center/50%;
+	background: var(--bg-color) url("../img/wall.png") repeat center/50%;
 	padding: 0;
 }
 
@@ -42,11 +42,11 @@ div.show {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #181818;
+	background: var(--bg2-color);
 }
 
 div.show:nth-child(2n)>.showbg {
-	background: #242424;
+	background: var(--bg3-color);
 }
 
 .show.playing {
@@ -85,14 +85,14 @@ div.show:nth-child(2n)>.showbg {
 
 div.showinfo {
 	flex-grow: 1;
-	border-left: solid 2px #909090;
+	border-left: solid 2px var(--text-color);
 	padding-left: 1rem;
 	padding-right: 1rem;
 	padding-bottom: 1rem;
 }
 
 .show p {
-	color: #cfcfcf;
+	color: var(--text-color);
 	font-size: 1.5rem;
 	margin-left: 1rem;
 	width: 100%;
@@ -106,15 +106,15 @@ h2.showname {
 p.show.hosts {
 	margin-bottom: 3rem;
 	font-family: "Pixel";
-	text-shadow: 0.07em 0.07em #696969;
+	text-shadow: 0.07em 0.07em var(--text-shadow-color);
 	font-size: 2rem;
-	color: #e0e0e0;
+	color: var(--text-color);
 	display:inline;
 	margin-right: 3rem;
 }
 
 p.showtimes {
-	color: #a0a0a0;
+	color: var(--text-light-color);
 }
 
 .cancelled .showtimes {
@@ -164,20 +164,20 @@ p.showdesc {
 }
 
 .showBtn {
-	background-color: #0d0d0d;
+	background-color: var(--bg-color);
 	border-radius: 1.0em;
 	font-size: 2rem;
 	padding: 0.3em 1em 0.3em 1em;
 	text-decoration: none;
 	cursor:pointer;
 	font-family: Fortzilla;
-	color: #ce2328;
-	border: solid #dddddd 0.1em;
-	text-shadow: #722114 0.07em 0.07em;
+	color: var(--accent-color);
+	border: solid var(--text-color) 0.1em;
+	text-shadow: var(--accent-shadow-color) 0.07em 0.07em;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	margin: 20px 5px;
-	box-shadow: 0 0em 0em 0em #dddddd;
+	box-shadow: 0 0em 0em 0em var(--text-color);
 	transition: all 0.1s ease-out;
 
 	-webkit-touch-callout: none;
@@ -194,14 +194,14 @@ p.showdesc {
 .showBtn:hover,
 .showBtn:focus {
 	transform: perspective(var(--perspective-dist)) rotateX(var(--rotation-angle)) translateY(-0.25em);
-	background-color: #ce2328;
-	color: #222222;
-	box-shadow: 0 0.25em 0.0em 0.0em #dddddd;
+	background-color: var(--accent-color);
+	color: var(--bg2-color);
+	box-shadow: 0 0.25em 0.0em 0.0em var(--text-color);
 }
+
 .showBtn:active {
-	box-shadow: 0 0em 0em 0em #dddddd;
-	background-color: #ce2328;
-	color: #222222;
+	box-shadow: 0 0em 0em 0em var(--text-color);
+	background-color: var(--accent-color);
+	color: var(--bg2-color);
 	transform: perspective(var(--perspective-dist)) rotateX(var(--rotation-angle));
 }
-/* I still want to make the poster larger and then put the info to the right as an option, when clicked. */

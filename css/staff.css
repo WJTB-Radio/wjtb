@@ -1,5 +1,5 @@
 section.staff{
-	background-color: #171717;
+	background-color: var(--bg2-color);
 	padding: 5rem 5rem;
 }
 
@@ -19,12 +19,13 @@ div.staffCard {
 	position: relative;
 	z-index: 1;
 	overflow: visible;
-	margin-bottom: 0;
-	margin-top: 0;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
 	transform: scale(1.0);
 	transition: transform 0.4s cubic-bezier(0.1, 0.9, 0.9, 0.9);
+	box-shadow: 0 0 0.5rem -0.1rem rgba(0, 0, 0, 0.3);
 }
 
 @media (hover: hover) {
@@ -43,14 +44,15 @@ div.staffCard {
 
 
 div.staffCard>div.card_contents{
-	box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
-	background-color: #171717;
+	background-color: var(--bg2-color);
 	text-align: center;
-	color: #cfcfcf;
+	color: var(--text-color);
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 2rem;
+	margin-bottom: 0.5rem;
 	margin-top: 0;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }
 
 div.staffCard>div.image{
@@ -60,29 +62,34 @@ div.staffCard>div.image{
 	transition: filter 0.4s cubic-bezier(0.1, 0.9, 0.9, 0.9);
 }
 
+div.staffCard>div.image>img {
+	margin: auto;
+	width: 100%;
+}
+
 /* Name Styling */
 div.card_contents>h2 {
-	color: #ce2328;
+	color: var(--accent-color);
 	font-family: 'Fortzilla', sans-serif;
-	text-shadow: 0.07em 0.07em #721114;
+	text-shadow: 0.07em 0.07em var(--accent-shadow-color);
 	font-size: 1.7rem;
 	text-align: center;
 	margin-bottom: 0.7rem;
-	padding-top: 0.5rem;
+	margin-top: 0.5rem;
 }
 
 /* Position Styling */
 .title {
-	color: #e0e0e0;
+	color: var(--text-color);
 	font-family: 'Pixel', sans-serif;
-	text-shadow: 0.07em 0.07em #696969;
+	text-shadow: 0.07em 0.07em var(--text-shadow-color);
 	font-size: 1.3rem;
 	text-align: center;
 }
 
 /* Flavor Text Styling*/
 .flavor {
-	color: #e0e0e0;
+	color: var(--text-color);
 	font-size: 1.3rem;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.0rem;
 }
