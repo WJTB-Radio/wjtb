@@ -59,6 +59,25 @@ for (let item of items) {
 }
 document.addEventListener("click", closeSubmenu, false);
 
+
+function add_keyboard_events_for_buttons() {
+	for (let item of document.getElementsByTagName("btn")) {
+		if(item.getAttribute("keyboard_enabled") == "1") {
+			continue;
+		}
+		item.setAttribute("keyboard_enabled", "1");
+		item.setAttribute("tabindex", "0");
+		item.addEventListener("keydown", (e) => {
+			if(e.key == "Space" || e.key == "Enter") {
+				item.click();
+			}
+		});
+		item.addEventListener("click", (e) => {
+			item.blur();
+		});
+	}
+}
+
 document.addEventListener("page-content-loaded", (e) => {
 	for (let item of document.getElementsByTagName("a")) {
 		if(item.parentNode.classList.contains("has-submenu") || item.getAttribute("keyboard_enabled") == "1") {
@@ -75,18 +94,7 @@ document.addEventListener("page-content-loaded", (e) => {
 			}
 		});
 	}
-	for (let item of document.getElementsByTagName("btn")) {
-		if(item.getAttribute("keyboard_enabled") == "1") {
-			continue;
-		}
-		item.setAttribute("keyboard_enabled", "1");
-		item.setAttribute("tabindex", "0");
-		item.addEventListener("keydown", (e) => {
-			if(e.key == "Space" || e.key == "Enter") {
-				item.click();
-			}
-		});
-	}
+	add_keyboard_events_for_buttons();
 	let splash = document.getElementById("splash");
 	splash.setAttribute("tabindex", "0");
 	splash.addEventListener("keydown", (e) => {

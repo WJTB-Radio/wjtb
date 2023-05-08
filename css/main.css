@@ -113,11 +113,6 @@ body.lightmode .section-two {
 	position: relative;
 }
 
-.theme-button {
-	position: absolute;
-	bottom: 0%;
-}
-
 h2 {
 	color: var(--accent-color);
 	font-family: 'Fortzilla', sans-serif;
@@ -195,6 +190,49 @@ iframe {
 	margin-right: auto;
 	margin-top: 0%;
 	background: var(--iframe-bg-color);
+}
+
+.styled-button {
+	background-color: var(--bg-color);
+	border-radius: 1.0em;
+	font-size: 2rem;
+	padding: 0.3em 1em 0.3em 1em;
+	text-decoration: none;
+	cursor:pointer;
+	font-family: Fortzilla;
+	color: var(--accent-color);
+	border: solid var(--text-color) 0.1em;
+	text-shadow: var(--accent-shadow-color) 0.07em 0.07em;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin: 20px 5px;
+	box-shadow: 0 0em 0em 0em var(--text-color);
+	transition: all 0.1s ease-out;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	--rotation-angle: 20deg;
+	--perspective-dist: 10em;
+	transform: perspective(var(--perspective-dist)) rotateX(var(--rotation-angle));
+	user-select: none;
+}
+
+.styled-button:hover,
+.styled-button:focus {
+	transform: perspective(var(--perspective-dist)) rotateX(var(--rotation-angle)) translateY(-0.25em);
+	background-color: var(--accent-color);
+	color: var(--bg2-color);
+	box-shadow: 0 0.25em 0.0em 0.0em var(--text-color);
+}
+
+.styled-button:active {
+	box-shadow: 0 0em 0em 0em var(--text-color);
+	background-color: var(--accent-color);
+	color: var(--bg2-color);
+	transform: perspective(var(--perspective-dist)) rotateX(var(--rotation-angle));
 }
 
 /* Begin tablet sizing */

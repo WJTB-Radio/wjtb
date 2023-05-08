@@ -122,6 +122,10 @@ function loadShowRequest() {
 	loadPage("show-request");
 }
 
+function loadTheme() {
+	loadPage("themes");
+}
+
 function loadMondays() {
 	loadPage("monday");
 }

@@ -1,5 +1,7 @@
 const themes = [
 	{
+		"name": "dark",
+		"desc": "Easy on the eyes.",
 		"lightmode":false,
 		"style": `
 			--bg-color: #0d0d0d;
@@ -15,6 +17,8 @@ const themes = [
 		`,
 	},
 	{
+		"name":"light",
+		"desc": "Just like paper.",
 		"lightmode":true,
 		"style":`
 			--bg-color: #ffffff;
@@ -30,6 +34,8 @@ const themes = [
 		`,
 	},
 	{
+		"name":"pink",
+		"desc":"It looks pretty cool.",
 		"lightmode":true,
 		"style":`
 			--bg-color: #ffefef;
@@ -45,6 +51,8 @@ const themes = [
 		`,
 	},
 	{
+		"name":"red",
+		"desc":"What if it was like dark, but more?",
 		"lightmode":false,
 		"style":`
 			--bg-color: #1c0000;
@@ -65,13 +73,36 @@ function selectTheme(id) {
 	let theme = themes[id];
 	document.body.setAttribute("class", theme["lightmode"]?"lightmode":"");
 	document.body.setAttribute("style", theme["style"]);
+	setCookie("theme", id.toString());
 }
 
 let currentTheme = parseInt(getCookie("theme", "0"));
 function nextTheme() {
 	currentTheme = (currentTheme + 1) % themes.length;
 	selectTheme(currentTheme);
-	setCookie("theme", currentTheme.toString());
 }
 
 selectTheme(currentTheme);
+
+document.addEventListener("page-content-loaded", (e) => {
+	let themebox = document.getElementById("theme-list");
+	if(!themebox) {
+		return;
+	}
+	let elements = "";
+	let i = 0;
+	for(const theme of themes) {
+		elements += `
+			<div class="theme-selector">
+				<btn onclick="selectTheme(${i})" class="theme-button" style="${theme["style"]}" title="Apply ${theme["name"]} theme."></btn>
+				<div class="theme-info">
+					<h2 class="theme-name">${theme["name"]}</h2>
+					<p class="theme-desc">${theme["desc"]}</p>
+				</div>
+			</div>
+		`;
+		i++;
+	}
+	themebox.innerHTML = elements;
+	add_keyboard_events_for_buttons();
+});
