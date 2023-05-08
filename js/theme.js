@@ -29,6 +29,36 @@ const themes = [
 			--iframe-bg-color: #eeeeee00;	
 		`,
 	},
+	{
+		"lightmode":true,
+		"style":`
+			--bg-color: #ffefef;
+			--bg2-color: #ffebeb;
+			--bg3-color: #ffe0e0;
+			--text-color: #111111;
+			--text-shadow-color: #18181878;
+			--text-light-color: #444444;
+			--accent-color: #ce2328;
+			--accent-shadow-color: #721114;
+			--accent2-color: #f9262d;
+			--iframe-bg-color: #eeeeee00;	
+		`,
+	},
+	{
+		"lightmode":false,
+		"style":`
+			--bg-color: #1c0000;
+			--bg2-color: #260000;
+			--bg3-color: #300;
+			--text-color: #cfcfcf;
+			--text-shadow-color: #696969;
+			--text-light-color: #888888;
+			--accent-color: #ce2328;
+			--accent-shadow-color: #721114;
+			--accent2-color: #ed5050;
+			--iframe-bg-color: #eeeeee;
+		`,
+	},
 ];
 
 function selectTheme(id) {
