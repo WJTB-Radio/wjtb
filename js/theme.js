@@ -67,6 +67,40 @@ const themes = [
 			--iframe-bg-color: #eeeeee;
 		`,
 	},
+	{
+		"name":"trees and sun",
+		"desc":"Love from the theme.",
+		"lightmode":false,
+		"style":`
+			--bg-color: #a2c9ea;
+			--bg2-color: #8bb6de;
+			--bg3-color: #beba71;
+			--text-color: #ffffff;
+			--text-shadow-color: #ffe5ba;
+			--text-light-color: #888888;
+			--accent-color: #ffe5ba;
+			--accent-shadow-color: #ffb446;
+			--accent2-color: #ffbe59;
+			--iframe-bg-color: #eeeeee00;
+		`,
+	},
+	{
+		"name":"extra pink",
+		"desc":"Its so pink!",
+		"lightmode":false,
+		"style":`
+			--bg-color: #ffdbe8;
+			--bg2-color: #ffcadd;
+			--bg3-color: #ff9dcf;
+			--text-color: #000;
+			--text-shadow-color: #18181878;
+			--text-light-color: #444444;
+			--accent-color: #d32153;
+			--accent-shadow-color: #721611;
+			--accent2-color: #d32153;
+			--iframe-bg-color: #eeeeee00;
+		`,
+	},
 ];
 
 function selectTheme(id) {

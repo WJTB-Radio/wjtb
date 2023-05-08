@@ -7,7 +7,7 @@
    viewBox="0 0 300 300"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="EventIcons.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="false"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.49260384"
-     inkscape:cx="599.87352"
-     inkscape:cy="624.23387"
+     inkscape:zoom="0.69664703"
+     inkscape:cx="247.61463"
+     inkscape:cy="579.20293"
      inkscape:window-width="1920"
      inkscape:window-height="1016"
      inkscape:window-x="0"
@@ -35,7 +35,9 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#181818" />
   <defs
      id="defs2" />
   <g
@@ -44,81 +46,78 @@
      id="layer1"
      transform="translate(-24.489215,-23.050887)">
     <g
-       id="g858"
-       transform="translate(2.6458293,-5.2916673)">
+       id="g2867">
       <g
-         id="g837"
-         transform="translate(155.96254,26.865907)">
+         id="g2841">
         <rect
-           style="fill:#220000;fill-opacity:1;stroke:#ffffff;stroke-width:4.99999;stroke-linejoin:round;stroke-opacity:1"
+           style="fill:#1d1d1d;fill-opacity:1;stroke:#ffffff;stroke-width:4.99999;stroke-linejoin:round;stroke-opacity:1"
            id="rect827"
            width="116.95399"
            height="178.82652"
-           x="26.98921"
-           y="25.550882"
+           x="185.59758"
+           y="47.125122"
            ry="20"
            rx="20" />
         <circle
            style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:4.99999;stroke-linejoin:round;stroke-opacity:1"
            id="circle829"
-           cx="85.466202"
-           cy="148.30135"
+           cx="244.07457"
+           cy="169.87558"
            r="41.409569" />
         <circle
            style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:4.99999;stroke-linejoin:round;stroke-opacity:1"
            id="circle831"
-           cx="85.466202"
-           cy="148.30135"
+           cx="244.07457"
+           cy="169.87558"
            r="10.301952" />
         <circle
            style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:4.99999;stroke-linejoin:round;stroke-opacity:1"
            id="circle833"
            r="22.826223"
-           cy="67.338852"
-           cx="85.466202" />
+           cy="88.913094"
+           cx="244.07457" />
         <circle
            style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.99999;stroke-linejoin:round;stroke-opacity:1"
            id="circle835"
            r="5.2935095"
-           cy="67.338852"
-           cx="85.466202" />
+           cy="88.913094"
+           cx="244.07457" />
       </g>
       <g
-         id="g23170"
-         transform="translate(16.791824,99.890914)">
+         id="g2853">
         <rect
-           style="fill:#220000;fill-opacity:1;stroke:#ffffff;stroke-width:4.99999;stroke-linejoin:round;stroke-opacity:1"
+           style="fill:#1d1d1d;fill-opacity:1;stroke:#ffffff;stroke-width:4.99999;stroke-linejoin:round;stroke-opacity:1"
            id="rect1056"
            width="116.95399"
            height="178.82652"
-           x="26.98921"
-           y="25.550882"
+           x="46.426865"
+           y="120.15013"
            ry="20"
            rx="20" />
         <circle
            style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:4.99999;stroke-linejoin:round;stroke-opacity:1"
            id="path1286"
-           cx="85.466202"
-           cy="148.30135"
+           cx="104.90385"
+           cy="242.90059"
            r="41.409569" />
         <circle
            style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:4.99999;stroke-linejoin:round;stroke-opacity:1"
            id="circle1368"
-           cx="85.466202"
-           cy="148.30135"
+           cx="104.90385"
+           cy="242.90059"
            r="10.301952" />
         <circle
            style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:4.99999;stroke-linejoin:round;stroke-opacity:1"
            id="circle1414"
            r="22.826223"
-           cy="67.338852"
-           cx="85.466202" />
+           cy="161.9381"
+           cx="104.90385" />
         <circle
            style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.99999;stroke-linejoin:round;stroke-opacity:1"
            id="circle12442"
            r="5.2935095"
-           cy="67.338852"
-           cx="85.466202" />
+           cy="161.9381"
+           cx="104.90385" />
       </g>
     </g>
   </g>
