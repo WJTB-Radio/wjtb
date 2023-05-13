@@ -53,6 +53,7 @@ p.past-event-desc {
 .past-event-img {
 	flex-shrink 1;
 	overflow: hidden;
+	transition: transform 0.1s ease-out;
 }
 
 .past-event-img>img {
@@ -60,4 +61,10 @@ p.past-event-desc {
 	max-height: 100%;
 	max-height: 40rem;
 	object-fit: contain;
+}
+
+@media (min-width: 900px) {
+	.past-event-img:hover {
+		transform: scale(2);
+	}
 }
