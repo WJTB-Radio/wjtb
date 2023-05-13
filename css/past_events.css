@@ -1,0 +1,63 @@
+p.past-event-date {
+	font-family: "Pixel";
+	font-size: 2rem;
+	text-shadow: 0.07em 0.07em var(--text-shadow-color);
+}
+
+.section-two:has(>#past-events) {
+	padding: 0rem 0rem;
+}
+
+/* redundant has selector to check for browser compatibility */
+/* has selector isn't supported in firefox yet so we need this */
+.past-event:has(.past-event-name) {
+	padding: 1rem 2rem;
+}
+
+#past-events {
+	line-height: 1;
+}
+
+.past-event {
+	padding: 0.25rem 0.5rem;
+	background: var(--bg2-color);
+}
+
+.past-event:nth-child(2n) {
+	background: var(--bg3-color);
+}
+
+.past-event-name {
+	margin-top: 1.5rem;
+	margin-bottom: 2.5rem;
+}
+
+p.past-event-desc {
+	margin-top: 0.5rem;
+}
+
+.past-event-images {
+	display: flex;
+	padding: 0rem 1rem;
+	max-width: 75%;
+	margin: auto;
+	align-items: center;
+}
+
+@media (max-width: 900px) {
+	.past-event-images {
+		flex-direction: column;
+	}
+}
+
+.past-event-img {
+	flex-shrink 1;
+	overflow: hidden;
+}
+
+.past-event-img>img {
+	max-width: 100%;
+	max-height: 100%;
+	max-height: 40rem;
+	object-fit: contain;
+}
