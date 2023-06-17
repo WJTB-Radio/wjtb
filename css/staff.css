@@ -10,7 +10,7 @@ div.staffBox {
 	flex-wrap: wrap;
 	align-content: center;
 	justify-content:space-around;
-	align-items: center;
+	align-items: baseline;
 	align-self: center;
 	margin: auto;
 }
@@ -18,7 +18,7 @@ div.staffBox {
 div.staffCard {
 	position: relative;
 	z-index: 1;
-	overflow: visible;
+	width: 17rem;
 	margin-bottom: 1rem;
 	margin-top: 1rem;
 	margin-left: 0.5rem;
