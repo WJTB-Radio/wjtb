@@ -1,5 +1,5 @@
 const splashes = [
-	"Watching Jerma Twitch Broadcasts",
+/*	"Watching Jerma Twitch Broadcasts",
 	"worms jorms torms borms",
 	"We've Juiced The Boys",
 	"We Just Take B's",
@@ -33,7 +33,8 @@ const splashes = [
 	"We Just Trip Breakers",
 	"Watermelon Jam Topping Bread",
 	"Wolken Jolken Tolken Bolken",
-	"Widgets Jitter To Bass",
+	"Widgets Jitter To Bass",*/
+	"Wesbian Jay Tbisexual Btransgender",
 ]
 
 function getRandomInt(max) {
