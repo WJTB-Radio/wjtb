@@ -33,7 +33,7 @@ const splashes = [
 	"We Just Trip Breakers",
 	"Watermelon Jam Topping Bread",
 	"Wolken Jolken Tolken Bolken",
-	"Widgets Jitter To Bass",*/
+	"Widgets Jitter To Bass",
 	"Wesbian Jay Tbisexual Btransgender",
 	"Woman Jis Tmyfavorite Bguy",
 ]
