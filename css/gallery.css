@@ -1,0 +1,21 @@
+section.gallery {
+	background-color: var(--bg2-color);
+	padding: 5rem 5rem;
+}
+
+#gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery-image {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border: 0.15rem var(--accent-color) solid;
+	border-radius: 0.5rem;
+	max-width: min-content;
+}
+
+.gallery-image img {
+	height: 20rem;
+}
