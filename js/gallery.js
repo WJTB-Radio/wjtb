@@ -1,15 +1,21 @@
 document.addEventListener("page-content-loaded", (e) => {
 	let gallery = document.getElementById("gallery");
-	if(!gallery) {
-		return;
+	let gallery_top = document.getElementById("gallery-top");
+	if(gallery) {
+		make_request_nocache("https://raw.githubusercontent.com/WJTB-Radio/ShowData/master/gallery.json", got_gallery);
 	}
-	make_request_nocache("https://raw.githubusercontent.com/WJTB-Radio/ShowData/master/gallery.json", got_gallery);
+	if(gallery_top) {
+		make_request_nocache("https://raw.githubusercontent.com/WJTB-Radio/ShowData/master/gallery_top.json", got_gallery);
+	}
 });
 
 function got_gallery() {
 	let gallery = document.getElementById("gallery");
 	if(!gallery) {
-		return;
+		gallery = document.getElementById("gallery-top");
+		if(!gallery) {
+			return;
+		}
 	}
 	let photos = JSON.parse(this.responseText)["photos"];
 	let text = "";

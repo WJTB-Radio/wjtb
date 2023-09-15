@@ -160,8 +160,8 @@ ol li:before {
 }
 
 .img-icons {
+	display: none;
 	max-width: 50%;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 }

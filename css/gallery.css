@@ -8,16 +8,42 @@ section.gallery {
 	flex-wrap: wrap;
 }
 
+#gallery-top {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .gallery-image {
 	margin: 0.5rem;
 	padding: 0.5rem;
+	max-width: min(100%, 30rem);
+}
+
+#gallery .gallery-image {
 	border: 0.15rem var(--accent-color) solid;
 	border-radius: 0.5rem;
-	max-width: 100%;
 }
 
 .gallery-image img {
 	width: 100%;
+}
+
+#gallery-top p,
+#gallery p {
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+}
+
+.gallery-date {
+	color: var(--text-color);
+}
+
+#gallery-top .gallery-image {
+	display: none;
+}
+
+#gallery-top .gallery-image:nth-child(-n+1) {
+	display: block;
 }
 
 /* desktop */
@@ -28,5 +54,11 @@ section.gallery {
 	.gallery-image img {
 		height: 20rem;
 		width: auto;
+	}
+	#gallery-top {
+		flex-wrap: nowrap;
+	}
+	#gallery-top .gallery-image {
+		display: block;
 	}
 }
