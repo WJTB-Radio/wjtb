@@ -33,7 +33,7 @@
 .nowplaying {
 	position: absolute;
 	margin-bottom: 0.5rem;
-	top: 50%;
+	top: -15%;
 	width: 100%;
 	height: auto;
 	transform: translateX(100%) translateY(-50%);
