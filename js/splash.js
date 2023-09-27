@@ -37,6 +37,7 @@ const splashes = [
 	"Wesbian Jay Tbisexual Btransgender",
 	"Woman Jis Tmyfavorite Bguy",
 	"Welp Jonly Tin Bohio",
+	"Wumbus Jumbus Tumbus Bumbus",
 ]
 
 function getRandomInt(max) {
