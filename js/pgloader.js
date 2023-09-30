@@ -29,8 +29,36 @@ var isPageLoading = false;
 // replace the contents of the page using ajax
 function loadPage(page, pushHistory=true) {
 	isPageLoading = true;
+	if(page == "shows") {
+		let date = get_nyc_date();
+		switch(date.getDay()) {
+			case 0:
+				// sunday
+				page = "monday";
+				break;
+			case 1:
+				page = "monday";
+				break;
+			case 2:
+				page = "tuesday";
+				break;
+			case 3:
+				page = "wednesday";
+				break;
+			case 4:
+				page = "thursday";
+				break;
+			case 5:
+				page = "friday";
+				break;
+			case 6:
+				// saturday
+				page = "monday";
+				break;
+		}
+	}
 	if(page == "") {
-		page = "home"
+		page = "home";
 	}
 	closeMenu();
 	const xhttp = new XMLHttpRequest();
