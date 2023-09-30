@@ -26,6 +26,7 @@ const pageContentLoadedEvent = new Event("page-content-loaded", {
 
 var isFirstPageLoad = true;
 var isPageLoading = false;
+var prev_page = "home";
 // replace the contents of the page using ajax
 function loadPage(page, pushHistory=true) {
 	isPageLoading = true;
@@ -61,13 +62,18 @@ function loadPage(page, pushHistory=true) {
 		page = "home";
 	}
 	closeMenu();
-	const xhttp = new XMLHttpRequest();
-	xhttp.onload = function() {
-		document.getElementById("output").innerHTML = this.responseText;
+	let days_of_week = ["monday", "tuesday", "wednesday", "thursday", "friday"];
+	if(!(days_of_week.includes(page) && days_of_week.includes(prev_page))) {
+		const xhttp = new XMLHttpRequest();
+		xhttp.onload = function() {
+			document.getElementById("output").innerHTML = this.responseText;
+			postLoad(page);
+		}
+		xhttp.open("GET", "/pages/"+page+".html");
+		xhttp.send();
+	} else {
 		postLoad(page);
 	}
-	xhttp.open("GET", "/pages/"+page+".html");
-	xhttp.send();
 	if(supports_history_api()) {
 		// set the url bar to a different url
 		if(pushHistory) {
@@ -87,6 +93,7 @@ function postLoad(page) {
 		window.scrollTo(0, 0);
 	}
 	document.dispatchEvent(pageContentLoadedEvent);
+	prev_page = page;
 }
 
 // make the back button work properly on the site
