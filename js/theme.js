@@ -101,12 +101,71 @@ const themes = [
 			--iframe-bg-color: #eeeeee00;
 		`,
 	},
+	{
+		"name":"autumn",
+		"desc":"it tastes like pumpkin spice.",
+		"lightmode":false,
+		"style":`
+			--bg-color: #8e2610;
+			--bg2-color: #aa3f0f;
+			--bg3-color: #d55308;
+			--text-color: #f0efb9;
+			--text-shadow-color: #493615;
+			--text-light-color: #efad26;
+			--accent-color: #86b26b;
+			--accent-shadow-color: #493615;
+			--accent2-color: #eded50;
+			--iframe-bg-color: #efad26;
+`,
+		"custom-css":`
+			*{
+				font-family:'garamond', serif;
+			}
+		`,
+	},
+	{
+		"name":"spooky",
+		"desc":"w boo t b",
+		"lightmode":false,
+		"style":`
+			--bg-color: #1c1b21;
+			--bg2-color: #252433;
+			--bg3-color: #362c3c;
+			--text-color: #ea8e19;
+			--text-shadow-color: #696969;
+			--text-light-color: #888888;
+			--accent-color: #9731eb;
+			--accent-shadow-color: #3dee24;
+			--accent2-color: #3bee22;
+			--iframe-bg-color: #eeeeee;
+`,
+		"custom-css":`
+			h2{
+				font-family:'creepster', cursive;
+			}
+			body{
+				font-family: 'modern antiqua', cursive;
+			}
+		`,
+	},
 ];
 
 function selectTheme(id) {
 	let theme = themes[id];
 	document.body.setAttribute("class", theme["lightmode"]?"lightmode":"");
 	document.body.setAttribute("style", theme["style"]);
+
+	let theme_style = document.getElementById("theme-style");
+	if(!theme_style) {
+		theme_style = document.createElement("style");
+		theme_style.id = "theme-style";
+		document.head.appendChild(theme_style);
+	}
+	if(theme["custom-css"]) {
+		theme_style.innerHTML = theme["custom-css"];
+	} else {
+		theme_style.innerHTML = "";
+	}
 	setCookie("theme", id.toString());
 }
 
