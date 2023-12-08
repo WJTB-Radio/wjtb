@@ -1,7 +1,7 @@
 const themes = [
 	{
 		"name": "dark",
-		"desc": "Easy on the eyes.",
+		"desc": "easy on the eyes.",
 		"lightmode":false,
 		"style": `
 			--bg-color: #0d0d0d;
@@ -18,7 +18,7 @@ const themes = [
 	},
 	{
 		"name":"light",
-		"desc": "Just like paper.",
+		"desc": "just like paper.",
 		"lightmode":true,
 		"style":`
 			--bg-color: #ffffff;
@@ -35,7 +35,7 @@ const themes = [
 	},
 	{
 		"name":"pink",
-		"desc":"It looks pretty cool.",
+		"desc":"it looks pretty cool.",
 		"lightmode":true,
 		"style":`
 			--bg-color: #ffefef;
@@ -52,7 +52,7 @@ const themes = [
 	},
 	{
 		"name":"red",
-		"desc":"What if it was like dark, but more?",
+		"desc":"what if it was like dark, but more?",
 		"lightmode":false,
 		"style":`
 			--bg-color: #1c0000;
@@ -69,7 +69,7 @@ const themes = [
 	},
 	{
 		"name":"trees and sun",
-		"desc":"Love from the theme.",
+		"desc":"love from the theme.",
 		"lightmode":false,
 		"style":`
 			--bg-color: #a2c9ea;
@@ -86,7 +86,7 @@ const themes = [
 	},
 	{
 		"name":"extra pink",
-		"desc":"Its so pink!",
+		"desc":"it's so pink!",
 		"lightmode":false,
 		"style":`
 			--bg-color: #ffdbe8;
@@ -148,6 +148,23 @@ const themes = [
 			}
 		`,
 	},
+	{
+		"name": "winter",
+		"desc": "tastes like snow.",
+		"lightmode": false,
+		"style":`
+			--bg-color: #9fb6e1;
+			--bg2-color: #6f95dd;
+			--bg3-color: #5376b9;
+			--text-color: #000;
+			--text-shadow-color: #717171;
+			--text-light-color: #888888;
+			--accent-color: #a027c1;
+			--accent-shadow-color: #5b1b6c;
+			--accent2-color: #1e078a;
+			--iframe-bg-color: #eeeeee;
+		`
+	}
 ];
 
 function selectTheme(id) {
