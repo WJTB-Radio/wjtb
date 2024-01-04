@@ -8,7 +8,6 @@ document.addEventListener("page-content-loaded", (e) => {
 });
 
 function got_staff() {
-	console.log("got staff");
 	let staff_box = document.getElementById("staff-box");
 	if(!staff_box) {
 		return;
