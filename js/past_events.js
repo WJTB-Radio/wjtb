@@ -14,7 +14,7 @@ function got_past_events() {
 	let events = JSON.parse(this.responseText)["events"];
 	let text = "";
 	for(let event of events) {
-		let images = event["images"].split(" ");
+		let images = event["images"];
 		let images_text = "";
 		for(let image of images) {
 			images_text += `
